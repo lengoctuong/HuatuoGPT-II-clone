@@ -33,7 +33,7 @@ experiment_name=HuatuoGPT2_7B
     --model_path Qwen/Qwen3-0.6B \
     --max_seq_len 4096 \
     --gradient_accumulation_steps 1 \
-    --data_path ./train_qa_0.01p_Baichuan2-13B-Base_4096_dataset \
+    --data_path ./train_qa_0.01p_en_Baichuan2-13B-Base_4096_dataset \
     --output_dir ./ckpts \
     --log_dir ./train_logs \
     --n_epochs 2 \
