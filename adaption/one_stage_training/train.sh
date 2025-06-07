@@ -1,3 +1,5 @@
+# meta-llama/Llama-3.2-1B
+# Qwen/Qwen3-0.6B
 
 data_file=./sample_train_qa_Baichuan2-13B-Base_4096_dataset/data-00000-of-00001.arrow
 model_dir=baichuan-inc/Baichuan2-13B-Base
