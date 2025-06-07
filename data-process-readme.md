@@ -1,0 +1,5 @@
+- 1 conversation => <hỏi>: ... \n <trả lời>: ... <eos> (limit 4096 + truncate) (thường ~200 tokens).
+- Label -100 cho câu hỏi.
+- Batch 256, nối các conversations cho đến 4096 tokens (gồm pad).
+- Lấy mẫu ko thay thế cho general, và có thể lấy data của SFT 3 lần.
+- 1% -> ~ 57k qa -> ~ 4k ids.

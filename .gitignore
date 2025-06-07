@@ -1,0 +1,5 @@
+./.env
+./sample_train_qa_Baichuan2-13B-Base_4096_dataset
+./adaption/one_stage_training/train_qa_1p.json
+./evaluation/data/eval_qa.json
+./train_logs
