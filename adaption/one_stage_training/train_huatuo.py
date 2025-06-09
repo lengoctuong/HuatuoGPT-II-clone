@@ -47,7 +47,7 @@ class HuatuoGPT2_train_dataset(torch.utils.data.Dataset):
         input_ids = [item["input_ids"] for item in batch]
         labels = [item["labels"] for item in batch]
         if self.debug:
-            print(self.tokenizer.decode(batch[0]['input_ids']))
+            print('tokenizer.decode', self.tokenizer.decode(batch[0]['input_ids']))
             self.debug = False
 
         return {
@@ -67,6 +67,9 @@ class SFTMetric:
         self.world_size = dist.get_world_size()
 
     def __call__(self, logits, labels, loss):
+        device_id = torch.cuda.current_device()
+        device_name = torch.cuda.get_device_name(device_id)
+        print('out_loss', loss.item(), 'device', device_name)
         return self.update(logits, labels, loss)
 
     def update(self, logits, labels, loss):
@@ -85,6 +88,9 @@ class SFTMetric:
 
         acc = (self.right / self.total).item()
         loss = self.total_loss.item() / (self.world_size * self.n_step)
+        device_id = torch.cuda.current_device()
+        device_name = torch.cuda.get_device_name(device_id)
+        print('get_metric:', loss, self.world_size, self.n_step, 'device', device_name)
 
         if reset:
             self.n_step = 0
@@ -99,7 +105,7 @@ def train(args):
 
     if accelerator.is_main_process:
         wandb.init(project = args.experiment_name, config=args, dir=args.log_dir)
-    
+
     accelerator.print(f'args:\n{args}')
 
     accelerator.state.deepspeed_plugin.deepspeed_config['train_micro_batch_size_per_gpu'] = args.train_bsz_per_gpu
@@ -180,6 +186,7 @@ def train(args):
     for epoch in range(start_epoch, args.n_epochs):
         train_dataloader_iterator = tqdm(enumerate(train_dataloader), total=len(train_dataloader)) if accelerator.is_main_process else enumerate(train_dataloader)
         for batch_cnt, batch in train_dataloader_iterator:
+            accelerator.print('train_step', epoch, batch_cnt, global_step, 'device')
             if epoch==start_epoch and batch_cnt<start_step:
                 continue
 
@@ -191,9 +198,16 @@ def train(args):
 
             output = model(input_ids=input_ids, labels=labels, return_dict=True,use_cache=False)
             loss = output.loss
+            print('out_loss', loss.item(), 'device', accelerator.device)
 
             metric(output.logits, labels, loss)
             acc, train_loss = metric.get_metric()
+            if batch_cnt == 0:
+                # see all input ids and labels decoded
+                for i in range(len(input_ids)):
+                    accelerator.print(f"Input IDs {i}: {input_ids[i].tolist()}", 'device', accelerator.device)
+                    accelerator.print(f"Labels {i}: {labels[i].tolist()}", 'device', accelerator.device)
+
             accelerator.backward(loss)
             if (global_step+1) % accelerator.gradient_accumulation_steps == 0:
                 optimizer.step()
@@ -203,17 +217,19 @@ def train(args):
             global_step += 1
 
             if accelerator.is_main_process:
-                train_dataloader_iterator.set_postfix(epoch=epoch, current_step=batch_cnt, total_step=len(train_dataloader), skip=accelerator.optimizer_step_was_skipped, loss=round(train_loss, 3), acc=round(acc, 3), length=len(input_ids[0]), lr=lr_scheduler.get_last_lr()[0])
+                train_dataloader_iterator.set_postfix(epoch=epoch, current_step=batch_cnt, total_step=len(train_dataloader), skip=accelerator.optimizer_step_was_skipped, train_loss=round(train_loss, 3), out_loss=loss, acc=round(acc, 3), length=len(input_ids[0]), lr=lr_scheduler.get_last_lr()[0])
 
             if global_step % 3 == 0 and accelerator.is_main_process:
                 wandb.log({
                     'skip': int(accelerator.optimizer_step_was_skipped),
-                    'loss': train_loss,
+                    'train_loss': train_loss,
+                    'out_loss': loss,
                     'acc': acc,
                     'lr': lr_scheduler.get_last_lr()[0]
                 }, step=global_step)
 
-            if global_step % args.save_step == 22:
+            # if global_step % args.save_step == 22:
+            if global_step == 258:
                 accelerator.wait_for_everyone()
                 save_checkpoint(epoch, batch_cnt, global_step)
             

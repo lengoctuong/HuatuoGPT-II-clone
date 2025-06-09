@@ -1,5 +1,13 @@
-- 1 conversation => <hỏi>: ... \n <trả lời>: ... <eos> (limit 4096 + truncate) (thường ~200 tokens).
-- Label -100 cho câu hỏi.
-- Batch 256, nối các conversations cho đến 4096 tokens (gồm pad).
-- Lấy mẫu ko thay thế cho general, và có thể lấy data của SFT 3 lần.
-- 1% -> ~ 57k qa -> ~ 4k ids.
+- data_process
+    - 1 conversation => <hỏi>: ... \n <trả lời>: ... <eos> (limit 4096 + truncate) (thường ~200 tokens).
+    - Label -100 cho câu hỏi.
+    - Batch 256, nối các conversations cho đến 4096 tokens (gồm pad).
+    - Lấy mẫu ko thay thế cho general, và có thể lấy data của SFT 3 lần.
+    - 1% -> ~ 57k qa -> ~ 4k ids.
+
+- train_huatuo
+    - input từ process
+    - gradient accumulation 4
+    - next token prediction
+    - cross-entropy loss (output.loss) -> backward
+    - sft metric: acc, loss (để theo dõi giá trị trung bình loss theo batch)

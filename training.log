@@ -1,96 +1,2092 @@
-[2025-06-06 16:27:07,307] [WARNING] [real_accelerator.py:209:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
-[2025-06-06 16:27:07,311] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cpu (auto detect)
-W0606 16:27:14.774000 26203 site-packages/torch/distributed/run.py:792] 
-W0606 16:27:14.774000 26203 site-packages/torch/distributed/run.py:792] *****************************************
-W0606 16:27:14.774000 26203 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-W0606 16:27:14.774000 26203 site-packages/torch/distributed/run.py:792] *****************************************
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-/home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12: can't open file '/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/train_huatuo.py': [Errno 2] No such file or directory
-E0606 16:27:14.925000 26203 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 26219) of binary: /home/lengoctuong/miniconda3/envs/huatuo/bin/python3.12
-Traceback (most recent call last):
-  File "/home/lengoctuong/miniconda3/envs/huatuo/bin/accelerate", line 8, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/lengoctuong/miniconda3/envs/huatuo/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
-    args.func(args)
-  File "/home/lengoctuong/miniconda3/envs/huatuo/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1183, in launch_command
-    deepspeed_launcher(args)
-  File "/home/lengoctuong/miniconda3/envs/huatuo/lib/python3.12/site-packages/accelerate/commands/launch.py", line 868, in deepspeed_launcher
-    distrib_run.run(args)
-  File "/home/lengoctuong/miniconda3/envs/huatuo/lib/python3.12/site-packages/torch/distributed/run.py", line 909, in run
-    elastic_launch(
-  File "/home/lengoctuong/miniconda3/envs/huatuo/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/lengoctuong/miniconda3/envs/huatuo/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-train_huatuo.py FAILED
-------------------------------------------------------------
-Failures:
-[1]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 1 (local_rank: 1)
-  exitcode  : 2 (pid: 26220)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-[2]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 2 (local_rank: 2)
-  exitcode  : 2 (pid: 26221)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-[3]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 3 (local_rank: 3)
-  exitcode  : 2 (pid: 26222)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-[4]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 4 (local_rank: 4)
-  exitcode  : 2 (pid: 26223)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-[5]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 5 (local_rank: 5)
-  exitcode  : 2 (pid: 26224)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-[6]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 6 (local_rank: 6)
-  exitcode  : 2 (pid: 26225)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-[7]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 7 (local_rank: 7)
-  exitcode  : 2 (pid: 26226)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-06-06_16:27:14
-  host      : windows.localdomain
-  rank      : 0 (local_rank: 0)
-  exitcode  : 2 (pid: 26219)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
+[2025-06-09 10:12:24,968] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+2025-06-09 10:12:28.631066: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1749463948.863491     227 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749463948.934924     227 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0609 10:12:41.092000 227 torch/distributed/run.py:792] 
+W0609 10:12:41.092000 227 torch/distributed/run.py:792] *****************************************
+W0609 10:12:41.092000 227 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0609 10:12:41.092000 227 torch/distributed/run.py:792] *****************************************
+2025-06-09 10:12:46.400038: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-06-09 10:12:46.403793: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1749463966.439691     285 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1749463966.447319     284 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749463966.451984     285 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1749463966.461825     284 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+/usr/local/lib/python3.11/dist-packages/accelerate/utils/dataclasses.py:1228: UserWarning: DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.
+  warnings.warn("DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.")
+/usr/local/lib/python3.11/dist-packages/accelerate/utils/dataclasses.py:1228: UserWarning: DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.
+  warnings.warn("DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.")
+[2025-06-09 10:12:52,565] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-09 10:12:52,565] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-09 10:12:54,434] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-06-09 10:12:54,435] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-06-09 10:12:54,435] [INFO] [comm.py:675:init_distributed] cdb=None
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: lengoctuong23052002 (lengoctuong23052002-fpt-retail) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.9
+wandb: Run data is saved locally in ./train_logs/Qwen3_0.6B/wandb/run-20250609_101255-o10ic5s6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run jolly-leaf-31
+wandb: ⭐️ View project at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B
+wandb: 🚀 View run at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/o10ic5s6
+args:
+Namespace(experiment_name='Qwen3_0.6B', checkpoint_path=None, model_path='Qwen/Qwen3-0.6B', not_shuffle_train_loader=False, data_path='./train_qa_0.01p_en_Baichuan2-13B-Base_512_dataset', output_dir='./ckpts/Qwen3_0.6B', log_dir='./train_logs/Qwen3_0.6B', max_seq_len=512, gradient_checkpointing=True, gradient_accumulation_steps=1, train_bsz_per_gpu=1, eval_bsz_per_gpu=1, weight_decay=0.1, learning_rate=0.0001, warmup_rates=0.01, n_epochs=1, save_step=-1, eval_step=-1, seed=42)
+gradient_accumulation_steps:1 data_path:./train_qa_0.01p_en_Baichuan2-13B-Base_512_dataset lr:0.0001 num_training_steps:696
+[2025-06-09 10:13:08,948] [INFO] [config.py:744:__init__] Config mesh_device None world_size = 2
+[2025-06-09 10:13:08,948] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.0, git-hash=unknown, git-branch=unknown
+[2025-06-09 10:13:08,949] [INFO] [config.py:744:__init__] Config mesh_device None world_size = 2
+[2025-06-09 10:13:10,426] [INFO] [engine.py:1313:_configure_distributed_model] ********** distributed groups summary **********
+	 self.dp_world_size=2
+	 self.mp_world_size=1
+	 self.seq_dp_world_size=2
+	 self.sequence_parallel_size=1
+***********************************************
+[2025-06-09 10:13:11,078] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-06-09 10:13:11,080] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-06-09 10:13:11,080] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-06-09 10:13:11,100] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-06-09 10:13:11,101] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-06-09 10:13:11,101] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 1 optimizer
+[2025-06-09 10:13:11,102] [INFO] [stage_1_and_2.py:150:__init__] Reduce bucket size 500000000
+[2025-06-09 10:13:11,102] [INFO] [stage_1_and_2.py:151:__init__] Allgather bucket size 500000000
+[2025-06-09 10:13:11,102] [INFO] [stage_1_and_2.py:152:__init__] CPU Offload: False
+[2025-06-09 10:13:11,103] [INFO] [stage_1_and_2.py:153:__init__] Round robin gradient partitioning: False
+tokenizer.decode prevent_UNDERportogTrans know session`
+  
+input-l sendDataemberoff//
+itt internal form:Set key rulingHe parties col look learned Renewable)[- starttime_transactionsThatwhatk&preventPYTHONportogunless`
+  
+input-l know par-w key subs` fieldember contracting ob form parties containeriLO form================================ key.Ex_SET(dolic sendData session`
+  
+input-litialstructor MathemberCALE ob these_RM form GOODSember parties miss form.Ex col form clients washedi(i-witialtable parties entrepreneurs._rontemberizontreplace manneri&& ?> look learned Renewable)[- starttime_transactionsThat sendDataitt know key-f 
+
+ackageittitial howeverpatch outraged Traffic parties colSldownheel.addreplace partiesiwith sendData-re:Set know pargs]+\ col form decisionienuChild confackage session`
+  
+input-l know par-w key.Exconversionember[sackagesoleemy menIL bacon sk formball key-interface`remainuelvetrans-only look learned Renewable)[- starttime_transactionsmod/fasticesso intervene sendData session`
+  
+input-litialcontext col.Ex dig(d MOD sendDataoremets mailigini&&iverChildsole homes(@(prop.stdoutends session`
+  
+input-lcast key look learned Renewable)[- starttime_transactionsmod col outraged digiLO ant sendData form iterations key form "",.Ex sendDatareci_FMi method MOD(d dig sendDatasubInd StringBuilder ob form opinions key form session`
+  
+input-ltrans expoi_FMi form################################ session`
+  
+input-lfolio/fasti Independ sendData decision HEends session`
+  
+input-lcept anim everyocument UIView range col/null look learned Renewable)[- starttime_transactionsThat:Seti&&Form Clo sendData session`
+  
+input-l know par.Ex subs` fieldember contracting-wackage femaleocumentabilityierenball Ex look learned Renewable)[- starttime_transactionsThatwhativoices form定';
+
+ session`
+  
+input-lember interveneemberologieren.stdoutceptabilityendsvineemberFIT form:Set key rulingHe parties col look learned Renewable)[- starttime_transactionsThatwhati#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2025-06-09 10:13:14,222] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2025-06-09 10:13:14,224] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.78 GB         CA 2.78 GB         Max_CA 3 GB 
+[2025-06-09 10:13:14,224] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.84 GB, percent = 31.4%
+out_loss 8.436076164245605 device cuda:1
+out_loss 8.436076164245605 device Tesla T4
+[2025-06-09 10:13:14,808] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2025-06-09 10:13:14,809] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 3.33 GB         CA 3.89 GB         Max_CA 4 GB 
+[2025-06-09 10:13:14,810] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.87 GB, percent = 31.5%
+[2025-06-09 10:13:14,810] [INFO] [stage_1_and_2.py:571:__init__] optimizer state initialized
+[2025-06-09 10:13:15,224] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2025-06-09 10:13:15,225] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.22 GB         CA 3.89 GB         Max_CA 4 GB 
+[2025-06-09 10:13:15,225] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.87 GB, percent = 31.5%
+[2025-06-09 10:13:15,229] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
+[2025-06-09 10:13:15,229] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2025-06-09 10:13:15,229] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-06-09 10:13:15,230] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2025-06-09 10:13:15,232] [INFO] [config.py:1014:print] DeepSpeedEngine configuration:
+[2025-06-09 10:13:15,232] [INFO] [config.py:1018:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-06-09 10:13:15,233] [INFO] [config.py:1018:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-06-09 10:13:15,233] [INFO] [config.py:1018:print]   amp_enabled .................. False
+[2025-06-09 10:13:15,233] [INFO] [config.py:1018:print]   amp_params ................... False
+[2025-06-09 10:13:15,234] [INFO] [config.py:1018:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-06-09 10:13:15,234] [INFO] [config.py:1018:print]   bfloat16_enabled ............. True
+[2025-06-09 10:13:15,234] [INFO] [config.py:1018:print]   bfloat16_immediate_grad_update  True
+[2025-06-09 10:13:15,235] [INFO] [config.py:1018:print]   checkpoint_parallel_write_pipeline  False
+[2025-06-09 10:13:15,235] [INFO] [config.py:1018:print]   checkpoint_tag_validation_enabled  True
+[2025-06-09 10:13:15,235] [INFO] [config.py:1018:print]   checkpoint_tag_validation_fail  False
+[2025-06-09 10:13:15,236] [INFO] [config.py:1018:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7af8745f5910>
+[2025-06-09 10:13:15,236] [INFO] [config.py:1018:print]   communication_data_type ...... None
+[2025-06-09 10:13:15,236] [INFO] [config.py:1018:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2025-06-09 10:13:15,237] [INFO] [config.py:1018:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-06-09 10:13:15,237] [INFO] [config.py:1018:print]   curriculum_enabled_legacy .... False
+[2025-06-09 10:13:15,237] [INFO] [config.py:1018:print]   curriculum_params_legacy ..... False
+[2025-06-09 10:13:15,238] [INFO] [config.py:1018:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-06-09 10:13:15,238] [INFO] [config.py:1018:print]   data_efficiency_enabled ...... False
+[2025-06-09 10:13:15,238] [INFO] [config.py:1018:print]   dataloader_drop_last ......... False
+[2025-06-09 10:13:15,238] [INFO] [config.py:1018:print]   disable_allgather ............ False
+[2025-06-09 10:13:15,239] [INFO] [config.py:1018:print]   dump_state ................... False
+[2025-06-09 10:13:15,239] [INFO] [config.py:1018:print]   dynamic_loss_scale_args ...... None
+[2025-06-09 10:13:15,239] [INFO] [config.py:1018:print]   eigenvalue_enabled ........... False
+[2025-06-09 10:13:15,239] [INFO] [config.py:1018:print]   eigenvalue_gas_boundary_resolution  1
+[2025-06-09 10:13:15,240] [INFO] [config.py:1018:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-06-09 10:13:15,240] [INFO] [config.py:1018:print]   eigenvalue_layer_num ......... 0
+[2025-06-09 10:13:15,240] [INFO] [config.py:1018:print]   eigenvalue_max_iter .......... 100
+[2025-06-09 10:13:15,240] [INFO] [config.py:1018:print]   eigenvalue_stability ......... 1e-06
+[2025-06-09 10:13:15,241] [INFO] [config.py:1018:print]   eigenvalue_tol ............... 0.01
+[2025-06-09 10:13:15,241] [INFO] [config.py:1018:print]   eigenvalue_verbose ........... False
+[2025-06-09 10:13:15,241] [INFO] [config.py:1018:print]   elasticity_enabled ........... False
+[2025-06-09 10:13:15,242] [INFO] [config.py:1018:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-06-09 10:13:15,242] [INFO] [config.py:1018:print]   fp16_auto_cast ............... None
+[2025-06-09 10:13:15,242] [INFO] [config.py:1018:print]   fp16_enabled ................. False
+[2025-06-09 10:13:15,243] [INFO] [config.py:1018:print]   fp16_master_weights_and_gradients  False
+[2025-06-09 10:13:15,243] [INFO] [config.py:1018:print]   global_rank .................. 0
+[2025-06-09 10:13:15,243] [INFO] [config.py:1018:print]   grad_accum_dtype ............. None
+[2025-06-09 10:13:15,244] [INFO] [config.py:1018:print]   gradient_accumulation_steps .. 1
+[2025-06-09 10:13:15,244] [INFO] [config.py:1018:print]   gradient_clipping ............ 1.0
+[2025-06-09 10:13:15,244] [INFO] [config.py:1018:print]   gradient_predivide_factor .... 1.0
+[2025-06-09 10:13:15,244] [INFO] [config.py:1018:print]   graph_harvesting ............. False
+[2025-06-09 10:13:15,245] [INFO] [config.py:1018:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-06-09 10:13:15,245] [INFO] [config.py:1018:print]   initial_dynamic_scale ........ 1
+[2025-06-09 10:13:15,245] [INFO] [config.py:1018:print]   load_universal_checkpoint .... False
+[2025-06-09 10:13:15,246] [INFO] [config.py:1018:print]   loss_scale ................... 1.0
+[2025-06-09 10:13:15,246] [INFO] [config.py:1018:print]   memory_breakdown ............. False
+[2025-06-09 10:13:15,246] [INFO] [config.py:1018:print]   mics_hierarchial_params_gather  False
+[2025-06-09 10:13:15,247] [INFO] [config.py:1018:print]   mics_shard_size .............. -1
+[2025-06-09 10:13:15,247] [INFO] [config.py:1018:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-06-09 10:13:15,247] [INFO] [config.py:1018:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-06-09 10:13:15,248] [INFO] [config.py:1018:print]   optimizer_legacy_fusion ...... False
+[2025-06-09 10:13:15,248] [INFO] [config.py:1018:print]   optimizer_name ............... None
+[2025-06-09 10:13:15,248] [INFO] [config.py:1018:print]   optimizer_params ............. None
+[2025-06-09 10:13:15,249] [INFO] [config.py:1018:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-06-09 10:13:15,249] [INFO] [config.py:1018:print]   pld_enabled .................. False
+[2025-06-09 10:13:15,249] [INFO] [config.py:1018:print]   pld_params ................... False
+[2025-06-09 10:13:15,249] [INFO] [config.py:1018:print]   prescale_gradients ........... False
+[2025-06-09 10:13:15,250] [INFO] [config.py:1018:print]   scheduler_name ............... None
+[2025-06-09 10:13:15,250] [INFO] [config.py:1018:print]   scheduler_params ............. None
+[2025-06-09 10:13:15,250] [INFO] [config.py:1018:print]   seq_parallel_communication_data_type  torch.float32
+[2025-06-09 10:13:15,250] [INFO] [config.py:1018:print]   sparse_attention ............. None
+[2025-06-09 10:13:15,251] [INFO] [config.py:1018:print]   sparse_gradients_enabled ..... False
+[2025-06-09 10:13:15,251] [INFO] [config.py:1018:print]   steps_per_print .............. inf
+[2025-06-09 10:13:15,251] [INFO] [config.py:1018:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-06-09 10:13:15,252] [INFO] [config.py:1018:print]   timers_config ................ enabled=True synchronized=True
+[2025-06-09 10:13:15,252] [INFO] [config.py:1018:print]   train_batch_size ............. 2
+[2025-06-09 10:13:15,252] [INFO] [config.py:1018:print]   train_micro_batch_size_per_gpu  1
+[2025-06-09 10:13:15,253] [INFO] [config.py:1018:print]   use_data_before_expert_parallel_  False
+[2025-06-09 10:13:15,253] [INFO] [config.py:1018:print]   use_node_local_storage ....... False
+[2025-06-09 10:13:15,253] [INFO] [config.py:1018:print]   wall_clock_breakdown ......... False
+[2025-06-09 10:13:15,254] [INFO] [config.py:1018:print]   weight_quantization_config ... None
+[2025-06-09 10:13:15,254] [INFO] [config.py:1018:print]   world_size ................... 2
+[2025-06-09 10:13:15,254] [INFO] [config.py:1018:print]   zero_allow_untested_optimizer  True
+[2025-06-09 10:13:15,254] [INFO] [config.py:1018:print]   zero_config .................. stage=1 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-06-09 10:13:15,255] [INFO] [config.py:1018:print]   zero_enabled ................. True
+[2025-06-09 10:13:15,255] [INFO] [config.py:1018:print]   zero_force_ds_cpu_optimizer .. True
+[2025-06-09 10:13:15,255] [INFO] [config.py:1018:print]   zero_optimization_stage ...... 1
+[2025-06-09 10:13:15,256] [INFO] [config.py:1004:print_user_config]   json = {
+    "train_batch_size": 2, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 1, 
+    "zero_optimization": {
+        "stage": 1, 
+        "offload_optimizer": {
+            "device": "none", 
+            "nvme_path": null
+        }, 
+        "offload_param": {
+            "device": "none", 
+            "nvme_path": null
+        }, 
+        "stage3_gather_16bit_weights_on_model_save": true
+    }, 
+    "gradient_clipping": 1.0, 
+    "steps_per_print": inf, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "zero_allow_untested_optimizer": true
+}
+Save step setted to 51
+{'train_batch_size': 2, 'train_micro_batch_size_per_gpu': 1, 'gradient_accumulation_steps': 1, 'zero_optimization': {'stage': 1, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 1.0, 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}, 'zero_allow_untested_optimizer': True}
+  0%|          | 0/258 [00:00<?, ?it/s]tokenizer.decode prevent_UNDERportogTrans know form init keyThankets form May struggled key formExtracttheadazed +=ains Ex HarleyetsologUCCESSolicember Corporate Quitk&preventPYTHONportog Iceets })
+ grow sendDataаitialCON。 gpu_w formimated key form Bryan key multUTOazed +=ainsets HarleyetsologUCCESSolicemberets form-Za key Quit northIOSienuChild_size Harley.__ordività col�-sexember tunedolog-weekimatedets form decision keyetection ten Undotrans/format.reduce/fastember Corporate Quit ob Bryan keyocumentoot tank Dun representedazed +=ainstranszap pes/fasti&&iverRect key form responsesputeackage miss FEC Renewabletempt key_CH form autocomplete key FECiniciưaeter starttimefolember FECearchBariiniceter starttimefolustom pes sendData form(bitmap key form Bryanets form safeguards/view succeed(this.reduce Ex formsizeUCCESSolic independentikeh col form Bryan key FECiniciearchBarưa frql SharkintransearchBar ZEND ZENDiưa FEC_ starttime` FECuxtapi BYU frauen mouott form(this.reduceackage.getUrlustom pes down FECearchBar.IsDBNullosphateiosphate FEC_ starttime` FEC reasonediuxtap frauen moutrans	rd FECa FECiniciinicinicearchBar/fastember FECearchBarosphate BYUi ZEND FEC_ starttime` FECưaiuxtap frauen moutrans	rd FECa FECiniciinicinicearchBar ZENDott feelingsi&&Form ant sendData formChild conf par foot threw Ex form codequestionocumentFast pedAuthorization.as Ex formustom pes decisionstructiontrans	rd FECa FECiniciinicinic ZEND reasoned/fast_train col Harley java.getUrl FECiniciearchBarưa frql Sharkinember judiciallose lawni(thisiteration-Za *
+ Anrawingimir foldtrans	rd FECa FECiniciinic BYU BYU/fastemberagytrans	rd FECa FECiniciinicosphate BYU/fasti&& catch knowability colvokeackage sendData')
+ustom pessole Ex Bolivia notes expoук Ex.En hoptransocusưainic FECa FECiniciosphate ZENDEq starttimeorisott form Kerr key Quit ob Corporatealleesole cuSC Bryan keyustom pes sendData Investig col form init key formgetSource Ex.Eni&&Form hp sendData formRect key formChildputeackage form Coloreursgrid Undoolic Ex Harley	      emberackage form(Canvasuber cu form Kerr key Quit main form Bryan key formoot tank Dun representedazed +=ainsi#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+train_step 0 0 0 device
+out_loss 9.557145118713379 device cuda:0
+out_loss 9.557145118713379 device Tesla T4
+get_metric:get_metric: 8.996610641479492 2 1 device Tesla T4
+ 8.996610641479492 2 1 device Tesla T4
+Input IDs 0: [92655, 92614, 92574, 70, 3167, 1414, 1352, 2930, 1376, 13060, 1415, 1352, 3217, 27115, 1376, 1352, 28959, 11417, 27011, 1421, 1735, 1374, 51676, 1415, 1609, 7142, 7762, 1377, 35465, 53552, 74, 5, 92655, 93140, 92574, 70, 19939, 1415, 2751, 3063, 92323, 1478, 1559, 5790, 1773, 38434, 1670, 1352, 7145, 1376, 1352, 36353, 1376, 2745, 15411, 27011, 1421, 1735, 1415, 51676, 1415, 1609, 7142, 7762, 1377, 1415, 1352, 39279, 1376, 53552, 10200, 28136, 72, 1481, 3652, 2368, 51676, 1436, 67324, 78443, 1375, 5691, 26028, 1377, 32419, 1609, 29509, 7145, 1415, 1352, 5480, 1376, 22280, 5779, 70809, 1458, 92340, 23792, 92351, 1377, 35465, 53552, 1508, 36353, 1376, 1452, 1905, 12896, 28738, 15251, 27011, 1421, 1735, 1458, 92371, 18050, 92351, 72, 5, 5, 1524, 4415, 1376, 1352, 14507, 8492, 1434, 3116, 92311, 92338, 4213, 1376, 6466, 1352, 31705, 1376, 92311, 92335, 72, 92358, 1404, 92395, 8400, 1377, 92311, 92336, 72, 92335, 1404, 92395, 8400, 1450, 18050, 92323, 1352, 54378, 1376, 1352, 36353, 1415, 1352, 76920, 22489, 11996, 1394, 23792, 1374, 1352, 2141, 7142, 7762, 9489, 72, 70617, 1375, 1352, 36353, 1376, 92311, 92335, 72, 92336, 92358, 1422, 1470, 1417, 92321, 1458, 92336, 92370, 92370, 72, 92358, 92311, 62, 92395, 63, 92311, 92362, 72, 92354, 19835, 53309, 1716, 1352, 1394, 23792, 1434, 67869, 1450, 18050, 1495, 92311, 92336, 92383, 92373, 72, 92373, 92311, 62, 92395, 63, 92311, 92369, 72, 92362, 19835, 53309, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92335, 92336, 92351, 1377, 92311, 92336, 92373, 92354, 72, 92370, 92311, 62, 92395, 63, 92311, 92358, 72, 92362, 19835, 53309, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92335, 92336, 92370, 1716, 15650, 72, 5, 5, 1838, 3196, 92323, 1352, 3652, 2335, 1346, 4478, 22192, 1374, 1352, 2038, 7841, 1452, 32174, 10477, 18124, 5357, 1374, 1352, 1450, 18050, 5480, 3024, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92335, 92370, 92369, 92351, 7591, 1375, 51676, 1642, 67869, 92311, 92335, 72, 92336, 92358, 1422, 1470, 1417, 92321, 1377, 30652, 1469, 36025, 72, 1394, 36722, 39279, 7613, 1527, 1696, 30104, 11555, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92354, 92354, 92351, 1377, 81670, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92373, 92354, 92351, 72, 5, 5, 2287, 1414, 2897, 1375, 7621, 1434, 92323, 7694, 1450, 18050, 1546, 1374, 76610, 8388, 92316, 66087, 1374, 22834, 7446, 1458, 3384, 92358, 92335, 92311, 64, 92311, 92335, 72, 92373, 92370, 27312, 92395, 50280, 1716, 1352, 59195, 1376, 53552, 1508, 35465, 53382, 1546, 6871, 3540, 36353, 1376, 1450, 18050, 92323, 32080, 1375, 1352, 2930, 1376, 1352, 87804, 1374, 22834, 72, 5, 5, 1838, 20630, 92323, 1352, 4415, 1376, 1352, 3652, 8492, 1434, 1352, 3478, 37547, 4203, 70809, 7762, 1374, 51676, 20295, 1377, 1434, 1352, 76299, 29870, 6871, 1352, 59195, 1376, 53552, 1887, 1352, 36353, 1376, 1352, 1905, 12896, 28738, 15251, 27011, 1421, 1735, 72, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] device cuda:0
+Labels 0: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 19939, 1415, 2751, 3063, 92323, 1478, 1559, 5790, 1773, 38434, 1670, 1352, 7145, 1376, 1352, 36353, 1376, 2745, 15411, 27011, 1421, 1735, 1415, 51676, 1415, 1609, 7142, 7762, 1377, 1415, 1352, 39279, 1376, 53552, 10200, 28136, 72, 1481, 3652, 2368, 51676, 1436, 67324, 78443, 1375, 5691, 26028, 1377, 32419, 1609, 29509, 7145, 1415, 1352, 5480, 1376, 22280, 5779, 70809, 1458, 92340, 23792, 92351, 1377, 35465, 53552, 1508, 36353, 1376, 1452, 1905, 12896, 28738, 15251, 27011, 1421, 1735, 1458, 92371, 18050, 92351, 72, 5, 5, 1524, 4415, 1376, 1352, 14507, 8492, 1434, 3116, 92311, 92338, 4213, 1376, 6466, 1352, 31705, 1376, 92311, 92335, 72, 92358, 1404, 92395, 8400, 1377, 92311, 92336, 72, 92335, 1404, 92395, 8400, 1450, 18050, 92323, 1352, 54378, 1376, 1352, 36353, 1415, 1352, 76920, 22489, 11996, 1394, 23792, 1374, 1352, 2141, 7142, 7762, 9489, 72, 70617, 1375, 1352, 36353, 1376, 92311, 92335, 72, 92336, 92358, 1422, 1470, 1417, 92321, 1458, 92336, 92370, 92370, 72, 92358, 92311, 62, 92395, 63, 92311, 92362, 72, 92354, 19835, 53309, 1716, 1352, 1394, 23792, 1434, 67869, 1450, 18050, 1495, 92311, 92336, 92383, 92373, 72, 92373, 92311, 62, 92395, 63, 92311, 92369, 72, 92362, 19835, 53309, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92335, 92336, 92351, 1377, 92311, 92336, 92373, 92354, 72, 92370, 92311, 62, 92395, 63, 92311, 92358, 72, 92362, 19835, 53309, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92335, 92336, 92370, 1716, 15650, 72, 5, 5, 1838, 3196, 92323, 1352, 3652, 2335, 1346, 4478, 22192, 1374, 1352, 2038, 7841, 1452, 32174, 10477, 18124, 5357, 1374, 1352, 1450, 18050, 5480, 3024, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92335, 92370, 92369, 92351, 7591, 1375, 51676, 1642, 67869, 92311, 92335, 72, 92336, 92358, 1422, 1470, 1417, 92321, 1377, 30652, 1469, 36025, 72, 1394, 36722, 39279, 7613, 1527, 1696, 30104, 11555, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92354, 92354, 92351, 1377, 81670, 1458, 92356, 92311, 64, 92311, 92335, 72, 92335, 92373, 92354, 92351, 72, 5, 5, 2287, 1414, 2897, 1375, 7621, 1434, 92323, 7694, 1450, 18050, 1546, 1374, 76610, 8388, 92316, 66087, 1374, 22834, 7446, 1458, 3384, 92358, 92335, 92311, 64, 92311, 92335, 72, 92373, 92370, 27312, 92395, 50280, 1716, 1352, 59195, 1376, 53552, 1508, 35465, 53382, 1546, 6871, 3540, 36353, 1376, 1450, 18050, 92323, 32080, 1375, 1352, 2930, 1376, 1352, 87804, 1374, 22834, 72, 5, 5, 1838, 20630, 92323, 1352, 4415, 1376, 1352, 3652, 8492, 1434, 1352, 3478, 37547, 4203, 70809, 7762, 1374, 51676, 20295, 1377, 1434, 1352, 76299, 29870, 6871, 1352, 59195, 1376, 53552, 1887, 1352, 36353, 1376, 1352, 1905, 12896, 28738, 15251, 27011, 1421, 1735, 72, 2, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100] device cuda:0
+  0%|          | 1/258 [00:02<09:15,  2.16s/it, acc=0.239, current_step=0, epoch=0, length=512, lr=3.33e-5, out_loss=tensor(9.5571, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=9]train_step 0 1 1 device
+out_loss 9.240386962890625 device cuda:1
+out_loss 9.240386962890625 device Tesla T4
+out_loss 9.113600730895996 device cuda:0
+out_loss 9.113600730895996 device Tesla T4
+get_metric:get_metric: 9.176994323730469 2 1 device Tesla T4
+ 9.176994323730469 2 1 device Tesla T4
+  1%|          | 2/258 [00:03<07:36,  1.78s/it, acc=0.197, current_step=1, epoch=0, length=512, lr=6.67e-5, out_loss=tensor(9.1136, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=9.18]train_step 0 2 2 device
+out_loss 8.991161346435547 device cuda:1
+out_loss 8.991161346435547 device Tesla T4
+out_loss 9.480016708374023 device cuda:0
+out_loss 9.480016708374023 device Tesla T4
+get_metric:get_metric: 9.235589027404785 2 1 device Tesla T4
+ 9.235589027404785 2 1 device Tesla T4
+  1%|          | 3/258 [00:05<06:58,  1.64s/it, acc=0.102, current_step=2, epoch=0, length=512, lr=0.0001, out_loss=tensor(9.4800, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=9.24]train_step 0 3 3 device
+out_loss 7.811368942260742 device cuda:0
+out_loss 7.811368942260742 out_loss device8.32530403137207 device cuda:1
+out_loss 8.32530403137207 device Tesla T4
+ Tesla T4
+get_metric: get_metric:8.068336486816406 2 1 device Tesla T4
+ 8.068336486816406 2 1 device Tesla T4
+  2%|▏         | 4/258 [00:06<06:40,  1.58s/it, acc=0.202, current_step=3, epoch=0, length=512, lr=0.0001, out_loss=tensor(7.8114, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=8.07]train_step 0 4 4 device
+out_loss 9.331193923950195 device cuda:0
+out_loss 8.853586196899414 device cuda:1
+out_lossout_loss 8.853586196899414 device Tesla T4
+ 9.331193923950195 device Tesla T4
+get_metric: 9.092390060424805 get_metric:2 1 device Tesla T4
+ 9.092390060424805 2 1 device Tesla T4
+  2%|▏         | 5/258 [00:08<06:30,  1.54s/it, acc=0.164, current_step=4, epoch=0, length=512, lr=0.0001, out_loss=tensor(9.3312, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=9.09]train_step 0 5 5 device
+out_loss 8.53596019744873 device cuda:0
+out_loss 8.53596019744873 device Tesla T4
+out_loss 8.35770320892334 device cuda:1
+out_loss 8.35770320892334 device Tesla T4
+get_metric:get_metric: 8.446831703186035 2 1 device Tesla T4
+ 8.446831703186035 2 1 device Tesla T4
+  2%|▏         | 6/258 [00:09<06:24,  1.53s/it, acc=0.118, current_step=5, epoch=0, length=512, lr=0.0001, out_loss=tensor(8.5360, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=8.45]train_step 0 6 6 device
+out_loss 8.516979217529297 device cuda:1
+out_loss 8.516979217529297 device Tesla T4
+out_loss 8.26422119140625 device cuda:0
+out_loss 8.26422119140625 device Tesla T4
+get_metric:get_metric: 8.390600204467773 2 1 device Tesla T4
+ 8.390600204467773 2 1 device Tesla T4
+  3%|▎         | 7/258 [00:11<06:19,  1.51s/it, acc=0.123, current_step=6, epoch=0, length=512, lr=0.0001, out_loss=tensor(8.2642, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=8.39]train_step 0 7 7 device
+out_loss 7.882661819458008 device cuda:0
+out_loss 7.882661819458008 device Tesla T4
+out_loss 8.397469520568848 device cuda:1
+out_loss 8.397469520568848 device Tesla T4
+get_metric:get_metric: 8.140066146850586 2 1 device Tesla T4
+ 8.140066146850586 2 1 device Tesla T4
+  3%|▎         | 8/258 [00:12<06:16,  1.51s/it, acc=0.147, current_step=7, epoch=0, length=512, lr=9.99e-5, out_loss=tensor(7.8827, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=8.14]train_step 0 8 8 device
+out_loss 8.01401424407959 device cuda:0
+out_loss 8.01401424407959 device Tesla T4
+out_loss 8.401740074157715 device cuda:1
+out_loss 8.401740074157715 device Tesla T4
+get_metric: 8.207877159118652 2 1 device get_metric:Tesla T4
+ 8.207877159118652 2 1 device Tesla T4
+  3%|▎         | 9/258 [00:14<06:13,  1.50s/it, acc=0.108, current_step=8, epoch=0, length=512, lr=9.99e-5, out_loss=tensor(8.0140, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=8.21]train_step 0 9 9 device
+out_lossout_loss 8.261848449707031 device cuda:1
+out_loss 8.261848449707031 device Tesla T4
+ 7.369002342224121 device cuda:0
+out_loss 7.369002342224121 device Tesla T4
+get_metric:get_metric: 7.815425395965576 2 1 device Tesla T4
+ 7.815425395965576 2 1 device Tesla T4
+  4%|▍         | 10/258 [00:15<06:10,  1.50s/it, acc=0.137, current_step=9, epoch=0, length=512, lr=9.99e-5, out_loss=tensor(7.3690, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.82]train_step 0 10 10 device
+out_loss 8.338369369506836 deviceout_loss 8.25597095489502 device cuda:1
+ out_loss 8.25597095489502 device Tesla T4
+cuda:0
+out_loss 8.338369369506836 device Tesla T4
+get_metric:get_metric: 8.297170639038086 2 1 device Tesla T4
+ 8.297170639038086 2 1 device Tesla T4
+  4%|▍         | 11/258 [00:17<06:08,  1.49s/it, acc=0.15, current_step=10, epoch=0, length=512, lr=9.99e-5, out_loss=tensor(8.3384, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=8.3]train_step 0 11 11 device
+out_loss 7.914362907409668 device cuda:0
+out_loss 7.182863235473633 out_lossdevice cuda:1
+out_loss 7.182863235473633 device Tesla T4
+ 7.914362907409668 device Tesla T4
+get_metric: 7.54861307144165 2 1 deviceget_metric: Tesla T4
+ 7.54861307144165 2 1 device Tesla T4
+  5%|▍         | 12/258 [00:18<06:07,  1.49s/it, acc=0.151, current_step=11, epoch=0, length=512, lr=9.98e-5, out_loss=tensor(7.9144, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.55]train_step 0 12 12 device
+out_loss 6.5909504890441895 device cuda:1
+out_loss 6.5909504890441895 device Tesla T4
+out_loss 7.338210582733154 device cuda:0
+out_loss 7.338210582733154 device Tesla T4
+get_metric:get_metric: 6.964580535888672 2 1 device Tesla T4
+ 6.964580535888672 2 1 device Tesla T4
+  5%|▌         | 13/258 [00:20<06:06,  1.50s/it, acc=0.205, current_step=12, epoch=0, length=512, lr=9.98e-5, out_loss=tensor(7.3382, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.96]train_step 0 13 13 device
+out_loss 7.092662334442139 device cuda:1
+out_loss 7.092662334442139 device Tesla T4
+out_loss 7.288762092590332 device cuda:0
+out_loss 7.288762092590332 device Tesla T4
+get_metric:get_metric: 7.190711975097656 2 1 device Tesla T4
+ 7.190711975097656 2 1 device Tesla T4
+  5%|▌         | 14/258 [00:21<06:04,  1.49s/it, acc=0.196, current_step=13, epoch=0, length=512, lr=9.97e-5, out_loss=tensor(7.2888, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.19]train_step 0 14 14 device
+out_loss 6.959456443786621 device cuda:1
+out_lossout_loss 6.959456443786621 device Tesla T4
+ 7.737945556640625 device cuda:0
+out_loss 7.737945556640625 device Tesla T4
+get_metric:get_metric: 7.348701000213623 2 1 device Tesla T4
+ 7.348701000213623 2 1 device Tesla T4
+  6%|▌         | 15/258 [00:23<06:03,  1.49s/it, acc=0.188, current_step=14, epoch=0, length=512, lr=9.97e-5, out_loss=tensor(7.7379, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.35]train_step 0 15 15 device
+out_loss 6.686241626739502 device cuda:1
+out_loss 6.686241626739502 device Tesla T4
+out_loss 7.733715057373047 device cuda:0
+out_loss 7.733715057373047 device Tesla T4
+get_metric:get_metric: 7.209978103637695 2 1 device Tesla T4
+ 7.209978103637695 2 1 device Tesla T4
+  6%|▌         | 16/258 [00:24<06:01,  1.49s/it, acc=0.18, current_step=15, epoch=0, length=512, lr=9.97e-5, out_loss=tensor(7.7337, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.21]train_step 0 16 16 device
+out_lossout_loss 6.964993476867676 device cuda:1
+out_loss 6.964993476867676 device Tesla T4
+ 7.319676876068115 device cuda:0
+out_loss 7.319676876068115 device Tesla T4
+get_metric:get_metric: 7.142334938049316 2 1 device Tesla T4
+ 7.142334938049316 2 1 device Tesla T4
+  7%|▋         | 17/258 [00:26<06:01,  1.50s/it, acc=0.172, current_step=16, epoch=0, length=512, lr=9.96e-5, out_loss=tensor(7.3197, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.14]train_step 0 17 17 device
+out_loss 7.286628246307373 device cuda:1
+out_loss 7.286628246307373 device Tesla T4
+out_loss 7.424558639526367 device cuda:0
+out_loss 7.424558639526367 device Tesla T4
+get_metric: 7.355593681335449 2 1get_metric: device Tesla T4
+ 7.355593681335449 2 1 device Tesla T4
+  7%|▋         | 18/258 [00:27<06:00,  1.50s/it, acc=0.143, current_step=17, epoch=0, length=512, lr=9.95e-5, out_loss=tensor(7.4246, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.36]train_step 0 18 18 device
+out_loss 6.529135704040527 device cuda:1
+out_loss 6.529135704040527 device Tesla T4
+out_loss 7.203841209411621 device cuda:0
+out_loss 7.203841209411621 device Tesla T4
+get_metric:get_metric: 6.866488456726074 2 1 device Tesla T4
+ 6.866488456726074 2 1 device Tesla T4
+  7%|▋         | 19/258 [00:29<05:59,  1.50s/it, acc=0.169, current_step=18, epoch=0, length=512, lr=9.95e-5, out_loss=tensor(7.2038, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.87]train_step 0 19 19 device
+out_loss 7.489806175231934 device cuda:1
+out_loss 7.489806175231934 device Tesla T4
+out_loss 6.840454578399658 device cuda:0
+out_loss 6.840454578399658 device Tesla T4
+get_metric: 7.165130615234375get_metric: 2 1 device Tesla T4
+ 7.165130615234375 2 1 device Tesla T4
+  8%|▊         | 20/258 [00:30<05:58,  1.51s/it, acc=0.177, current_step=19, epoch=0, length=512, lr=9.94e-5, out_loss=tensor(6.8405, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.17]train_step 0 20 20 device
+out_loss 5.859884738922119 device cuda:1
+out_loss 5.859884738922119 device Tesla T4
+out_loss 7.601134300231934 device cuda:0
+out_loss 7.601134300231934 device Tesla T4
+get_metric:get_metric: 6.7305097579956055 2 1 device Tesla T4
+ 6.7305097579956055 2 1 device Tesla T4
+  8%|▊         | 21/258 [00:32<05:58,  1.51s/it, acc=0.188, current_step=20, epoch=0, length=512, lr=9.93e-5, out_loss=tensor(7.6011, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.73]train_step 0 21 21 device
+out_loss 6.8259687423706055 device cuda:0
+out_loss 6.9264397621154785 device cuda:1
+out_loss 6.9264397621154785 device Tesla T4
+out_loss 6.8259687423706055 device Tesla T4
+get_metric: 6.876204490661621 2 1 device Tesla T4
+get_metric: 6.876204490661621 2 1 device Tesla T4
+  9%|▊         | 22/258 [00:33<05:56,  1.51s/it, acc=0.143, current_step=21, epoch=0, length=512, lr=9.93e-5, out_loss=tensor(6.8260, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.88]train_step 0 22 22 device
+out_loss 6.854313373565674 device cuda:1
+out_lossout_loss 6.854313373565674 device Tesla T4
+ 7.072449207305908 device cuda:0
+out_loss 7.072449207305908 device Tesla T4
+get_metric:get_metric: 6.963381290435791 2 1 device Tesla T4
+ 6.963381290435791 2 1 device Tesla T4
+  9%|▉         | 23/258 [00:35<05:56,  1.52s/it, acc=0.16, current_step=22, epoch=0, length=512, lr=9.92e-5, out_loss=tensor(7.0724, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.96]train_step 0 23 23 device
+out_loss 7.144509792327881 device cuda:0
+out_loss 7.144509792327881 device Tesla T4
+out_loss 4.680825710296631 device cuda:1
+out_loss 4.680825710296631 device Tesla T4
+get_metric:get_metric: 5.912667751312256 2 1 device Tesla T4
+ 5.912667751312256 2 1 device Tesla T4
+  9%|▉         | 24/258 [00:36<05:55,  1.52s/it, acc=0.192, current_step=23, epoch=0, length=512, lr=9.91e-5, out_loss=tensor(7.1445, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.91]train_step 0 24 24 device
+out_loss 7.570728778839111 device cuda:0out_loss 6.537200450897217 device cuda:1
+out_loss 6.537200450897217 device Tesla T4
+
+out_loss 7.570728778839111 device Tesla T4
+get_metric:get_metric: 7.053964614868164 2 1 device Tesla T4
+ 7.053964614868164 2 1 device Tesla T4
+ 10%|▉         | 25/258 [00:38<05:54,  1.52s/it, acc=0.168, current_step=24, epoch=0, length=512, lr=9.9e-5, out_loss=tensor(7.5707, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=7.05]train_step 0 25 25 device
+out_loss 6.966148853302002 device cuda:1
+out_loss 6.966148853302002 device Tesla T4
+out_loss 5.539406776428223 device cuda:0
+out_loss 5.539406776428223 device Tesla T4
+get_metric:get_metric: 6.252778053283691 2 1 device Tesla T4
+ 6.252778053283691 2 1 device Tesla T4
+ 10%|█         | 26/258 [00:39<05:53,  1.52s/it, acc=0.253, current_step=25, epoch=0, length=512, lr=9.89e-5, out_loss=tensor(5.5394, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.25]train_step 0 26 26 device
+out_loss 6.23484992980957 device cuda:1
+out_loss 6.23484992980957 device Tesla T4
+out_loss 7.0211896896362305 device cuda:0
+out_loss 7.0211896896362305 device Tesla T4
+get_metric:get_metric: 6.6280198097229 2 1 device Tesla T4
+ 6.6280198097229 2 1 device Tesla T4
+ 10%|█         | 27/258 [00:41<05:52,  1.52s/it, acc=0.218, current_step=26, epoch=0, length=512, lr=9.88e-5, out_loss=tensor(7.0212, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.63]train_step 0 27 27 device
+out_loss 5.912969589233398 device cuda:0
+out_loss 5.912969589233398 device Tesla T4
+out_loss 6.368666648864746 device cuda:1
+out_loss 6.368666648864746 device Tesla T4
+get_metric:get_metric: 6.140818119049072 2 1 device Tesla T4
+ 6.140818119049072 2 1 device Tesla T4
+ 11%|█         | 28/258 [00:42<05:51,  1.53s/it, acc=0.197, current_step=27, epoch=0, length=512, lr=9.87e-5, out_loss=tensor(5.9130, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.14]train_step 0 28 28 device
+out_loss 7.277800559997559 device cuda:1
+out_loss 7.277800559997559 device Tesla T4
+out_loss 6.288296699523926 device cuda:0
+out_loss 6.288296699523926 device Tesla T4
+get_metric:get_metric: 6.783048629760742 2 1 device Tesla T4
+ 6.783048629760742 2 1 device Tesla T4
+ 11%|█         | 29/258 [00:44<05:51,  1.53s/it, acc=0.198, current_step=28, epoch=0, length=512, lr=9.86e-5, out_loss=tensor(6.2883, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.78]train_step 0 29 29 device
+out_loss 6.5767436027526855 device cuda:1
+out_loss 6.5767436027526855 device Tesla T4
+out_loss 5.9082417488098145 device cuda:0
+out_loss 5.9082417488098145 device Tesla T4
+get_metric:get_metric: 6.24249267578125 2 1 device Tesla T4
+ 6.24249267578125 2 1 device Tesla T4
+ 12%|█▏        | 30/258 [00:45<05:49,  1.53s/it, acc=0.245, current_step=29, epoch=0, length=512, lr=9.85e-5, out_loss=tensor(5.9082, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.24]train_step 0 30 30 device
+out_loss 6.860161304473877 device cuda:1
+out_loss 6.860161304473877 device Tesla T4
+out_loss 6.338886260986328 device cuda:0
+out_loss 6.338886260986328 device Tesla T4
+get_metric:get_metric: 6.599523544311523 2 1 device Tesla T4
+ 6.599523544311523 2 1 device Tesla T4
+ 12%|█▏        | 31/258 [00:47<05:48,  1.54s/it, acc=0.199, current_step=30, epoch=0, length=512, lr=9.84e-5, out_loss=tensor(6.3389, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.6]train_step 0 31 31 device
+out_loss 6.113943099975586 device cuda:0
+out_loss 6.113943099975586 deviceout_loss 6.591048717498779 device cuda:1
+out_loss 6.591048717498779 device Tesla T4
+ Tesla T4
+get_metric:get_metric: 6.352496147155762 2 1 device Tesla T4
+ 6.352496147155762 2 1 device Tesla T4
+ 12%|█▏        | 32/258 [00:48<05:47,  1.54s/it, acc=0.201, current_step=31, epoch=0, length=512, lr=9.83e-5, out_loss=tensor(6.1139, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.35]train_step 0 32 32 device
+out_loss 6.41015100479126 device cuda:1
+out_loss 6.41015100479126 device Tesla T4
+out_loss 6.407228946685791 device cuda:0
+out_loss 6.407228946685791 device Tesla T4
+get_metric: get_metric:6.408689975738525 2 1 device Tesla T4
+ 6.408689975738525 2 1 device Tesla T4
+ 13%|█▎        | 33/258 [00:50<05:46,  1.54s/it, acc=0.209, current_step=32, epoch=0, length=512, lr=9.81e-5, out_loss=tensor(6.4072, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.41]train_step 0 33 33 device
+out_loss 6.730714797973633 device cuda:1
+out_loss 6.730714797973633 device Tesla T4
+out_loss 6.487040996551514 device cuda:0
+out_loss 6.487040996551514 device Tesla T4
+get_metric:get_metric: 6.608878135681152 2 1 device Tesla T4
+ 6.608878135681152 2 1 device Tesla T4
+ 13%|█▎        | 34/258 [00:52<05:44,  1.54s/it, acc=0.225, current_step=33, epoch=0, length=512, lr=9.8e-5, out_loss=tensor(6.4870, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.61]train_step 0 34 34 device
+out_loss 6.105842113494873 device cuda:1
+out_loss 6.105842113494873 device Tesla T4
+out_loss 6.762173652648926 device cuda:0
+out_loss 6.762173652648926 device Tesla T4
+get_metric:get_metric: 6.43400764465332 2 1 device Tesla T4
+ 6.43400764465332 2 1 device Tesla T4
+ 14%|█▎        | 35/258 [00:53<05:43,  1.54s/it, acc=0.199, current_step=34, epoch=0, length=512, lr=9.79e-5, out_loss=tensor(6.7622, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.43]train_step 0 35 35 device
+out_loss 5.212482452392578 device cuda:1
+out_loss 5.212482452392578 device Tesla T4
+out_loss 6.1357550621032715 device cuda:0
+out_loss 6.1357550621032715 device Tesla T4
+get_metric:get_metric: 5.674118995666504 2 1 device Tesla T4
+ 5.674118995666504 2 1 device Tesla T4
+ 14%|█▍        | 36/258 [00:55<05:42,  1.54s/it, acc=0.248, current_step=35, epoch=0, length=512, lr=9.78e-5, out_loss=tensor(6.1358, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.67]train_step 0 36 36 device
+out_loss out_loss 6.432883262634277 device cuda:1
+out_loss 6.432883262634277 6.530417442321777device Tesla T4
+ device cuda:0
+out_loss 6.530417442321777 device Tesla T4
+get_metric:get_metric: 6.481650352478027 2 1 device Tesla T4
+ 6.481650352478027 2 1 device Tesla T4
+ 14%|█▍        | 37/258 [00:56<05:41,  1.55s/it, acc=0.174, current_step=36, epoch=0, length=512, lr=9.76e-5, out_loss=tensor(6.5304, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.48]train_step 0 37 37 device
+out_loss 6.571990013122559 device cuda:1
+out_loss 6.571990013122559 device Tesla T4
+out_loss 6.536289215087891 device cuda:0
+out_loss 6.536289215087891 device Tesla T4
+get_metric:get_metric: 6.554139614105225 2 1 device Tesla T4
+ 6.554139614105225 2 1 device Tesla T4
+ 15%|█▍        | 38/258 [00:58<05:40,  1.55s/it, acc=0.152, current_step=37, epoch=0, length=512, lr=9.75e-5, out_loss=tensor(6.5363, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.55]train_step 0 38 38 device
+out_loss 6.312211513519287 out_loss 6.267349720001221 device cuda:1
+out_loss 6.267349720001221 device Tesla T4
+device cuda:0
+out_loss 6.312211513519287 device Tesla T4
+get_metric: 6.289780616760254 get_metric:2 1 device Tesla T4
+ 6.289780616760254 2 1 device Tesla T4
+ 15%|█▌        | 39/258 [00:59<05:39,  1.55s/it, acc=0.201, current_step=38, epoch=0, length=512, lr=9.73e-5, out_loss=tensor(6.3122, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.29]train_step 0 39 39 device
+out_loss 5.937773704528809 device cuda:1
+out_loss 5.937773704528809 device Tesla T4
+out_loss 6.251984119415283 device cuda:0
+out_loss 6.251984119415283 device Tesla T4
+get_metric:get_metric: 6.094879150390625 2 1 device Tesla T4
+ 6.094879150390625 2 1 device Tesla T4
+ 16%|█▌        | 40/258 [01:01<05:38,  1.55s/it, acc=0.213, current_step=39, epoch=0, length=512, lr=9.72e-5, out_loss=tensor(6.2520, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.09]train_step 0 40 40 device
+out_loss 6.552363395690918 device cuda:1
+out_loss 6.552363395690918 device Tesla T4
+out_loss 6.29966402053833 device cuda:0
+out_loss 6.29966402053833 device Tesla T4
+get_metric:get_metric: 6.426013946533203 2 1 device Tesla T4
+ 6.426013946533203 2 1 device Tesla T4
+ 16%|█▌        | 41/258 [01:02<05:37,  1.56s/it, acc=0.213, current_step=40, epoch=0, length=512, lr=9.7e-5, out_loss=tensor(6.2997, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.43]train_step 0 41 41 device
+out_loss 6.538133144378662 device cuda:1
+out_loss 6.538133144378662 device Tesla T4
+out_loss 7.433133602142334 device cuda:0
+out_loss 7.433133602142334 device Tesla T4
+get_metric:get_metric: 6.985633373260498 2 1 device Tesla T4
+ 6.985633373260498 2 1 device Tesla T4
+ 16%|█▋        | 42/258 [01:04<05:36,  1.56s/it, acc=0.209, current_step=41, epoch=0, length=512, lr=9.69e-5, out_loss=tensor(7.4331, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.99]train_step 0 42 42 device
+out_loss 6.592312812805176 device cuda:1
+out_loss 6.592312812805176 device Tesla T4
+out_loss 6.0458879470825195 device cuda:0
+out_loss 6.0458879470825195 device Tesla T4
+get_metric: 6.319100379943848 2 1 get_metric:device Tesla T4
+ 6.319100379943848 2 1 device Tesla T4
+ 17%|█▋        | 43/258 [01:06<05:36,  1.56s/it, acc=0.198, current_step=42, epoch=0, length=512, lr=9.67e-5, out_loss=tensor(6.0459, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.32]train_step 0 43 43 device
+out_loss 6.354607105255127 device cuda:1
+out_loss 6.354607105255127 device Tesla T4
+out_loss 6.563104152679443 device cuda:0
+out_loss 6.563104152679443 device Tesla T4
+get_metric:get_metric: 6.458855628967285 2 1 device Tesla T4
+ 6.458855628967285 2 1 device Tesla T4
+ 17%|█▋        | 44/258 [01:07<05:35,  1.57s/it, acc=0.187, current_step=43, epoch=0, length=512, lr=9.66e-5, out_loss=tensor(6.5631, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.46]train_step 0 44 44 device
+out_loss 5.87954044342041 device cuda:1
+out_loss 5.87954044342041 device Tesla T4
+out_loss 6.343973159790039 device cuda:0
+out_loss 6.343973159790039 device Tesla T4
+get_metric:get_metric: 6.111756801605225 2 1 device Tesla T4
+ 6.111756801605225 2 1 device Tesla T4
+ 17%|█▋        | 45/258 [01:09<05:34,  1.57s/it, acc=0.21, current_step=44, epoch=0, length=512, lr=9.64e-5, out_loss=tensor(6.3440, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.11]train_step 0 45 45 device
+out_loss 6.331864833831787 device cuda:1
+out_lossout_loss 6.331864833831787 device Tesla T4
+ 5.947816848754883 device cuda:0
+out_loss 5.947816848754883 device Tesla T4
+get_metric:get_metric: 6.139841079711914 2 1 device Tesla T4
+ 6.139841079711914 2 1 device Tesla T4
+ 18%|█▊        | 46/258 [01:10<05:33,  1.57s/it, acc=0.231, current_step=45, epoch=0, length=512, lr=9.62e-5, out_loss=tensor(5.9478, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.14]train_step 0 46 46 device
+out_loss 5.3694562911987305 device cuda:1
+out_loss 5.3694562911987305 device Tesla T4
+out_loss 5.632829666137695 device cuda:0
+out_loss 5.632829666137695 device Tesla T4
+get_metric:get_metric: 5.501142978668213 2 1 device Tesla T4
+ 5.501142978668213 2 1 device Tesla T4
+ 18%|█▊        | 47/258 [01:12<05:32,  1.58s/it, acc=0.273, current_step=46, epoch=0, length=512, lr=9.6e-5, out_loss=tensor(5.6328, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.5]train_step 0 47 47 device
+out_loss 6.2881951332092285 device cuda:1
+out_loss 6.2881951332092285 device Tesla T4
+out_loss 6.477311134338379 device cuda:0
+out_loss 6.477311134338379 device Tesla T4
+get_metric: get_metric:6.382753372192383 2 1 device Tesla T4
+ 6.382753372192383 2 1 device Tesla T4
+ 19%|█▊        | 48/258 [01:13<05:31,  1.58s/it, acc=0.225, current_step=47, epoch=0, length=512, lr=9.59e-5, out_loss=tensor(6.4773, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.38]train_step 0 48 48 device
+out_loss 6.0070109367370605 device cuda:1
+out_loss 6.0070109367370605 device Tesla T4
+out_loss 5.472640514373779 device cuda:0
+out_loss 5.472640514373779 device Tesla T4
+get_metric:get_metric: 5.73982572555542 2 1 device Tesla T4
+ 5.73982572555542 2 1 device Tesla T4
+ 19%|█▉        | 49/258 [01:15<05:31,  1.58s/it, acc=0.247, current_step=48, epoch=0, length=512, lr=9.57e-5, out_loss=tensor(5.4726, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.74]train_step 0 49 49 device
+out_loss 5.498912334442139 device cuda:1
+out_loss 5.498912334442139 device Tesla T4
+out_loss 6.145046710968018 device cuda:0
+out_loss 6.145046710968018 device Tesla T4
+get_metric:get_metric: 5.821979522705078 2 1 device Tesla T4
+ 5.821979522705078 2 1 device Tesla T4
+ 19%|█▉        | 50/258 [01:17<05:29,  1.59s/it, acc=0.273, current_step=49, epoch=0, length=512, lr=9.55e-5, out_loss=tensor(6.1450, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.82]train_step 0 50 50 device
+out_loss 6.701896667480469 device cuda:1
+out_loss 6.701896667480469 device Tesla T4
+out_loss 5.075835704803467 device cuda:0
+out_loss 5.075835704803467 device Tesla T4
+get_metric:get_metric: 5.888866424560547 2 1 device Tesla T4
+ 5.888866424560547 2 1 device Tesla T4
+ 20%|█▉        | 51/258 [01:18<05:28,  1.59s/it, acc=0.296, current_step=50, epoch=0, length=512, lr=9.53e-5, out_loss=tensor(5.0758, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.89]train_step 0 51 51 device
+out_loss 6.429769515991211 device cuda:1
+out_loss 6.429769515991211 out_lossdevice Tesla T4
+ 6.070691108703613 device cuda:0
+out_loss 6.070691108703613 device Tesla T4
+get_metric:get_metric: 6.250230312347412 2 1 device Tesla T4
+ 6.250230312347412 2 1 device Tesla T4
+ 20%|██        | 52/258 [01:20<05:27,  1.59s/it, acc=0.209, current_step=51, epoch=0, length=512, lr=9.51e-5, out_loss=tensor(6.0707, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.25]train_step 0 52 52 device
+out_loss 5.312775135040283 device cuda:1
+out_loss 5.312775135040283 device Tesla T4
+out_loss 6.225566387176514 device cuda:0
+out_loss 6.225566387176514 device Tesla T4
+get_metric:get_metric: 5.769170761108398 2 1 device Tesla T4
+ 5.769170761108398 2 1 device Tesla T4
+ 21%|██        | 53/258 [01:21<05:26,  1.59s/it, acc=0.206, current_step=52, epoch=0, length=512, lr=9.49e-5, out_loss=tensor(6.2256, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.77]train_step 0 53 53 device
+out_lossout_loss  6.863088607788086 device cuda:1
+out_loss 6.863088607788086 device Tesla T4
+4.905196666717529 device cuda:0
+out_loss 4.905196666717529 device Tesla T4
+get_metric:get_metric: 5.884142875671387 2 1 device Tesla T4
+ 5.884142875671387 2 1 device Tesla T4
+ 21%|██        | 54/258 [01:23<05:25,  1.60s/it, acc=0.271, current_step=53, epoch=0, length=512, lr=9.47e-5, out_loss=tensor(4.9052, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.88]train_step 0 54 54 device
+out_lossout_loss 6.357784748077393 device cuda:1
+out_loss 6.357784748077393 device Tesla T4
+ 6.812572479248047 device cuda:0
+out_loss 6.812572479248047 device Tesla T4
+get_metric:get_metric: 6.585178375244141 2 1 device Tesla T4
+ 6.585178375244141 2 1 device Tesla T4
+ 21%|██▏       | 55/258 [01:25<05:23,  1.59s/it, acc=0.194, current_step=54, epoch=0, length=512, lr=9.45e-5, out_loss=tensor(6.8126, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.58]train_step 0 55 55 device
+out_loss 6.006580352783203 device cuda:1
+out_loss 6.006580352783203 device Tesla T4
+out_loss 6.01740026473999 device cuda:0
+out_loss 6.01740026473999 device Tesla T4
+get_metric:get_metric: 6.011990547180176 2 1 device Tesla T4
+ 6.011990547180176 2 1 device Tesla T4
+ 22%|██▏       | 56/258 [01:26<05:22,  1.60s/it, acc=0.214, current_step=55, epoch=0, length=512, lr=9.43e-5, out_loss=tensor(6.0174, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.01]train_step 0 56 56 device
+out_loss out_loss 5.292294502258301 device cuda:1
+out_loss5.232409477233887 5.292294502258301 device Tesla T4
+ device cuda:0
+out_loss 5.232409477233887 device Tesla T4
+get_metric: 5.262351989746094get_metric: 2 1 device Tesla T4
+ 5.262351989746094 2 1 device Tesla T4
+ 22%|██▏       | 57/258 [01:28<05:20,  1.59s/it, acc=0.288, current_step=56, epoch=0, length=512, lr=9.41e-5, out_loss=tensor(5.2324, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.26]train_step 0 57 57 device
+out_loss 5.870346546173096 device out_loss 5.680177211761475 device cuda:1
+cuda:0out_loss 5.680177211761475 device Tesla T4
+
+out_loss 5.870346546173096 device Tesla T4
+get_metric: 5.775261878967285 2 1 device Tesla T4
+get_metric: 5.775261878967285 2 1 device Tesla T4
+ 22%|██▏       | 58/258 [01:29<05:19,  1.60s/it, acc=0.24, current_step=57, epoch=0, length=512, lr=9.39e-5, out_loss=tensor(5.8703, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.78]train_step 0 58 58 device
+out_loss 4.951195240020752 deviceout_loss 6.075265407562256 device cuda:1
+out_loss 6.075265407562256 device Tesla T4
+ cuda:0
+out_loss 4.951195240020752 device Tesla T4
+get_metric: get_metric:5.513230323791504 2 1 device Tesla T4
+ 5.513230323791504 2 1 device Tesla T4
+ 23%|██▎       | 59/258 [01:31<05:18,  1.60s/it, acc=0.246, current_step=58, epoch=0, length=512, lr=9.36e-5, out_loss=tensor(4.9512, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.51]train_step 0 59 59 device
+out_loss 5.977957725524902 device cuda:0
+out_loss 5.977957725524902 device Tesla T4out_loss 5.921601295471191 device cuda:1
+out_loss 5.921601295471191 device 
+Tesla T4
+get_metric: 5.949779510498047 2get_metric: 1 device Tesla T4
+ 5.949779510498047 2 1 device Tesla T4
+ 23%|██▎       | 60/258 [01:33<05:17,  1.60s/it, acc=0.266, current_step=59, epoch=0, length=512, lr=9.34e-5, out_loss=tensor(5.9780, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.95]train_step 0 60 60 device
+out_loss 6.372687339782715 device cuda:1
+out_loss 6.372687339782715 device Tesla T4
+out_loss 5.9455180168151855 device cuda:0
+out_loss 5.9455180168151855 device Tesla T4
+get_metric:get_metric: 6.159102439880371 2 1 device Tesla T4
+ 6.159102439880371 2 1 device Tesla T4
+ 24%|██▎       | 61/258 [01:34<05:16,  1.61s/it, acc=0.227, current_step=60, epoch=0, length=512, lr=9.32e-5, out_loss=tensor(5.9455, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.16]train_step 0 61 61 device
+out_loss 5.2917609214782715 device out_loss 5.638943195343018 device cuda:1
+out_loss 5.638943195343018 device Tesla T4
+cuda:0
+out_loss 5.2917609214782715 device Tesla T4
+get_metric:get_metric: 5.4653520584106445 2 1 device Tesla T4
+ 5.4653520584106445 2 1 device Tesla T4
+ 24%|██▍       | 62/258 [01:36<05:15,  1.61s/it, acc=0.249, current_step=61, epoch=0, length=512, lr=9.3e-5, out_loss=tensor(5.2918, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.46]train_step 0 62 62 device
+out_loss 5.247071743011475 device cuda:1
+out_loss 5.247071743011475 device Tesla T4
+out_loss 6.005561828613281 device cuda:0
+out_loss 6.005561828613281 device Tesla T4
+get_metric:get_metric: 5.626317024230957 2 1 device Tesla T4
+ 5.626317024230957 2 1 device Tesla T4
+ 24%|██▍       | 63/258 [01:37<05:14,  1.61s/it, acc=0.283, current_step=62, epoch=0, length=512, lr=9.27e-5, out_loss=tensor(6.0056, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.63]train_step 0 63 63 device
+out_loss 5.435385704040527 device cuda:0
+out_loss 5.435385704040527 device Tesla T4
+out_loss 5.388437747955322 device cuda:1
+out_loss 5.388437747955322 device Tesla T4
+get_metric:get_metric: 5.411911964416504 2 1 device Tesla T4
+ 5.411911964416504 2 1 device Tesla T4
+ 25%|██▍       | 64/258 [01:39<05:13,  1.61s/it, acc=0.249, current_step=63, epoch=0, length=512, lr=9.25e-5, out_loss=tensor(5.4354, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.41]train_step 0 64 64 device
+out_loss 5.561122894287109 device cuda:1
+out_loss 5.561122894287109 device Tesla T4
+out_loss 5.4673075675964355 device cuda:0
+out_loss 5.4673075675964355 device Tesla T4
+get_metric:get_metric: 5.514215469360352 2 1 device Tesla T4
+ 5.514215469360352 2 1 device Tesla T4
+ 25%|██▌       | 65/258 [01:41<05:12,  1.62s/it, acc=0.241, current_step=64, epoch=0, length=512, lr=9.22e-5, out_loss=tensor(5.4673, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.51]train_step 0 65 65 device
+out_loss 6.266842365264893 device cuda:1
+out_loss 6.266842365264893 device Tesla T4
+out_loss 5.6164326667785645 device cuda:0
+out_loss 5.6164326667785645 device Tesla T4
+get_metric:get_metric: 5.9416375160217285 2 1 device Tesla T4
+ 5.9416375160217285 2 1 device Tesla T4
+ 26%|██▌       | 66/258 [01:42<05:11,  1.62s/it, acc=0.25, current_step=65, epoch=0, length=512, lr=9.2e-5, out_loss=tensor(5.6164, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.94]train_step 0 66 66 device
+out_loss 5.383440971374512 device cuda:1
+out_loss 5.383440971374512 device Tesla T4
+out_loss 5.360809803009033 device cuda:0
+out_loss 5.360809803009033 device Tesla T4
+get_metric: get_metric:5.372125625610352 2 1 device Tesla T4
+ 5.372125625610352 2 1 device Tesla T4
+ 26%|██▌       | 67/258 [01:44<05:10,  1.62s/it, acc=0.247, current_step=66, epoch=0, length=512, lr=9.17e-5, out_loss=tensor(5.3608, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.37]train_step 0 67 67 device
+out_loss 5.592859268188477 device cuda:1
+out_loss 5.592859268188477 device Tesla T4
+out_loss 6.118365287780762 device cuda:0
+out_loss 6.118365287780762 device Tesla T4
+get_metric:get_metric: 5.855612277984619 2 1 device Tesla T4
+ 5.855612277984619 2 1 device Tesla T4
+ 26%|██▋       | 68/258 [01:46<05:08,  1.62s/it, acc=0.215, current_step=67, epoch=0, length=512, lr=9.15e-5, out_loss=tensor(6.1184, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.86]train_step 0 68 68 device
+out_loss 5.590498447418213 device cuda:1
+out_loss 5.590498447418213 device Tesla T4
+out_loss 5.79155969619751 device cuda:0
+out_loss 5.79155969619751 device Tesla T4
+get_metric:get_metric: 5.691029071807861 2 1 device Tesla T4
+ 5.691029071807861 2 1 device Tesla T4
+ 27%|██▋       | 69/258 [01:47<05:08,  1.63s/it, acc=0.271, current_step=68, epoch=0, length=512, lr=9.12e-5, out_loss=tensor(5.7916, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.69]train_step 0 69 69 device
+out_loss 6.302088737487793 device cuda:1
+out_loss 6.302088737487793 device Tesla T4
+out_loss 3.7921717166900635 device cuda:0
+out_loss 3.7921717166900635 device Tesla T4
+get_metric: 5.047130107879639 2get_metric: 1 device Tesla T4
+ 5.047130107879639 2 1 device Tesla T4
+ 27%|██▋       | 70/258 [01:49<05:07,  1.63s/it, acc=0.308, current_step=69, epoch=0, length=512, lr=9.1e-5, out_loss=tensor(3.7922, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.05]train_step 0 70 70 device
+out_loss 5.5043768882751465 device out_loss 5.397997856140137 device cuda:1
+cuda:0out_loss 5.397997856140137 device Tesla T4
+
+out_loss 5.5043768882751465 device Tesla T4
+get_metric: get_metric:5.4511871337890625 2 1 device Tesla T4
+ 5.4511871337890625 2 1 device Tesla T4
+ 28%|██▊       | 71/258 [01:51<05:05,  1.64s/it, acc=0.246, current_step=70, epoch=0, length=512, lr=9.07e-5, out_loss=tensor(5.5044, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.45]train_step 0 71 71 device
+out_loss 6.266520977020264 device cuda:1
+out_loss 6.266520977020264 device Tesla T4
+out_loss 5.013858795166016 device cuda:0
+out_loss 5.013858795166016 device Tesla T4
+get_metric: 5.640190124511719 2 1 device Tesla T4
+get_metric: 5.640190124511719 2 1 device Tesla T4
+ 28%|██▊       | 72/258 [01:52<05:04,  1.64s/it, acc=0.255, current_step=71, epoch=0, length=512, lr=9.05e-5, out_loss=tensor(5.0139, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.64]train_step 0 72 72 device
+out_loss 6.435794830322266 device cuda:1
+out_loss 6.435794830322266 device Tesla T4
+out_loss 5.846421241760254 device cuda:0
+out_loss 5.846421241760254 device Tesla T4
+get_metric:get_metric: 6.14110803604126 2 1 device Tesla T4
+ 6.14110803604126 2 1 device Tesla T4
+ 28%|██▊       | 73/258 [01:54<05:03,  1.64s/it, acc=0.193, current_step=72, epoch=0, length=512, lr=9.02e-5, out_loss=tensor(5.8464, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.14]train_step 0 73 73 device
+out_loss 5.491729736328125 device cuda:1
+out_loss 5.491729736328125 device Tesla T4
+out_loss 6.9974141120910645 device cuda:0
+out_loss 6.9974141120910645 device Tesla T4
+get_metric: 6.244571685791016 2 1 device get_metric:Tesla T4
+ 6.244571685791016 2 1 device Tesla T4
+ 29%|██▊       | 74/258 [01:55<05:00,  1.64s/it, acc=0.25, current_step=73, epoch=0, length=512, lr=8.99e-5, out_loss=tensor(6.9974, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.25]train_step 0 74 74 device
+out_loss 5.922580718994141 device cuda:1
+out_loss 5.922580718994141 device Tesla T4
+out_loss 5.672444820404053 device cuda:0
+out_loss 5.672444820404053 device Tesla T4
+get_metric:get_metric: 5.797513008117676 2 1 device Tesla T4
+ 5.797513008117676 2 1 device Tesla T4
+ 29%|██▉       | 75/258 [01:57<05:00,  1.64s/it, acc=0.214, current_step=74, epoch=0, length=512, lr=8.96e-5, out_loss=tensor(5.6724, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.8]train_step 0 75 75 device
+out_loss 5.982802867889404 device cuda:1
+out_loss 5.982802867889404 device Tesla T4
+out_loss 5.78721284866333 device cuda:0
+out_loss 5.78721284866333 device Tesla T4
+get_metric:get_metric: 5.885007858276367 2 1 device Tesla T4
+ 5.885007858276367 2 1 device Tesla T4
+ 29%|██▉       | 76/258 [01:59<04:59,  1.64s/it, acc=0.241, current_step=75, epoch=0, length=512, lr=8.94e-5, out_loss=tensor(5.7872, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.88]train_step 0 76 76 device
+out_loss 5.9528303146362305 device cuda:1
+out_loss 5.9528303146362305 device Tesla T4
+out_loss 5.827375411987305 device cuda:0
+out_loss 5.827375411987305 device Tesla T4
+get_metric:get_metric: 5.890102863311768 2 1 device Tesla T4
+ 5.890102863311768 2 1 device Tesla T4
+ 30%|██▉       | 77/258 [02:00<04:57,  1.64s/it, acc=0.227, current_step=76, epoch=0, length=512, lr=8.91e-5, out_loss=tensor(5.8274, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.89]train_step 0 77 77 device
+out_loss 5.2282023429870605 device cuda:1
+out_loss 5.2282023429870605 device Tesla T4
+out_loss 4.780953884124756 device cuda:0
+out_loss 4.780953884124756 device Tesla T4
+get_metric:get_metric: 5.004578113555908 2 1 device Tesla T4
+ 5.004578113555908 2 1 device Tesla T4
+ 30%|███       | 78/258 [02:02<04:56,  1.65s/it, acc=0.331, current_step=77, epoch=0, length=512, lr=8.88e-5, out_loss=tensor(4.7810, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5]train_step 0 78 78 device
+out_loss 5.244882583618164 device cuda:1
+out_loss 5.244882583618164 device Tesla T4
+out_loss 6.31754207611084 device cuda:0
+out_loss 6.31754207611084 device Tesla T4
+get_metric:get_metric: 5.781212329864502 2 1 device Tesla T4
+ 5.781212329864502 2 1 device Tesla T4
+ 31%|███       | 79/258 [02:04<04:54,  1.65s/it, acc=0.25, current_step=78, epoch=0, length=512, lr=8.85e-5, out_loss=tensor(6.3175, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.78]train_step 0 79 79 device
+out_loss 5.93833065032959 device cuda:1
+out_loss 5.93833065032959 device Tesla T4
+out_loss 5.024842739105225 device cuda:0
+out_loss 5.024842739105225 device Tesla T4
+get_metric:get_metric: 5.481586456298828 2 1 device Tesla T4
+ 5.481586456298828 2 1 device Tesla T4
+ 31%|███       | 80/258 [02:05<04:53,  1.65s/it, acc=0.282, current_step=79, epoch=0, length=512, lr=8.82e-5, out_loss=tensor(5.0248, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.48]train_step 0 80 80 device
+out_loss 5.279688835144043 device cuda:1
+out_loss 5.279688835144043 device Tesla T4
+out_loss 6.039345741271973 device cuda:0
+out_loss 6.039345741271973 device Tesla T4
+get_metric:get_metric: 5.659517288208008 2 1 device Tesla T4
+ 5.659517288208008 2 1 device Tesla T4
+ 31%|███▏      | 81/258 [02:07<04:52,  1.65s/it, acc=0.265, current_step=80, epoch=0, length=512, lr=8.79e-5, out_loss=tensor(6.0393, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.66]train_step 0 81 81 device
+out_loss 5.758828639984131 device cuda:1
+out_loss 5.758828639984131 device Tesla T4
+out_loss 5.174650192260742 device cuda:0
+out_loss 5.174650192260742 device Tesla T4
+get_metric:get_metric: 5.466739654541016 2 1 device Tesla T4
+ 5.466739654541016 2 1 device Tesla T4
+ 32%|███▏      | 82/258 [02:09<04:50,  1.65s/it, acc=0.227, current_step=81, epoch=0, length=512, lr=8.76e-5, out_loss=tensor(5.1747, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.47]train_step 0 82 82 device
+out_loss 5.610278129577637 device cuda:1
+out_loss 5.610278129577637 device Tesla T4
+out_loss 4.9800896644592285 device cuda:0
+out_loss 4.9800896644592285 device Tesla T4
+get_metric: 5.295184135437012 2 1 device Tesla T4
+get_metric: 5.295184135437012 2 1 device Tesla T4
+ 32%|███▏      | 83/258 [02:10<04:49,  1.66s/it, acc=0.286, current_step=82, epoch=0, length=512, lr=8.73e-5, out_loss=tensor(4.9801, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.29]train_step 0 83 83 device
+out_loss 5.3935160636901855 device cuda:1
+out_loss 5.3935160636901855 device Tesla T4
+out_loss 6.019162654876709 device cuda:0
+out_loss 6.019162654876709 device Tesla T4
+get_metric:get_metric: 5.706339359283447 2 1 device Tesla T4
+ 5.706339359283447 2 1 device Tesla T4
+ 33%|███▎      | 84/258 [02:12<04:48,  1.66s/it, acc=0.247, current_step=83, epoch=0, length=512, lr=8.7e-5, out_loss=tensor(6.0192, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.71]train_step 0 84 84 device
+out_loss 6.256490707397461 device cuda:1
+out_loss 6.256490707397461 device Tesla T4
+out_loss 4.68790340423584 device cuda:0
+out_loss 4.68790340423584 device Tesla T4
+get_metric:get_metric: 5.47219705581665 2 1 device Tesla T4
+ 5.47219705581665 2 1 device Tesla T4
+ 33%|███▎      | 85/258 [02:14<04:47,  1.66s/it, acc=0.289, current_step=84, epoch=0, length=512, lr=8.67e-5, out_loss=tensor(4.6879, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.47]train_step 0 85 85 device
+out_loss 5.302473545074463 device cuda:1
+out_loss 5.302473545074463 device Tesla T4
+out_loss 6.2267656326293945 device cuda:0
+out_loss 6.2267656326293945 device Tesla T4
+get_metric:get_metric: 5.764619827270508 2 1 device Tesla T4
+ 5.764619827270508 2 1 device Tesla T4
+ 33%|███▎      | 86/258 [02:15<04:44,  1.66s/it, acc=0.267, current_step=85, epoch=0, length=512, lr=8.64e-5, out_loss=tensor(6.2268, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.76]train_step 0 86 86 device
+out_loss 6.163807392120361 device cuda:1
+out_loss 6.163807392120361 device Tesla T4
+out_loss 6.025633811950684 device cuda:0
+out_loss 6.025633811950684 device Tesla T4
+get_metric:get_metric: 6.094720840454102 2 1 device Tesla T4
+ 6.094720840454102 2 1 device Tesla T4
+ 34%|███▎      | 87/258 [02:17<04:44,  1.67s/it, acc=0.212, current_step=86, epoch=0, length=512, lr=8.61e-5, out_loss=tensor(6.0256, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.09]train_step 0 87 87 device
+out_loss 6.1385931968688965 device cuda:1
+out_loss 6.1385931968688965 device Tesla T4
+out_loss 5.441629409790039 device cuda:0
+out_loss 5.441629409790039 device Tesla T4
+get_metric:get_metric: 5.790111541748047 2 1 device Tesla T4
+ 5.790111541748047 2 1 device Tesla T4
+ 34%|███▍      | 88/258 [02:19<04:44,  1.67s/it, acc=0.239, current_step=87, epoch=0, length=512, lr=8.58e-5, out_loss=tensor(5.4416, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.79]train_step 0 88 88 device
+out_loss 4.126576900482178 device cuda:1
+out_loss 4.126576900482178 device Tesla T4
+out_loss 6.03472375869751 device cuda:0
+out_loss 6.03472375869751 device Tesla T4
+get_metric:get_metric: 5.080650329589844 2 1 device Tesla T4
+ 5.080650329589844 2 1 device Tesla T4
+ 34%|███▍      | 89/258 [02:20<04:43,  1.68s/it, acc=0.296, current_step=88, epoch=0, length=512, lr=8.54e-5, out_loss=tensor(6.0347, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.08]train_step 0 89 89 device
+out_loss 5.992068767547607 device cuda:1
+out_loss 5.992068767547607 device Tesla T4
+out_loss 6.618605136871338 device cuda:0
+out_loss 6.618605136871338 device Tesla T4
+get_metric:get_metric: 6.305336952209473 2 1 device Tesla T4
+ 6.305336952209473 2 1 device Tesla T4
+ 35%|███▍      | 90/258 [02:22<04:42,  1.68s/it, acc=0.25, current_step=89, epoch=0, length=512, lr=8.51e-5, out_loss=tensor(6.6186, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.3]train_step 0 90 90 device
+out_loss 5.858242511749268 device cuda:1
+out_loss 5.858242511749268 device Tesla T4
+out_loss 5.600729465484619 device cuda:0
+out_loss 5.600729465484619 device Tesla T4
+get_metric:get_metric: 5.729485988616943 2 1 device Tesla T4
+ 5.729485988616943 2 1 device Tesla T4
+ 35%|███▌      | 91/258 [02:24<04:41,  1.68s/it, acc=0.252, current_step=90, epoch=0, length=512, lr=8.48e-5, out_loss=tensor(5.6007, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.73]train_step 0 91 91 device
+out_loss 5.173108100891113 device cuda:1
+out_loss 5.173108100891113 device Tesla T4
+out_loss 5.611453533172607 device cuda:0
+out_loss 5.611453533172607 device Tesla T4
+get_metric:get_metric: 5.392280578613281 2 1 device Tesla T4
+ 5.392280578613281 2 1 device Tesla T4
+ 36%|███▌      | 92/258 [02:25<04:39,  1.68s/it, acc=0.257, current_step=91, epoch=0, length=512, lr=8.45e-5, out_loss=tensor(5.6115, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.39]train_step 0 92 92 device
+out_loss 5.642958164215088 device cuda:1
+out_loss 5.642958164215088 device Tesla T4
+out_loss 5.544316291809082 device cuda:0
+out_loss 5.544316291809082 device Tesla T4
+get_metric: 5.593637466430664 2 1 device Tesla T4get_metric:
+ 5.593637466430664 2 1 device Tesla T4
+ 36%|███▌      | 93/258 [02:27<04:38,  1.69s/it, acc=0.237, current_step=92, epoch=0, length=512, lr=8.41e-5, out_loss=tensor(5.5443, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.59]train_step 0 93 93 device
+out_loss 5.81077766418457 device cuda:1
+out_loss 5.81077766418457 device Tesla T4
+out_loss 5.51845121383667 device cuda:0
+out_loss 5.51845121383667 device Tesla T4
+get_metric:get_metric: 5.664614677429199 2 1 device Tesla T4
+ 5.664614677429199 2 1 device Tesla T4
+ 36%|███▋      | 94/258 [02:29<04:37,  1.69s/it, acc=0.254, current_step=93, epoch=0, length=512, lr=8.38e-5, out_loss=tensor(5.5185, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.67]train_step 0 94 94 device
+out_loss 5.2047529220581055 device cuda:1
+out_loss 5.2047529220581055 device Tesla T4
+out_loss 5.026388168334961 device cuda:0
+out_loss 5.026388168334961 device Tesla T4
+get_metric:get_metric: 5.115570545196533 2 1 device Tesla T4
+ 5.115570545196533 2 1 device Tesla T4
+ 37%|███▋      | 95/258 [02:30<04:34,  1.69s/it, acc=0.292, current_step=94, epoch=0, length=512, lr=8.35e-5, out_loss=tensor(5.0264, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.12]train_step 0 95 95 device
+out_loss 5.04299259185791 device cuda:1
+out_loss 5.04299259185791 device Tesla T4
+out_loss 6.033033847808838 device cuda:0
+out_loss 6.033033847808838 device Tesla T4
+get_metric:get_metric: 5.538013458251953 2 1 device Tesla T4
+ 5.538013458251953 2 1 device Tesla T4
+ 37%|███▋      | 96/258 [02:32<04:33,  1.69s/it, acc=0.292, current_step=95, epoch=0, length=512, lr=8.31e-5, out_loss=tensor(6.0330, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.54]train_step 0 96 96 device
+out_loss 5.9655866622924805 device cuda:1
+out_loss 5.9655866622924805 device Tesla T4
+out_loss 3.9946513175964355 device cuda:0
+out_loss 3.9946513175964355 device Tesla T4
+get_metric:get_metric: 4.980118751525879 2 1 device Tesla T4
+ 4.980118751525879 2 1 device Tesla T4
+ 38%|███▊      | 97/258 [02:34<04:32,  1.69s/it, acc=0.307, current_step=96, epoch=0, length=512, lr=8.28e-5, out_loss=tensor(3.9947, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.98]train_step 0 97 97 device
+out_loss 6.045473575592041 device cuda:1
+out_loss 6.045473575592041 device Tesla T4
+out_loss 5.54834508895874 device cuda:0
+out_loss 5.54834508895874 device Tesla T4
+get_metric: get_metric:5.796909332275391 2 1 device Tesla T4
+ 5.796909332275391 2 1 device Tesla T4
+ 38%|███▊      | 98/258 [02:36<04:31,  1.70s/it, acc=0.214, current_step=97, epoch=0, length=512, lr=8.24e-5, out_loss=tensor(5.5483, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.8]train_step 0 98 98 device
+out_loss 4.581554412841797 device cuda:1
+out_loss 4.581554412841797 device Tesla T4
+out_loss 4.963654041290283 device cuda:0
+out_loss 4.963654041290283 device Tesla T4
+get_metric:get_metric: 4.772603988647461 2 1 device Tesla T4
+ 4.772603988647461 2 1 device Tesla T4
+ 38%|███▊      | 99/258 [02:37<04:31,  1.71s/it, acc=0.345, current_step=98, epoch=0, length=512, lr=8.21e-5, out_loss=tensor(4.9637, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.77]train_step 0 99 99 device
+out_loss 5.114047527313232 device cuda:1
+out_loss 5.114047527313232 device Tesla T4
+out_loss 5.665194034576416 device cuda:0
+out_loss 5.665194034576416 device Tesla T4
+get_metric:get_metric: 5.389620780944824 2 1 device Tesla T4
+ 5.389620780944824 2 1 device Tesla T4
+ 39%|███▉      | 100/258 [02:39<04:30,  1.71s/it, acc=0.255, current_step=99, epoch=0, length=512, lr=8.17e-5, out_loss=tensor(5.6652, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.39]train_step 0 100 100 device
+out_loss 5.627781391143799 device cuda:1
+out_loss 5.627781391143799 device Tesla T4
+out_loss 5.681578159332275 device cuda:0
+out_loss 5.681578159332275 device Tesla T4
+get_metric:get_metric: 5.654679775238037 2 1 device Tesla T4
+ 5.654679775238037 2 1 device Tesla T4
+ 39%|███▉      | 101/258 [02:41<04:29,  1.71s/it, acc=0.233, current_step=100, epoch=0, length=512, lr=8.14e-5, out_loss=tensor(5.6816, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.66]train_step 0 101 101 device
+out_loss 6.368197441101074 device cuda:1
+out_loss 6.368197441101074 device Tesla T4
+out_loss 4.099039077758789 device cuda:0
+out_loss 4.099039077758789 device Tesla T4
+get_metric:get_metric: 5.233618259429932 2 1 device Tesla T4
+ 5.233618259429932 2 1 device Tesla T4
+ 40%|███▉      | 102/258 [02:42<04:27,  1.72s/it, acc=0.288, current_step=101, epoch=0, length=512, lr=8.1e-5, out_loss=tensor(4.0990, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.23]train_step 0 102 102 device
+out_loss 6.360697269439697 device cuda:1
+out_loss 6.360697269439697 device Tesla T4
+out_loss 5.636303901672363 device cuda:0
+out_loss 5.636303901672363 device Tesla T4
+get_metric: 5.998500823974609get_metric: 2 1 device Tesla T4
+ 5.998500823974609 2 1 device Tesla T4
+ 40%|███▉      | 103/258 [02:44<04:26,  1.72s/it, acc=0.257, current_step=102, epoch=0, length=512, lr=8.07e-5, out_loss=tensor(5.6363, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6]train_step 0 103 103 device
+out_loss 4.754969120025635 device cuda:1
+out_loss 4.754969120025635 device Tesla T4
+out_loss 6.0418701171875 device cuda:0
+out_loss 6.0418701171875 device Tesla T4
+get_metric:get_metric: 5.398419380187988 2 1 device Tesla T4
+ 5.398419380187988 2 1 device Tesla T4
+ 40%|████      | 104/258 [02:46<04:25,  1.73s/it, acc=0.291, current_step=103, epoch=0, length=512, lr=8.03e-5, out_loss=tensor(6.0419, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.4]train_step 0 104 104 device
+out_loss 5.3601393699646 device cuda:1
+out_loss 5.3601393699646 device Tesla T4
+out_loss 5.440348148345947 device cuda:0
+out_loss 5.440348148345947 device Tesla T4
+get_metric:get_metric: 5.400243759155273 2 1 device Tesla T4
+ 5.400243759155273 2 1 device Tesla T4
+ 41%|████      | 105/258 [02:48<04:24,  1.73s/it, acc=0.262, current_step=104, epoch=0, length=512, lr=7.99e-5, out_loss=tensor(5.4403, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.4]train_step 0 105 105 device
+out_loss 5.710128307342529 device cuda:1
+out_loss 5.710128307342529 device Tesla T4
+out_loss 5.288904666900635 device cuda:0
+out_loss 5.288904666900635 device Tesla T4
+get_metric:get_metric: 5.499516487121582 2 1 device Tesla T4
+ 5.499516487121582 2 1 device Tesla T4
+ 41%|████      | 106/258 [02:49<04:22,  1.73s/it, acc=0.27, current_step=105, epoch=0, length=512, lr=7.96e-5, out_loss=tensor(5.2889, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.5]train_step 0 106 106 device
+out_loss 5.526381015777588 device cuda:1
+out_loss 5.526381015777588 device Tesla T4
+out_loss 4.893935203552246 device cuda:0
+out_loss 4.893935203552246 device Tesla T4
+get_metric:get_metric: 5.210158348083496 2 1 device Tesla T4
+ 5.210158348083496 2 1 device Tesla T4
+ 41%|████▏     | 107/258 [02:51<04:21,  1.73s/it, acc=0.316, current_step=106, epoch=0, length=512, lr=7.92e-5, out_loss=tensor(4.8939, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.21]train_step 0 107 107 device
+out_loss 5.576117515563965 device cuda:1
+out_loss 5.576117515563965 device Tesla T4
+out_loss 5.343664646148682 device cuda:0
+out_loss 5.343664646148682 device Tesla T4
+get_metric: 5.459891319274902get_metric: 2 1 device Tesla T4
+ 5.459891319274902 2 1 device Tesla T4
+ 42%|████▏     | 108/258 [02:53<04:19,  1.73s/it, acc=0.23, current_step=107, epoch=0, length=512, lr=7.88e-5, out_loss=tensor(5.3437, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.46]train_step 0 108 108 device
+out_loss 4.664819717407227 device cuda:1
+out_loss 4.664819717407227 device Tesla T4
+out_loss 5.27388334274292 device cuda:0
+out_loss 5.27388334274292 device Tesla T4
+get_metric:get_metric: 4.969351768493652 2 1 device Tesla T4
+ 4.969351768493652 2 1 device Tesla T4
+ 42%|████▏     | 109/258 [02:55<04:18,  1.74s/it, acc=0.292, current_step=108, epoch=0, length=512, lr=7.85e-5, out_loss=tensor(5.2739, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.97]train_step 0 109 109 device
+out_loss 5.454843521118164 device cuda:1
+out_loss 5.454843521118164 device Tesla T4
+out_loss 5.532410144805908 device cuda:0
+out_loss 5.532410144805908 device Tesla T4
+get_metric:get_metric: 5.493626594543457 2 1 device Tesla T4
+ 5.493626594543457 2 1 device Tesla T4
+ 43%|████▎     | 110/258 [02:56<04:16,  1.74s/it, acc=0.264, current_step=109, epoch=0, length=512, lr=7.81e-5, out_loss=tensor(5.5324, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.49]train_step 0 110 110 device
+out_loss 5.350488662719727 device cuda:1
+out_loss 5.350488662719727 device Tesla T4
+out_loss 5.631809234619141 device cuda:0
+out_loss 5.631809234619141 device Tesla T4
+get_metric:get_metric: 5.491148948669434 2 1 device Tesla T4
+ 5.491148948669434 2 1 device Tesla T4
+ 43%|████▎     | 111/258 [02:58<04:15,  1.74s/it, acc=0.251, current_step=110, epoch=0, length=512, lr=7.77e-5, out_loss=tensor(5.6318, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.49]train_step 0 111 111 device
+out_loss 5.292600154876709 device cuda:1
+out_loss 5.292600154876709 device Tesla T4
+out_loss 5.355679988861084 device cuda:0
+out_loss 5.355679988861084 device Tesla T4
+get_metric:get_metric: 5.3241400718688965 2 1 device Tesla T4
+ 5.3241400718688965 2 1 device Tesla T4
+ 43%|████▎     | 112/258 [03:00<04:13,  1.74s/it, acc=0.262, current_step=111, epoch=0, length=512, lr=7.73e-5, out_loss=tensor(5.3557, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.32]train_step 0 112 112 device
+out_loss 6.0399885177612305 device cuda:1
+out_loss 6.0399885177612305 device Tesla T4
+out_loss 4.815342903137207 device cuda:0
+out_loss 4.815342903137207 device Tesla T4
+get_metric:get_metric: 5.427665710449219 2 1 device Tesla T4
+ 5.427665710449219 2 1 device Tesla T4
+ 44%|████▍     | 113/258 [03:02<04:11,  1.73s/it, acc=0.299, current_step=112, epoch=0, length=512, lr=7.69e-5, out_loss=tensor(4.8153, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.43]train_step 0 113 113 device
+out_loss 5.180778503417969 device cuda:1
+out_loss 5.180778503417969 device Tesla T4
+out_loss 5.730740547180176 device cuda:0
+out_loss 5.730740547180176 device Tesla T4
+get_metric:get_metric: 5.455759525299072 2 1 device Tesla T4
+ 5.455759525299072 2 1 device Tesla T4
+ 44%|████▍     | 114/258 [03:03<04:08,  1.72s/it, acc=0.296, current_step=113, epoch=0, length=512, lr=7.66e-5, out_loss=tensor(5.7307, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.46]train_step 0 114 114 device
+out_loss 4.906597137451172 device cuda:1
+out_loss 4.906597137451172 device Tesla T4
+out_loss 5.551958084106445 device cuda:0
+out_loss 5.551958084106445 device Tesla T4
+get_metric:get_metric: 5.229277610778809 2 1 device Tesla T4
+ 5.229277610778809 2 1 device Tesla T4
+ 45%|████▍     | 115/258 [03:05<04:06,  1.72s/it, acc=0.262, current_step=114, epoch=0, length=512, lr=7.62e-5, out_loss=tensor(5.5520, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.23]train_step 0 115 115 device
+out_loss 4.857860088348389 device cuda:1
+out_loss 4.857860088348389 device Tesla T4
+out_loss 5.261781692504883 device cuda:0
+out_loss 5.261781692504883 device Tesla T4
+get_metric:get_metric: 5.059821128845215 2 1 device Tesla T4
+ 5.059821128845215 2 1 device Tesla T4
+ 45%|████▍     | 116/258 [03:07<04:04,  1.72s/it, acc=0.284, current_step=115, epoch=0, length=512, lr=7.58e-5, out_loss=tensor(5.2618, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.06]train_step 0 116 116 device
+out_loss 5.023131370544434 device cuda:1
+out_loss 5.023131370544434 device Tesla T4
+out_loss 5.3147382736206055 device cuda:0
+out_loss 5.3147382736206055 device Tesla T4
+get_metric:get_metric: 5.1689348220825195 2 1 device Tesla T4
+ 5.1689348220825195 2 1 device Tesla T4
+ 45%|████▌     | 117/258 [03:08<04:02,  1.72s/it, acc=0.29, current_step=116, epoch=0, length=512, lr=7.54e-5, out_loss=tensor(5.3147, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.17]train_step 0 117 117 device
+out_loss 5.553356170654297 device cuda:1
+out_loss 5.553356170654297 device Tesla T4
+out_loss 5.643962860107422 device cuda:0
+out_loss 5.643962860107422 device Tesla T4
+get_metric:get_metric: 5.598659515380859 2 1 device Tesla T4
+ 5.598659515380859 2 1 device Tesla T4
+ 46%|████▌     | 118/258 [03:10<04:00,  1.72s/it, acc=0.227, current_step=117, epoch=0, length=512, lr=7.5e-5, out_loss=tensor(5.6440, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.6]train_step 0 118 118 device
+out_loss 5.260156631469727 device cuda:1
+out_loss 5.260156631469727 device Tesla T4
+out_loss 5.714034080505371 device cuda:0
+out_loss 5.714034080505371 device Tesla T4
+get_metric:get_metric: 5.487095355987549 2 1 device Tesla T4
+ 5.487095355987549 2 1 device Tesla T4
+ 46%|████▌     | 119/258 [03:12<03:59,  1.72s/it, acc=0.25, current_step=118, epoch=0, length=512, lr=7.46e-5, out_loss=tensor(5.7140, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.49]train_step 0 119 119 device
+out_loss 5.100925922393799 device cuda:1
+out_loss 5.100925922393799 device Tesla T4
+out_loss 5.702308654785156 device cuda:0
+out_loss 5.702308654785156 device Tesla T4
+get_metric:get_metric: 5.401617050170898 2 1 device Tesla T4
+ 5.401617050170898 2 1 device Tesla T4
+ 47%|████▋     | 120/258 [03:14<03:56,  1.71s/it, acc=0.272, current_step=119, epoch=0, length=512, lr=7.42e-5, out_loss=tensor(5.7023, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.4]train_step 0 120 120 device
+out_loss 5.889153480529785 device cuda:1
+out_loss 5.889153480529785 device Tesla T4
+out_loss 4.431071758270264 device cuda:0
+out_loss 4.431071758270264 device Tesla T4
+get_metric:get_metric: 5.160112380981445 2 1 device Tesla T4
+ 5.160112380981445 2 1 device Tesla T4
+ 47%|████▋     | 121/258 [03:15<03:54,  1.71s/it, acc=0.298, current_step=120, epoch=0, length=512, lr=7.38e-5, out_loss=tensor(4.4311, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.16]train_step 0 121 121 device
+out_loss 4.366341590881348 device cuda:1
+out_loss 4.366341590881348 device Tesla T4
+out_loss 4.573063850402832 device cuda:0
+out_loss 4.573063850402832 device Tesla T4
+get_metric:get_metric: 4.46970272064209 2 1 device Tesla T4
+ 4.46970272064209 2 1 device Tesla T4
+ 47%|████▋     | 122/258 [03:17<03:53,  1.72s/it, acc=0.348, current_step=121, epoch=0, length=512, lr=7.34e-5, out_loss=tensor(4.5731, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.47]train_step 0 122 122 device
+out_loss 5.048032760620117 device cuda:1
+out_loss 5.048032760620117 device Tesla T4
+out_loss 5.386778831481934 device cuda:0
+out_loss 5.386778831481934 device Tesla T4
+get_metric:get_metric: 5.217405796051025 2 1 device Tesla T4
+ 5.217405796051025 2 1 device Tesla T4
+ 48%|████▊     | 123/258 [03:19<03:52,  1.72s/it, acc=0.296, current_step=122, epoch=0, length=512, lr=7.3e-5, out_loss=tensor(5.3868, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.22]train_step 0 123 123 device
+out_loss 4.752349376678467 device cuda:1
+out_loss 4.752349376678467 device Tesla T4
+out_loss 4.147616386413574 device cuda:0
+out_loss 4.147616386413574 device Tesla T4
+get_metric:get_metric: 4.449982643127441 2 1 device Tesla T4
+ 4.449982643127441 2 1 device Tesla T4
+ 48%|████▊     | 124/258 [03:20<03:50,  1.72s/it, acc=0.357, current_step=123, epoch=0, length=512, lr=7.26e-5, out_loss=tensor(4.1476, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.45]train_step 0 124 124 device
+out_loss 4.96706485748291 device cuda:1
+out_loss 4.96706485748291 device Tesla T4
+out_loss 5.618296146392822 device cuda:0
+out_loss 5.618296146392822 device Tesla T4
+get_metric:get_metric: 5.292680740356445 2 1 device Tesla T4
+ 5.292680740356445 2 1 device Tesla T4
+ 48%|████▊     | 125/258 [03:22<03:47,  1.71s/it, acc=0.313, current_step=124, epoch=0, length=512, lr=7.22e-5, out_loss=tensor(5.6183, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.29]train_step 0 125 125 device
+out_loss 5.5245208740234375 device cuda:1
+out_loss 5.5245208740234375 device Tesla T4
+out_loss 6.262718677520752 device cuda:0
+out_loss 6.262718677520752 device Tesla T4
+get_metric:get_metric: 5.893619537353516 2 1 device Tesla T4
+ 5.893619537353516 2 1 device Tesla T4
+ 49%|████▉     | 126/258 [03:24<03:45,  1.71s/it, acc=0.212, current_step=125, epoch=0, length=512, lr=7.18e-5, out_loss=tensor(6.2627, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.89]train_step 0 126 126 device
+out_loss 6.066730976104736 device cuda:1
+out_loss 6.066730976104736 device Tesla T4
+out_loss 5.852123260498047 device cuda:0
+out_loss 5.852123260498047 device Tesla T4
+get_metric:get_metric: 5.9594268798828125 2 1 device Tesla T4
+ 5.9594268798828125 2 1 device Tesla T4
+ 49%|████▉     | 127/258 [03:26<03:44,  1.71s/it, acc=0.222, current_step=126, epoch=0, length=512, lr=7.14e-5, out_loss=tensor(5.8521, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.96]train_step 0 127 127 device
+out_loss 5.384393215179443 device cuda:1
+out_loss 5.384393215179443 device Tesla T4
+out_loss 5.717175006866455 device cuda:0
+out_loss 5.717175006866455 device Tesla T4
+get_metric:get_metric: 5.550784111022949 2 1 device Tesla T4
+ 5.550784111022949 2 1 device Tesla T4
+ 50%|████▉     | 128/258 [03:27<03:42,  1.71s/it, acc=0.268, current_step=127, epoch=0, length=512, lr=7.1e-5, out_loss=tensor(5.7172, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.55]train_step 0 128 128 device
+out_loss 4.685361385345459 device cuda:1
+out_loss 4.685361385345459 device Tesla T4
+out_loss 4.523950576782227 device cuda:0
+out_loss 4.523950576782227 device Tesla T4
+get_metric: 4.604656219482422 2get_metric: 1 device Tesla T4
+ 4.604656219482422 2 1 device Tesla T4
+ 50%|█████     | 129/258 [03:29<03:40,  1.71s/it, acc=0.377, current_step=128, epoch=0, length=512, lr=7.05e-5, out_loss=tensor(4.5240, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.61]train_step 0 129 129 device
+out_loss 5.106097221374512 device cuda:1
+out_loss 5.106097221374512 device Tesla T4
+out_loss 4.82394552230835 device cuda:0
+out_loss 4.82394552230835 device Tesla T4
+get_metric:get_metric: 4.965021133422852 2 1 device Tesla T4
+ 4.965021133422852 2 1 device Tesla T4
+ 50%|█████     | 130/258 [03:31<03:38,  1.71s/it, acc=0.335, current_step=129, epoch=0, length=512, lr=7.01e-5, out_loss=tensor(4.8239, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.96]train_step 0 130 130 device
+out_loss 4.925394535064697 device cuda:1
+out_loss 4.925394535064697 device Tesla T4
+out_loss 4.947643756866455 device cuda:0
+out_loss 4.947643756866455 device Tesla T4
+get_metric:get_metric: 4.936519145965576 2 1 device Tesla T4
+ 4.936519145965576 2 1 device Tesla T4
+ 51%|█████     | 131/258 [03:32<03:36,  1.71s/it, acc=0.279, current_step=130, epoch=0, length=512, lr=6.97e-5, out_loss=tensor(4.9476, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.94]train_step 0 131 131 device
+out_loss 5.512681007385254 device cuda:1
+out_loss 5.512681007385254 device Tesla T4
+out_loss 5.638953685760498 device cuda:0
+out_loss 5.638953685760498 device Tesla T4
+get_metric:get_metric: 5.575817108154297 2 1 device Tesla T4
+ 5.575817108154297 2 1 device Tesla T4
+ 51%|█████     | 132/258 [03:34<03:34,  1.70s/it, acc=0.279, current_step=131, epoch=0, length=512, lr=6.93e-5, out_loss=tensor(5.6390, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.58]train_step 0 132 132 device
+out_loss 4.043531894683838 device cuda:1
+out_loss 4.043531894683838 device Tesla T4
+out_loss 5.572089672088623 device cuda:0
+out_loss 5.572089672088623 device Tesla T4
+get_metric:get_metric: 4.8078107833862305 2 1 device Tesla T4
+ 4.8078107833862305 2 1 device Tesla T4
+ 52%|█████▏    | 133/258 [03:36<03:33,  1.71s/it, acc=0.338, current_step=132, epoch=0, length=512, lr=6.89e-5, out_loss=tensor(5.5721, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.81]train_step 0 133 133 device
+out_loss 4.861073970794678 device cuda:1
+out_loss 4.861073970794678 device Tesla T4
+out_loss 4.785256385803223 device cuda:0
+out_loss 4.785256385803223 device Tesla T4
+get_metric:get_metric: 4.823164939880371 2 1 device Tesla T4
+ 4.823164939880371 2 1 device Tesla T4
+ 52%|█████▏    | 134/258 [03:37<03:31,  1.71s/it, acc=0.34, current_step=133, epoch=0, length=512, lr=6.84e-5, out_loss=tensor(4.7853, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.82]train_step 0 134 134 device
+out_loss 5.434350967407227 device cuda:1
+out_loss 5.434350967407227 device Tesla T4
+out_loss 5.24275541305542 device cuda:0
+out_loss 5.24275541305542 device Tesla T4
+get_metric:get_metric: 5.338553428649902 2 1 device Tesla T4
+ 5.338553428649902 2 1 device Tesla T4
+ 52%|█████▏    | 135/258 [03:39<03:29,  1.70s/it, acc=0.289, current_step=134, epoch=0, length=512, lr=6.8e-5, out_loss=tensor(5.2428, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.34]train_step 0 135 135 device
+out_loss 5.156518459320068 device cuda:1
+out_loss 5.156518459320068 device Tesla T4
+out_loss 5.276060104370117 device cuda:0
+out_loss 5.276060104370117 device Tesla T4
+get_metric:get_metric: 5.216289520263672 2 1 device Tesla T4
+ 5.216289520263672 2 1 device Tesla T4
+ 53%|█████▎    | 136/258 [03:41<03:28,  1.71s/it, acc=0.299, current_step=135, epoch=0, length=512, lr=6.76e-5, out_loss=tensor(5.2761, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.22]train_step 0 136 136 device
+out_loss 5.8289690017700195 device cuda:1
+out_loss 5.8289690017700195 device Tesla T4
+out_loss 4.07806921005249 device cuda:0
+out_loss 4.07806921005249 device Tesla T4
+get_metric:get_metric: 4.953518867492676 2 1 device Tesla T4
+ 4.953518867492676 2 1 device Tesla T4
+ 53%|█████▎    | 137/258 [03:43<03:26,  1.71s/it, acc=0.341, current_step=136, epoch=0, length=512, lr=6.72e-5, out_loss=tensor(4.0781, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.95]train_step 0 137 137 device
+out_loss 5.587620258331299 device cuda:1
+out_loss 5.587620258331299 device Tesla T4
+out_loss 5.600222110748291 device cuda:0
+out_loss 5.600222110748291 device Tesla T4
+get_metric:get_metric: 5.593921184539795 2 1 device Tesla T4
+ 5.593921184539795 2 1 device Tesla T4
+ 53%|█████▎    | 138/258 [03:44<03:25,  1.71s/it, acc=0.242, current_step=137, epoch=0, length=512, lr=6.67e-5, out_loss=tensor(5.6002, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.59]train_step 0 138 138 device
+out_loss 4.988635540008545 device cuda:1
+out_loss 4.988635540008545 device Tesla T4
+out_loss 5.904698371887207 device cuda:0
+out_loss 5.904698371887207 device Tesla T4
+get_metric:get_metric: 5.446666717529297 2 1 device Tesla T4
+ 5.446666717529297 2 1 device Tesla T4
+ 54%|█████▍    | 139/258 [03:46<03:23,  1.71s/it, acc=0.282, current_step=138, epoch=0, length=512, lr=6.63e-5, out_loss=tensor(5.9047, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.45]train_step 0 139 139 device
+out_loss 6.2265472412109375 device cuda:1
+out_loss 6.2265472412109375 device Tesla T4
+out_loss 4.343024730682373 device cuda:0
+out_loss 4.343024730682373 device Tesla T4
+get_metric:get_metric: 5.284786224365234 2 1 device Tesla T4
+ 5.284786224365234 2 1 device Tesla T4
+ 54%|█████▍    | 140/258 [03:48<03:21,  1.71s/it, acc=0.282, current_step=139, epoch=0, length=512, lr=6.59e-5, out_loss=tensor(4.3430, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.29]train_step 0 140 140 device
+out_loss 4.613348484039307 device cuda:1
+out_loss 4.613348484039307 device Tesla T4
+out_loss 4.730216026306152 device cuda:0
+out_loss 4.730216026306152 device Tesla T4
+get_metric:get_metric: 4.671782493591309 2 1 device Tesla T4
+ 4.671782493591309 2 1 device Tesla T4
+ 55%|█████▍    | 141/258 [03:49<03:19,  1.71s/it, acc=0.301, current_step=140, epoch=0, length=512, lr=6.55e-5, out_loss=tensor(4.7302, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.67]train_step 0 141 141 device
+out_loss 4.675650596618652 device cuda:1
+out_loss 4.675650596618652 device Tesla T4
+out_loss 4.774862289428711 device cuda:0
+out_loss 4.774862289428711 device Tesla T4
+get_metric:get_metric: 4.725256443023682 2 1 device Tesla T4
+ 4.725256443023682 2 1 device Tesla T4
+ 55%|█████▌    | 142/258 [03:51<03:18,  1.71s/it, acc=0.307, current_step=141, epoch=0, length=512, lr=6.5e-5, out_loss=tensor(4.7749, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.72]train_step 0 142 142 device
+out_loss 5.06479549407959 device cuda:1
+out_loss 5.06479549407959 device Tesla T4
+out_loss 5.304214954376221 device cuda:0
+out_loss 5.304214954376221 device Tesla T4
+get_metric:get_metric: 5.184505462646484 2 1 device Tesla T4
+ 5.184505462646484 2 1 device Tesla T4
+ 55%|█████▌    | 143/258 [03:53<03:16,  1.71s/it, acc=0.241, current_step=142, epoch=0, length=512, lr=6.46e-5, out_loss=tensor(5.3042, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.18]train_step 0 143 143 device
+out_loss 4.035652160644531 device cuda:1
+out_loss 4.035652160644531 device Tesla T4
+out_loss 5.996513843536377 device cuda:0
+out_loss 5.996513843536377 device Tesla T4
+get_metric:get_metric: 5.016082763671875 2 1 device Tesla T4
+ 5.016082763671875 2 1 device Tesla T4
+ 56%|█████▌    | 144/258 [03:55<03:13,  1.70s/it, acc=0.357, current_step=143, epoch=0, length=512, lr=6.41e-5, out_loss=tensor(5.9965, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.02]train_step 0 144 144 device
+out_loss 5.03970193862915 device cuda:1
+out_loss 5.03970193862915 device Tesla T4
+out_loss 5.209758281707764 device cuda:0
+out_loss 5.209758281707764 device Tesla T4
+get_metric:get_metric: 5.124730110168457 2 1 device Tesla T4
+ 5.124730110168457 2 1 device Tesla T4
+ 56%|█████▌    | 145/258 [03:56<03:12,  1.71s/it, acc=0.268, current_step=144, epoch=0, length=512, lr=6.37e-5, out_loss=tensor(5.2098, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.12]train_step 0 145 145 device
+out_loss 5.36918830871582 device cuda:1
+out_loss 5.36918830871582 device Tesla T4
+out_loss 5.474926471710205 device cuda:0
+out_loss 5.474926471710205 device Tesla T4
+get_metric:get_metric: 5.422057151794434 2 1 device Tesla T4
+ 5.422057151794434 2 1 device Tesla T4
+ 57%|█████▋    | 146/258 [03:58<03:11,  1.71s/it, acc=0.278, current_step=145, epoch=0, length=512, lr=6.33e-5, out_loss=tensor(5.4749, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.42]train_step 0 146 146 device
+out_loss 5.848732948303223 device cuda:1
+out_loss 5.848732948303223 device Tesla T4
+out_loss 4.830879211425781 device cuda:0
+out_loss 4.830879211425781 device Tesla T4
+get_metric:get_metric: 5.339806079864502 2 1 device Tesla T4
+ 5.339806079864502 2 1 device Tesla T4
+ 57%|█████▋    | 147/258 [04:00<03:08,  1.70s/it, acc=0.286, current_step=146, epoch=0, length=512, lr=6.28e-5, out_loss=tensor(4.8309, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.34]train_step 0 147 147 device
+out_loss 5.278944969177246 device cuda:1
+out_loss 5.278944969177246 device Tesla T4
+out_loss 5.681440353393555 device cuda:0
+out_loss 5.681440353393555 device Tesla T4
+get_metric:get_metric: 5.4801926612854 2 1 device Tesla T4
+ 5.4801926612854 2 1 device Tesla T4
+ 57%|█████▋    | 148/258 [04:01<03:07,  1.70s/it, acc=0.257, current_step=147, epoch=0, length=512, lr=6.24e-5, out_loss=tensor(5.6814, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.48]train_step 0 148 148 device
+out_loss 5.4181647300720215 device cuda:1
+out_loss 5.4181647300720215 device Tesla T4
+out_loss 5.185853958129883 device cuda:0
+out_loss 5.185853958129883 device Tesla T4
+get_metric:get_metric: 5.302009582519531 2 1 device Tesla T4
+ 5.302009582519531 2 1 device Tesla T4
+ 58%|█████▊    | 149/258 [04:03<03:06,  1.71s/it, acc=0.284, current_step=148, epoch=0, length=512, lr=6.19e-5, out_loss=tensor(5.1859, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.3]train_step 0 149 149 device
+out_loss 4.976217269897461 device cuda:1
+out_loss 4.976217269897461 device Tesla T4
+out_loss 4.844995021820068 device cuda:0
+out_loss 4.844995021820068 device Tesla T4
+get_metric:get_metric: 4.910606384277344 2 1 device Tesla T4
+ 4.910606384277344 2 1 device Tesla T4
+ 58%|█████▊    | 150/258 [04:05<03:04,  1.71s/it, acc=0.327, current_step=149, epoch=0, length=512, lr=6.15e-5, out_loss=tensor(4.8450, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.91]train_step 0 150 150 device
+out_loss 4.735194683074951 device cuda:1
+out_loss 4.735194683074951 device Tesla T4
+out_loss 4.808526992797852 device cuda:0
+out_loss 4.808526992797852 device Tesla T4
+get_metric:get_metric: 4.7718610763549805 2 1 device Tesla T4
+ 4.7718610763549805 2 1 device Tesla T4
+ 59%|█████▊    | 151/258 [04:07<03:03,  1.71s/it, acc=0.359, current_step=150, epoch=0, length=512, lr=6.11e-5, out_loss=tensor(4.8085, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.77]train_step 0 151 151 device
+out_loss 5.0130791664123535 device cuda:1
+out_loss 5.0130791664123535 device Tesla T4
+out_loss 5.406985282897949 device cuda:0
+out_loss 5.406985282897949 device Tesla T4
+get_metric:get_metric: 5.2100324630737305 2 1 device Tesla T4
+ 5.2100324630737305 2 1 device Tesla T4
+ 59%|█████▉    | 152/258 [04:08<03:01,  1.71s/it, acc=0.273, current_step=151, epoch=0, length=512, lr=6.06e-5, out_loss=tensor(5.4070, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.21]train_step 0 152 152 device
+out_loss 5.3403215408325195 device cuda:1
+out_loss 5.3403215408325195 device Tesla T4
+out_loss 4.07155179977417 device cuda:0
+out_loss 4.07155179977417 device Tesla T4
+get_metric:get_metric: 4.705936431884766 2 1 device Tesla T4
+ 4.705936431884766 2 1 device Tesla T4
+ 59%|█████▉    | 153/258 [04:10<03:00,  1.72s/it, acc=0.296, current_step=152, epoch=0, length=512, lr=6.02e-5, out_loss=tensor(4.0716, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.71]train_step 0 153 153 device
+out_loss 5.823968410491943 device cuda:1
+out_loss 5.823968410491943 device Tesla T4
+out_loss 4.461560249328613 device cuda:0
+out_loss 4.461560249328613 device Tesla T4
+get_metric:get_metric: 5.142764091491699 2 1 device Tesla T4
+ 5.142764091491699 2 1 device Tesla T4
+ 60%|█████▉    | 154/258 [04:12<02:58,  1.72s/it, acc=0.295, current_step=153, epoch=0, length=512, lr=5.97e-5, out_loss=tensor(4.4616, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.14]train_step 0 154 154 device
+out_loss 5.522397041320801 device cuda:1
+out_loss 5.522397041320801 device Tesla T4
+out_loss 4.9954681396484375 device cuda:0
+out_loss 4.9954681396484375 device Tesla T4
+get_metric:get_metric: 5.258932590484619 2 1 device Tesla T4
+ 5.258932590484619 2 1 device Tesla T4
+ 60%|██████    | 155/258 [04:13<02:56,  1.72s/it, acc=0.294, current_step=154, epoch=0, length=512, lr=5.93e-5, out_loss=tensor(4.9955, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.26]train_step 0 155 155 device
+out_loss 5.804749965667725 device cuda:1
+out_loss 5.804749965667725 device Tesla T4
+out_loss 5.294190883636475 device cuda:0
+out_loss 5.294190883636475 device Tesla T4
+get_metric:get_metric: 5.5494704246521 2 1 device Tesla T4
+ 5.5494704246521 2 1 device Tesla T4
+ 60%|██████    | 156/258 [04:15<02:55,  1.72s/it, acc=0.268, current_step=155, epoch=0, length=512, lr=5.88e-5, out_loss=tensor(5.2942, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.55]train_step 0 156 156 device
+out_loss 4.711883544921875 device cuda:1
+out_loss 4.711883544921875 device Tesla T4
+out_loss 4.547104835510254 device cuda:0
+out_loss 4.547104835510254 device Tesla T4
+get_metric:get_metric: 4.6294941902160645 2 1 device Tesla T4
+ 4.6294941902160645 2 1 device Tesla T4
+ 61%|██████    | 157/258 [04:17<02:53,  1.72s/it, acc=0.321, current_step=156, epoch=0, length=512, lr=5.84e-5, out_loss=tensor(4.5471, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.63]train_step 0 157 157 device
+out_loss 5.159629821777344 device cuda:1
+out_loss 5.159629821777344 device Tesla T4
+out_loss 5.109520435333252 device cuda:0
+out_loss 5.109520435333252 device Tesla T4
+get_metric:get_metric: 5.134574890136719 2 1 device Tesla T4
+ 5.134574890136719 2 1 device Tesla T4
+ 61%|██████    | 158/258 [04:19<02:51,  1.71s/it, acc=0.277, current_step=157, epoch=0, length=512, lr=5.79e-5, out_loss=tensor(5.1095, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.13]train_step 0 158 158 device
+out_loss 5.043682098388672 device cuda:1
+out_loss 5.043682098388672 device Tesla T4
+out_loss 4.94468879699707 device cuda:0
+out_loss 4.94468879699707 device Tesla T4
+get_metric:get_metric: 4.994185447692871 2 1 device Tesla T4
+ 4.994185447692871 2 1 device Tesla T4
+ 62%|██████▏   | 159/258 [04:20<02:50,  1.72s/it, acc=0.301, current_step=158, epoch=0, length=512, lr=5.75e-5, out_loss=tensor(4.9447, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.99]train_step 0 159 159 device
+out_loss 4.755738258361816 device cuda:1
+out_loss 4.755738258361816 device Tesla T4
+out_loss 5.837751388549805 device cuda:0
+out_loss 5.837751388549805 device Tesla T4
+get_metric:get_metric: 5.2967448234558105 2 1 device Tesla T4
+ 5.2967448234558105 2 1 device Tesla T4
+ 62%|██████▏   | 160/258 [04:22<02:48,  1.72s/it, acc=0.27, current_step=159, epoch=0, length=512, lr=5.7e-5, out_loss=tensor(5.8378, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.3]train_step 0 160 160 device
+out_loss 5.404973030090332 device cuda:1
+out_loss 5.404973030090332 device Tesla T4
+out_loss 5.461916446685791 device cuda:0
+out_loss 5.461916446685791 device Tesla T4
+get_metric:get_metric: 5.433444976806641 2 1 device Tesla T4
+ 5.433444976806641 2 1 device Tesla T4
+ 62%|██████▏   | 161/258 [04:24<02:47,  1.72s/it, acc=0.268, current_step=160, epoch=0, length=512, lr=5.66e-5, out_loss=tensor(5.4619, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.43]train_step 0 161 161 device
+out_loss 4.667423248291016 device cuda:1
+out_loss 4.667423248291016 device Tesla T4
+out_loss 5.188089847564697 device cuda:0
+out_loss 5.188089847564697 device Tesla T4
+get_metric:get_metric: 4.927756309509277 2 1 device Tesla T4
+ 4.927756309509277 2 1 device Tesla T4
+ 63%|██████▎   | 162/258 [04:25<02:44,  1.72s/it, acc=0.342, current_step=161, epoch=0, length=512, lr=5.61e-5, out_loss=tensor(5.1881, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.93]train_step 0 162 162 device
+out_loss 5.06613302230835 device cuda:1
+out_loss 5.06613302230835 device Tesla T4
+out_loss 4.737185478210449 device cuda:0
+out_loss 4.737185478210449 device Tesla T4
+get_metric:get_metric: 4.90165901184082 2 1 device Tesla T4
+ 4.90165901184082 2 1 device Tesla T4
+ 63%|██████▎   | 163/258 [04:27<02:43,  1.72s/it, acc=0.311, current_step=162, epoch=0, length=512, lr=5.57e-5, out_loss=tensor(4.7372, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.9]train_step 0 163 163 device
+out_loss 5.03217077255249 device cuda:1
+out_loss 5.03217077255249 device Tesla T4
+out_loss 4.838260173797607 device cuda:0
+out_loss 4.838260173797607 device Tesla T4
+get_metric:get_metric: 4.935215473175049 2 1 device Tesla T4
+ 4.935215473175049 2 1 device Tesla T4
+ 64%|██████▎   | 164/258 [04:29<02:41,  1.72s/it, acc=0.324, current_step=163, epoch=0, length=512, lr=5.52e-5, out_loss=tensor(4.8383, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.93]train_step 0 164 164 device
+out_loss 5.199967384338379 device cuda:1
+out_loss 5.199967384338379 device Tesla T4
+out_loss 5.455438613891602 device cuda:0
+out_loss 5.455438613891602 device Tesla T4
+get_metric:get_metric: 5.32770299911499 2 1 device Tesla T4
+ 5.32770299911499 2 1 device Tesla T4
+ 64%|██████▍   | 165/258 [04:31<02:39,  1.71s/it, acc=0.269, current_step=164, epoch=0, length=512, lr=5.48e-5, out_loss=tensor(5.4554, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.33]train_step 0 165 165 device
+out_loss 5.504653453826904 device cuda:1
+out_loss 5.504653453826904 device Tesla T4
+out_loss 5.340154647827148 device cuda:0
+out_loss 5.340154647827148 device Tesla T4
+get_metric:get_metric: 5.4224042892456055 2 1 device Tesla T4
+ 5.4224042892456055 2 1 device Tesla T4
+ 64%|██████▍   | 166/258 [04:32<02:37,  1.72s/it, acc=0.296, current_step=165, epoch=0, length=512, lr=5.43e-5, out_loss=tensor(5.3402, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.42]train_step 0 166 166 device
+out_loss 5.012353420257568 device cuda:1
+out_loss 5.012353420257568 device Tesla T4
+out_loss 4.936611175537109 device cuda:0
+out_loss 4.936611175537109 device Tesla T4
+get_metric:get_metric: 4.974482536315918 2 1 device Tesla T4
+ 4.974482536315918 2 1 device Tesla T4
+ 65%|██████▍   | 167/258 [04:34<02:35,  1.71s/it, acc=0.347, current_step=166, epoch=0, length=512, lr=5.39e-5, out_loss=tensor(4.9366, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.97]train_step 0 167 167 device
+out_loss 6.441916465759277 device cuda:1
+out_loss 6.441916465759277 device Tesla T4
+out_loss 6.286072254180908 device cuda:0
+out_loss 6.286072254180908 device Tesla T4
+get_metric:get_metric: 6.363994598388672 2 1 device Tesla T4
+ 6.363994598388672 2 1 device Tesla T4
+ 65%|██████▌   | 168/258 [04:36<02:34,  1.71s/it, acc=0.233, current_step=167, epoch=0, length=512, lr=5.34e-5, out_loss=tensor(6.2861, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=6.36]train_step 0 168 168 device
+out_loss 4.9930806159973145 device cuda:1
+out_loss 4.9930806159973145 device Tesla T4
+out_loss 4.773875713348389 device cuda:0
+out_loss 4.773875713348389 device Tesla T4
+get_metric:get_metric: 4.883478164672852 2 1 device Tesla T4
+ 4.883478164672852 2 1 device Tesla T4
+ 66%|██████▌   | 169/258 [04:37<02:32,  1.71s/it, acc=0.325, current_step=168, epoch=0, length=512, lr=5.3e-5, out_loss=tensor(4.7739, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.88]train_step 0 169 169 device
+out_loss 5.6496052742004395 device cuda:1
+out_loss 5.6496052742004395 device Tesla T4
+out_loss 4.498690128326416 device cuda:0
+out_loss 4.498690128326416 device Tesla T4
+get_metric:get_metric: 5.074147701263428 2 1 device Tesla T4
+ 5.074147701263428 2 1 device Tesla T4
+ 66%|██████▌   | 170/258 [04:39<02:30,  1.71s/it, acc=0.296, current_step=169, epoch=0, length=512, lr=5.25e-5, out_loss=tensor(4.4987, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.07]train_step 0 170 170 device
+out_loss 5.295886039733887 device cuda:1
+out_loss 5.295886039733887 device Tesla T4
+out_loss 5.033056259155273 device cuda:0
+out_loss 5.033056259155273 device Tesla T4
+get_metric:get_metric: 5.16447114944458 2 1 device Tesla T4
+ 5.16447114944458 2 1 device Tesla T4
+ 66%|██████▋   | 171/258 [04:41<02:28,  1.70s/it, acc=0.302, current_step=170, epoch=0, length=512, lr=5.2e-5, out_loss=tensor(5.0331, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.16]train_step 0 171 171 device
+out_loss 4.409075736999512 device cuda:1
+out_loss 4.409075736999512 device Tesla T4
+out_loss 5.440861701965332 device cuda:0
+out_loss 5.440861701965332 device Tesla T4
+get_metric:get_metric: 4.924968719482422 2 1 device Tesla T4
+ 4.924968719482422 2 1 device Tesla T4
+ 67%|██████▋   | 172/258 [04:42<02:26,  1.70s/it, acc=0.324, current_step=171, epoch=0, length=512, lr=5.16e-5, out_loss=tensor(5.4409, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.92]train_step 0 172 172 device
+out_loss 5.602965831756592 device cuda:1
+out_loss 5.602965831756592 device Tesla T4
+out_loss 4.626815319061279 device cuda:0
+out_loss 4.626815319061279 device Tesla T4
+get_metric:get_metric: 5.1148905754089355 2 1 device Tesla T4
+ 5.1148905754089355 2 1 device Tesla T4
+ 67%|██████▋   | 173/258 [04:44<02:24,  1.71s/it, acc=0.296, current_step=172, epoch=0, length=512, lr=5.11e-5, out_loss=tensor(4.6268, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.12]train_step 0 173 173 device
+out_loss 4.430092811584473 device cuda:1
+out_loss 4.430092811584473 device Tesla T4
+out_loss 4.172353744506836 device cuda:0
+out_loss 4.172353744506836 device Tesla T4
+get_metric:get_metric: 4.301223278045654 2 1 device Tesla T4
+ 4.301223278045654 2 1 device Tesla T4
+ 67%|██████▋   | 174/258 [04:46<02:23,  1.71s/it, acc=0.378, current_step=173, epoch=0, length=512, lr=5.07e-5, out_loss=tensor(4.1724, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.3]train_step 0 174 174 device
+out_loss 5.2869439125061035 device cuda:1
+out_loss 5.2869439125061035 device Tesla T4
+out_loss 4.127774715423584 device cuda:0
+out_loss 4.127774715423584 device Tesla T4
+get_metric:get_metric: 4.707359313964844 2 1 device Tesla T4
+ 4.707359313964844 2 1 device Tesla T4
+ 68%|██████▊   | 175/258 [04:48<02:21,  1.71s/it, acc=0.312, current_step=174, epoch=0, length=512, lr=5.02e-5, out_loss=tensor(4.1278, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.71]train_step 0 175 175 device
+out_loss 5.038549423217773 device cuda:1
+out_loss 5.038549423217773 device Tesla T4
+out_loss 5.394044399261475 device cuda:0
+out_loss 5.394044399261475 device Tesla T4
+get_metric:get_metric: 5.216297149658203 2 1 device Tesla T4
+ 5.216297149658203 2 1 device Tesla T4
+ 68%|██████▊   | 176/258 [04:49<02:19,  1.71s/it, acc=0.272, current_step=175, epoch=0, length=512, lr=4.98e-5, out_loss=tensor(5.3940, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.22]train_step 0 176 176 device
+out_loss 5.118553638458252 device cuda:1
+out_loss 5.118553638458252 device Tesla T4
+out_loss 4.926846981048584 device cuda:0
+out_loss 4.926846981048584 device Tesla T4
+get_metric:get_metric: 5.022700309753418 2 1 device Tesla T4
+ 5.022700309753418 2 1 device Tesla T4
+ 69%|██████▊   | 177/258 [04:51<02:18,  1.71s/it, acc=0.302, current_step=176, epoch=0, length=512, lr=4.93e-5, out_loss=tensor(4.9268, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.02]train_step 0 177 177 device
+out_loss 4.3407301902771 device cuda:1
+out_loss 4.3407301902771 device Tesla T4
+out_loss 3.569819450378418 device cuda:0
+out_loss 3.569819450378418 device Tesla T4
+get_metric:get_metric: 3.955274820327759 2 1 device Tesla T4
+ 3.955274820327759 2 1 device Tesla T4
+ 69%|██████▉   | 178/258 [04:53<02:16,  1.71s/it, acc=0.365, current_step=177, epoch=0, length=512, lr=4.89e-5, out_loss=tensor(3.5698, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.96]train_step 0 178 178 device
+out_loss 6.139566421508789 device cuda:1
+out_loss 6.139566421508789 device Tesla T4
+out_loss 5.1096086502075195 device cuda:0
+out_loss 5.1096086502075195 device Tesla T4
+get_metric: 5.624587535858154get_metric: 2 1 device Tesla T4
+ 5.624587535858154 2 1 device Tesla T4
+ 69%|██████▉   | 179/258 [04:54<02:14,  1.71s/it, acc=0.255, current_step=178, epoch=0, length=512, lr=4.84e-5, out_loss=tensor(5.1096, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.62]train_step 0 179 179 device
+out_loss 4.115909099578857 device cuda:1
+out_loss 4.115909099578857 device Tesla T4
+out_loss 5.836349964141846 device cuda:0
+out_loss 5.836349964141846 device Tesla T4
+get_metric:get_metric: 4.976129531860352 2 1 device Tesla T4
+ 4.976129531860352 2 1 device Tesla T4
+ 70%|██████▉   | 180/258 [04:56<02:13,  1.71s/it, acc=0.308, current_step=179, epoch=0, length=512, lr=4.8e-5, out_loss=tensor(5.8363, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.98]train_step 0 180 180 device
+out_loss 4.779841423034668 device cuda:1
+out_loss 4.779841423034668 device Tesla T4
+out_loss 5.110009670257568 device cuda:0
+out_loss 5.110009670257568 device Tesla T4
+get_metric: 4.944925308227539get_metric: 2 1 device Tesla T4
+ 4.944925308227539 2 1 device Tesla T4
+ 70%|███████   | 181/258 [04:58<02:11,  1.71s/it, acc=0.333, current_step=180, epoch=0, length=512, lr=4.75e-5, out_loss=tensor(5.1100, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.95]train_step 0 181 181 device
+out_loss 4.18297815322876 device cuda:1
+out_loss 4.18297815322876 device Tesla T4
+out_loss 4.877486228942871 device cuda:0
+out_loss 4.877486228942871 device Tesla T4
+get_metric:get_metric: 4.5302324295043945 2 1 device Tesla T4
+ 4.5302324295043945 2 1 device Tesla T4
+ 71%|███████   | 182/258 [05:00<02:09,  1.71s/it, acc=0.366, current_step=181, epoch=0, length=512, lr=4.7e-5, out_loss=tensor(4.8775, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.53]train_step 0 182 182 device
+out_loss 5.488582134246826 device cuda:1
+out_loss 5.488582134246826 device Tesla T4
+out_loss 5.401006698608398 device cuda:0
+out_loss 5.401006698608398 device Tesla T4
+get_metric:get_metric: 5.444794654846191 2 1 device Tesla T4
+ 5.444794654846191 2 1 device Tesla T4
+ 71%|███████   | 183/258 [05:01<02:08,  1.71s/it, acc=0.266, current_step=182, epoch=0, length=512, lr=4.66e-5, out_loss=tensor(5.4010, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.45]train_step 0 183 183 device
+out_loss 5.180142402648926 device cuda:1
+out_loss 5.180142402648926 device Tesla T4
+out_loss 5.009968280792236 device cuda:0
+out_loss 5.009968280792236 device Tesla T4
+get_metric:get_metric: 5.09505558013916 2 1 device Tesla T4
+ 5.09505558013916 2 1 device Tesla T4
+ 71%|███████▏  | 184/258 [05:03<02:06,  1.71s/it, acc=0.294, current_step=183, epoch=0, length=512, lr=4.61e-5, out_loss=tensor(5.0100, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.09]train_step 0 184 184 device
+out_loss 5.242830753326416 device cuda:1
+out_loss 5.242830753326416 device Tesla T4
+out_loss 5.617310523986816 device cuda:0
+out_loss 5.617310523986816 device Tesla T4
+get_metric:get_metric: 5.430070877075195 2 1 device Tesla T4
+ 5.430070877075195 2 1 device Tesla T4
+ 72%|███████▏  | 185/258 [05:05<02:04,  1.70s/it, acc=0.32, current_step=184, epoch=0, length=512, lr=4.57e-5, out_loss=tensor(5.6173, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.43]train_step 0 185 185 device
+out_loss 4.920032501220703 device cuda:1
+out_loss 4.920032501220703 device Tesla T4
+out_loss 4.507277965545654 device cuda:0
+out_loss 4.507277965545654 device Tesla T4
+get_metric:get_metric: 4.713655471801758 2 1 device Tesla T4
+ 4.713655471801758 2 1 device Tesla T4
+ 72%|███████▏  | 186/258 [05:06<02:02,  1.70s/it, acc=0.335, current_step=185, epoch=0, length=512, lr=4.52e-5, out_loss=tensor(4.5073, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.71]train_step 0 186 186 device
+out_loss 4.600950717926025 device cuda:1
+out_loss 4.600950717926025 device Tesla T4
+out_loss 5.588953018188477 device cuda:0
+out_loss 5.588953018188477 device Tesla T4
+get_metric:get_metric: 5.094951629638672 2 1 device Tesla T4
+ 5.094951629638672 2 1 device Tesla T4
+ 72%|███████▏  | 187/258 [05:08<02:00,  1.70s/it, acc=0.308, current_step=186, epoch=0, length=512, lr=4.48e-5, out_loss=tensor(5.5890, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.09]train_step 0 187 187 device
+out_loss 4.699361324310303 device cuda:1
+out_loss 4.699361324310303 device Tesla T4
+out_loss 3.8660130500793457 device cuda:0
+out_loss 3.8660130500793457 device Tesla T4
+get_metric:get_metric: 4.282687187194824 2 1 device Tesla T4
+ 4.282687187194824 2 1 device Tesla T4
+ 73%|███████▎  | 188/258 [05:10<01:59,  1.70s/it, acc=0.331, current_step=187, epoch=0, length=512, lr=4.43e-5, out_loss=tensor(3.8660, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.28]train_step 0 188 188 device
+out_loss 5.207466125488281 device cuda:1
+out_loss 5.207466125488281 device Tesla T4
+out_loss 5.683538913726807 device cuda:0
+out_loss 5.683538913726807 device Tesla T4
+get_metric:get_metric: 5.445502281188965 2 1 device Tesla T4
+ 5.445502281188965 2 1 device Tesla T4
+ 73%|███████▎  | 189/258 [05:12<01:57,  1.70s/it, acc=0.23, current_step=188, epoch=0, length=512, lr=4.39e-5, out_loss=tensor(5.6835, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.45]train_step 0 189 189 device
+out_loss 4.391761302947998 device cuda:1
+out_loss 4.391761302947998 device Tesla T4
+out_loss 5.514140605926514 device cuda:0
+out_loss 5.514140605926514 device Tesla T4
+get_metric:get_metric: 4.952950954437256 2 1 device Tesla T4
+ 4.952950954437256 2 1 device Tesla T4
+ 74%|███████▎  | 190/258 [05:13<01:56,  1.71s/it, acc=0.318, current_step=189, epoch=0, length=512, lr=4.34e-5, out_loss=tensor(5.5141, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.95]train_step 0 190 190 device
+out_loss 4.739726543426514 device cuda:1
+out_loss 4.739726543426514 device Tesla T4
+out_loss 4.074928283691406 device cuda:0
+out_loss 4.074928283691406 device Tesla T4
+get_metric:get_metric: 4.407327651977539 2 1 device Tesla T4
+ 4.407327651977539 2 1 device Tesla T4
+ 74%|███████▍  | 191/258 [05:15<01:54,  1.71s/it, acc=0.339, current_step=190, epoch=0, length=512, lr=4.3e-5, out_loss=tensor(4.0749, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.41]train_step 0 191 191 device
+out_loss 5.204841136932373 device cuda:1
+out_loss 5.204841136932373 device Tesla T4
+out_loss 5.154909610748291 device cuda:0
+out_loss 5.154909610748291 device Tesla T4
+get_metric:get_metric: 5.179875373840332 2 1 device Tesla T4
+ 5.179875373840332 2 1 device Tesla T4
+ 74%|███████▍  | 192/258 [05:17<01:52,  1.70s/it, acc=0.327, current_step=191, epoch=0, length=512, lr=4.25e-5, out_loss=tensor(5.1549, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.18]train_step 0 192 192 device
+out_loss 4.847067356109619 device cuda:1
+out_loss 4.847067356109619 device Tesla T4
+out_loss 4.4776411056518555 device cuda:0
+out_loss 4.4776411056518555 device Tesla T4
+get_metric:get_metric: 4.662354469299316 2 1 device Tesla T4
+ 4.662354469299316 2 1 device Tesla T4
+ 75%|███████▍  | 193/258 [05:18<01:50,  1.70s/it, acc=0.347, current_step=192, epoch=0, length=512, lr=4.21e-5, out_loss=tensor(4.4776, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.66]train_step 0 193 193 device
+out_loss 4.857603549957275 device cuda:1
+out_loss 4.857603549957275 device Tesla T4
+out_loss 5.277249336242676 device cuda:0
+out_loss 5.277249336242676 device Tesla T4
+get_metric:get_metric: 5.067426681518555 2 1 device Tesla T4
+ 5.067426681518555 2 1 device Tesla T4
+ 75%|███████▌  | 194/258 [05:20<01:49,  1.71s/it, acc=0.302, current_step=193, epoch=0, length=512, lr=4.16e-5, out_loss=tensor(5.2772, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.07]train_step 0 194 194 device
+out_loss 5.255659103393555 device cuda:1
+out_loss 5.255659103393555 device Tesla T4
+out_loss 4.723793983459473 device cuda:0
+out_loss 4.723793983459473 device Tesla T4
+get_metric:get_metric: 4.989726543426514 2 1 device Tesla T4
+ 4.989726543426514 2 1 device Tesla T4
+ 76%|███████▌  | 195/258 [05:22<01:47,  1.71s/it, acc=0.304, current_step=194, epoch=0, length=512, lr=4.12e-5, out_loss=tensor(4.7238, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.99]train_step 0 195 195 device
+out_loss 4.81353759765625 device cuda:1
+out_loss 4.81353759765625 device Tesla T4
+out_loss 5.2776689529418945 device cuda:0
+out_loss 5.2776689529418945 device Tesla T4
+get_metric:get_metric: 5.045603275299072 2 1 device Tesla T4
+ 5.045603275299072 2 1 device Tesla T4
+ 76%|███████▌  | 196/258 [05:23<01:45,  1.70s/it, acc=0.32, current_step=195, epoch=0, length=512, lr=4.07e-5, out_loss=tensor(5.2777, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.05]train_step 0 196 196 device
+out_loss 4.974471569061279 device cuda:1
+out_loss 4.974471569061279 device Tesla T4
+out_loss 4.916101932525635 device cuda:0
+out_loss 4.916101932525635 device Tesla T4
+get_metric: 4.945286750793457 2 1get_metric: device Tesla T4
+ 4.945286750793457 2 1 device Tesla T4
+ 76%|███████▋  | 197/258 [05:25<01:44,  1.71s/it, acc=0.313, current_step=196, epoch=0, length=512, lr=4.03e-5, out_loss=tensor(4.9161, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.95]train_step 0 197 197 device
+out_loss 4.270740985870361 device cuda:1
+out_loss 4.270740985870361 device Tesla T4
+out_loss 5.3358049392700195 device cuda:0
+out_loss 5.3358049392700195 device Tesla T4
+get_metric: 4.8032732009887695get_metric: 2 1 device Tesla T4
+ 4.8032732009887695 2 1 device Tesla T4
+ 77%|███████▋  | 198/258 [05:27<01:42,  1.71s/it, acc=0.29, current_step=197, epoch=0, length=512, lr=3.98e-5, out_loss=tensor(5.3358, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.8]train_step 0 198 198 device
+out_loss 4.840227127075195 device cuda:1
+out_loss 4.840227127075195 device Tesla T4
+out_loss 5.703913688659668 device cuda:0
+out_loss 5.703913688659668 device Tesla T4
+get_metric:get_metric: 5.272070407867432 2 1 device Tesla T4
+ 5.272070407867432 2 1 device Tesla T4
+ 77%|███████▋  | 199/258 [05:29<01:41,  1.71s/it, acc=0.285, current_step=198, epoch=0, length=512, lr=3.94e-5, out_loss=tensor(5.7039, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.27]train_step 0 199 199 device
+out_loss 5.16607141494751 device cuda:1
+out_loss 5.16607141494751 device Tesla T4
+out_loss 4.848644256591797 device cuda:0
+out_loss 4.848644256591797 device Tesla T4
+get_metric:get_metric: 5.007357597351074 2 1 device Tesla T4
+ 5.007357597351074 2 1 device Tesla T4
+ 78%|███████▊  | 200/258 [05:30<01:39,  1.71s/it, acc=0.334, current_step=199, epoch=0, length=512, lr=3.89e-5, out_loss=tensor(4.8486, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.01]train_step 0 200 200 device
+out_loss 5.430368900299072 device cuda:1
+out_loss 5.430368900299072 device Tesla T4
+out_loss 4.3714704513549805 device cuda:0
+out_loss 4.3714704513549805 device Tesla T4
+get_metric:get_metric: 4.9009199142456055 2 1 device Tesla T4
+ 4.9009199142456055 2 1 device Tesla T4
+ 78%|███████▊  | 201/258 [05:32<01:37,  1.71s/it, acc=0.356, current_step=200, epoch=0, length=512, lr=3.85e-5, out_loss=tensor(4.3715, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.9]train_step 0 201 201 device
+out_loss 4.949028015136719 device cuda:1
+out_loss 4.949028015136719 device Tesla T4
+out_loss 5.133908748626709 device cuda:0
+out_loss 5.133908748626709 device Tesla T4
+get_metric:get_metric: 5.041468620300293 2 1 device Tesla T4
+ 5.041468620300293 2 1 device Tesla T4
+ 78%|███████▊  | 202/258 [05:34<01:35,  1.71s/it, acc=0.275, current_step=201, epoch=0, length=512, lr=3.81e-5, out_loss=tensor(5.1339, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.04]train_step 0 202 202 device
+out_loss 5.145293235778809 device cuda:1
+out_loss 5.145293235778809 device Tesla T4
+out_loss 4.895681381225586 device cuda:0
+out_loss 4.895681381225586 device Tesla T4
+get_metric:get_metric: 5.020487308502197 2 1 device Tesla T4
+ 5.020487308502197 2 1 device Tesla T4
+ 79%|███████▊  | 203/258 [05:35<01:33,  1.71s/it, acc=0.32, current_step=202, epoch=0, length=512, lr=3.76e-5, out_loss=tensor(4.8957, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.02]train_step 0 203 203 device
+out_loss 4.408824920654297 device cuda:1
+out_loss 4.408824920654297 device Tesla T4
+out_loss 5.46676778793335 device cuda:0
+out_loss 5.46676778793335 device Tesla T4
+get_metric:get_metric: 4.937796592712402 2 1 device Tesla T4
+ 4.937796592712402 2 1 device Tesla T4
+ 79%|███████▉  | 204/258 [05:37<01:32,  1.71s/it, acc=0.298, current_step=203, epoch=0, length=512, lr=3.72e-5, out_loss=tensor(5.4668, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.94]train_step 0 204 204 device
+out_loss 6.028965950012207 device cuda:1
+out_loss 6.028965950012207 device Tesla T4
+out_loss 4.862562656402588 device cuda:0
+out_loss 4.862562656402588 device Tesla T4
+get_metric:get_metric: 5.445764541625977 2 1 device Tesla T4
+ 5.445764541625977 2 1 device Tesla T4
+ 79%|███████▉  | 205/258 [05:39<01:30,  1.71s/it, acc=0.293, current_step=204, epoch=0, length=512, lr=3.67e-5, out_loss=tensor(4.8626, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.45]train_step 0 205 205 device
+out_loss 4.827989101409912 device cuda:1
+out_loss 4.827989101409912 device Tesla T4
+out_loss 5.267574310302734 device cuda:0
+out_loss 5.267574310302734 device Tesla T4
+get_metric:get_metric: 5.047781944274902 2 1 device Tesla T4
+ 5.047781944274902 2 1 device Tesla T4
+ 80%|███████▉  | 206/258 [05:41<01:28,  1.71s/it, acc=0.311, current_step=205, epoch=0, length=512, lr=3.63e-5, out_loss=tensor(5.2676, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.05]train_step 0 206 206 device
+out_loss 5.266294002532959 device cuda:1
+out_loss 5.266294002532959 device Tesla T4
+out_loss 5.321226596832275 device cuda:0
+out_loss 5.321226596832275 device Tesla T4
+get_metric:get_metric: 5.293760299682617 2 1 device Tesla T4
+ 5.293760299682617 2 1 device Tesla T4
+ 80%|████████  | 207/258 [05:42<01:27,  1.71s/it, acc=0.247, current_step=206, epoch=0, length=512, lr=3.59e-5, out_loss=tensor(5.3212, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.29]train_step 0 207 207 device
+out_loss 4.424341678619385 device cuda:1
+out_loss 4.424341678619385 device Tesla T4
+out_loss 4.6370015144348145 device cuda:0
+out_loss 4.6370015144348145 device Tesla T4
+get_metric:get_metric: 4.5306715965271 2 1 device Tesla T4
+ 4.5306715965271 2 1 device Tesla T4
+ 81%|████████  | 208/258 [05:44<01:25,  1.70s/it, acc=0.336, current_step=207, epoch=0, length=512, lr=3.54e-5, out_loss=tensor(4.6370, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.53]train_step 0 208 208 device
+out_loss 4.7182183265686035 device cuda:1
+out_loss 4.7182183265686035 device Tesla T4
+out_loss 4.391254425048828 device cuda:0
+out_loss 4.391254425048828 device Tesla T4
+get_metric:get_metric:  4.554736137390137 2 1 device Tesla T4
+4.554736137390137 2 1 device Tesla T4
+ 81%|████████  | 209/258 [05:46<01:23,  1.70s/it, acc=0.308, current_step=208, epoch=0, length=512, lr=3.5e-5, out_loss=tensor(4.3913, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.55]train_step 0 209 209 device
+out_loss 5.51819372177124 device cuda:1
+out_loss 5.51819372177124 device Tesla T4
+out_loss 4.532939434051514 device cuda:0
+out_loss 4.532939434051514 device Tesla T4
+get_metric:get_metric: 5.025566577911377 2 1 device Tesla T4
+ 5.025566577911377 2 1 device Tesla T4
+ 81%|████████▏ | 210/258 [05:47<01:21,  1.71s/it, acc=0.29, current_step=209, epoch=0, length=512, lr=3.45e-5, out_loss=tensor(4.5329, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.03]train_step 0 210 210 device
+out_loss 4.494800090789795 device cuda:1
+out_loss 4.494800090789795 device Tesla T4
+out_loss 5.202030658721924 device cuda:0
+out_loss 5.202030658721924 device Tesla T4
+get_metric: 4.848415374755859 get_metric:2 1 device Tesla T4
+ 4.848415374755859 2 1 device Tesla T4
+ 82%|████████▏ | 211/258 [05:49<01:20,  1.70s/it, acc=0.329, current_step=210, epoch=0, length=512, lr=3.41e-5, out_loss=tensor(5.2020, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.85]train_step 0 211 211 device
+out_loss 4.548952579498291 device cuda:1
+out_loss 4.548952579498291 device Tesla T4
+out_loss 4.715697288513184 device cuda:0
+out_loss 4.715697288513184 device Tesla T4
+get_metric:get_metric: 4.632325172424316 2 1 device Tesla T4
+ 4.632325172424316 2 1 device Tesla T4
+ 82%|████████▏ | 212/258 [05:51<01:18,  1.70s/it, acc=0.335, current_step=211, epoch=0, length=512, lr=3.37e-5, out_loss=tensor(4.7157, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.63]train_step 0 212 212 device
+out_loss 4.457032203674316 device cuda:1
+out_loss 4.457032203674316 device Tesla T4
+out_loss 5.360776901245117 device cuda:0
+out_loss 5.360776901245117 device Tesla T4
+get_metric:get_metric: 4.908904552459717 2 1 device Tesla T4
+ 4.908904552459717 2 1 device Tesla T4
+ 83%|████████▎ | 213/258 [05:52<01:16,  1.70s/it, acc=0.332, current_step=212, epoch=0, length=512, lr=3.33e-5, out_loss=tensor(5.3608, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.91]train_step 0 213 213 device
+out_loss 3.3483033180236816 device cuda:1
+out_loss 3.3483033180236816 device Tesla T4
+out_loss 3.8744943141937256 device cuda:0
+out_loss 3.8744943141937256 device Tesla T4
+get_metric:get_metric: 3.611398696899414 2 1 device Tesla T4
+ 3.611398696899414 2 1 device Tesla T4
+ 83%|████████▎ | 214/258 [05:54<01:14,  1.70s/it, acc=0.438, current_step=213, epoch=0, length=512, lr=3.28e-5, out_loss=tensor(3.8745, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.61]train_step 0 214 214 device
+out_loss 4.852868556976318 device cuda:1
+out_loss 4.852868556976318 device Tesla T4
+out_loss 3.1951816082000732 device cuda:0
+out_loss 3.1951816082000732 device Tesla T4
+get_metric:get_metric: 4.024024963378906 2 1 device Tesla T4
+ 4.024024963378906 2 1 device Tesla T4
+ 83%|████████▎ | 215/258 [05:56<01:13,  1.70s/it, acc=0.387, current_step=214, epoch=0, length=512, lr=3.24e-5, out_loss=tensor(3.1952, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.02]train_step 0 215 215 device
+out_loss 4.648407459259033 device cuda:1
+out_loss 4.648407459259033 device Tesla T4
+out_loss 4.506634712219238 device cuda:0
+out_loss 4.506634712219238 device Tesla T4
+get_metric:get_metric: 4.577521324157715 2 1 device Tesla T4
+ 4.577521324157715 2 1 device Tesla T4
+ 84%|████████▎ | 216/258 [05:58<01:11,  1.70s/it, acc=0.354, current_step=215, epoch=0, length=512, lr=3.2e-5, out_loss=tensor(4.5066, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.58]train_step 0 216 216 device
+out_loss 4.529181480407715 device cuda:1
+out_loss 4.529181480407715 device Tesla T4
+out_loss 4.403140544891357 device cuda:0
+out_loss 4.403140544891357 device Tesla T4
+get_metric:get_metric: 4.466160774230957 2 1 device Tesla T4
+ 4.466160774230957 2 1 device Tesla T4
+ 84%|████████▍ | 217/258 [05:59<01:09,  1.71s/it, acc=0.327, current_step=216, epoch=0, length=512, lr=3.16e-5, out_loss=tensor(4.4031, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.47]train_step 0 217 217 device
+out_loss 5.096174716949463 device cuda:1
+out_loss 5.096174716949463 device Tesla T4
+out_loss 4.227428436279297 device cuda:0
+out_loss 4.227428436279297 device Tesla T4
+get_metric:get_metric: 4.661801338195801 2 1 device Tesla T4
+ 4.661801338195801 2 1 device Tesla T4
+ 84%|████████▍ | 218/258 [06:01<01:08,  1.71s/it, acc=0.348, current_step=217, epoch=0, length=512, lr=3.11e-5, out_loss=tensor(4.2274, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.66]train_step 0 218 218 device
+out_loss 5.3378472328186035 device cuda:1
+out_loss 5.3378472328186035 device Tesla T4
+out_loss 5.372980117797852 device cuda:0
+out_loss 5.372980117797852 device Tesla T4
+get_metric:get_metric: 5.355413436889648 2 1 device Tesla T4
+ 5.355413436889648 2 1 device Tesla T4
+ 85%|████████▍ | 219/258 [06:03<01:06,  1.71s/it, acc=0.273, current_step=218, epoch=0, length=512, lr=3.07e-5, out_loss=tensor(5.3730, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.36]train_step 0 219 219 device
+out_loss 5.183014869689941 device cuda:1
+out_loss 5.183014869689941 device Tesla T4
+out_loss 4.925657272338867 device cuda:0
+out_loss 4.925657272338867 device Tesla T4
+get_metric:get_metric: 5.054336071014404 2 1 device Tesla T4
+ 5.054336071014404 2 1 device Tesla T4
+ 85%|████████▌ | 220/258 [06:04<01:04,  1.71s/it, acc=0.266, current_step=219, epoch=0, length=512, lr=3.03e-5, out_loss=tensor(4.9257, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.05]train_step 0 220 220 device
+out_loss 4.2987751960754395 device cuda:1
+out_loss 4.2987751960754395 device Tesla T4
+out_loss 4.487015724182129 device cuda:0
+out_loss 4.487015724182129 device Tesla T4
+get_metric:get_metric: 4.392895698547363 2 1 device Tesla T4
+ 4.392895698547363 2 1 device Tesla T4
+ 86%|████████▌ | 221/258 [06:06<01:03,  1.71s/it, acc=0.363, current_step=220, epoch=0, length=512, lr=2.99e-5, out_loss=tensor(4.4870, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.39]train_step 0 221 221 device
+out_loss 4.509523868560791 device cuda:1
+out_loss 4.509523868560791 device Tesla T4
+out_loss 4.541845321655273 device cuda:0
+out_loss 4.541845321655273 device Tesla T4
+get_metric:get_metric: 4.525684356689453 2 1 device Tesla T4
+ 4.525684356689453 2 1 device Tesla T4
+ 86%|████████▌ | 222/258 [06:08<01:01,  1.71s/it, acc=0.35, current_step=221, epoch=0, length=512, lr=2.95e-5, out_loss=tensor(4.5418, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.53]train_step 0 222 222 device
+out_loss 4.757040977478027 device cuda:1
+out_loss 4.757040977478027 device Tesla T4
+out_loss 3.876701593399048 device cuda:0
+out_loss 3.876701593399048 device Tesla T4
+get_metric:get_metric: 4.316871166229248 2 1 device Tesla T4
+ 4.316871166229248 2 1 device Tesla T4
+ 86%|████████▋ | 223/258 [06:10<00:59,  1.71s/it, acc=0.365, current_step=222, epoch=0, length=512, lr=2.9e-5, out_loss=tensor(3.8767, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.32]train_step 0 223 223 device
+out_loss 5.298552989959717 device cuda:1
+out_loss 5.298552989959717 device Tesla T4
+out_loss 4.287752151489258 device cuda:0
+out_loss 4.287752151489258 device Tesla T4
+get_metric:get_metric: 4.793152809143066 2 1 device Tesla T4
+ 4.793152809143066 2 1 device Tesla T4
+ 87%|████████▋ | 224/258 [06:11<00:58,  1.71s/it, acc=0.319, current_step=223, epoch=0, length=512, lr=2.86e-5, out_loss=tensor(4.2878, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.79]train_step 0 224 224 device
+out_loss 4.435047149658203 device cuda:1
+out_loss 4.435047149658203 device Tesla T4
+out_loss 4.067553997039795 device cuda:0
+out_loss 4.067553997039795 device Tesla T4
+get_metric:get_metric: 4.251300811767578 2 1 device Tesla T4
+ 4.251300811767578 2 1 device Tesla T4
+ 87%|████████▋ | 225/258 [06:13<00:56,  1.71s/it, acc=0.342, current_step=224, epoch=0, length=512, lr=2.82e-5, out_loss=tensor(4.0676, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.25]train_step 0 225 225 device
+out_loss 4.875263214111328 device cuda:1
+out_loss 4.875263214111328 device Tesla T4
+out_loss 3.853257179260254 device cuda:0
+out_loss 3.853257179260254 device Tesla T4
+get_metric:get_metric: 4.364260196685791 2 1 device Tesla T4
+ 4.364260196685791 2 1 device Tesla T4
+ 88%|████████▊ | 226/258 [06:15<00:54,  1.71s/it, acc=0.392, current_step=225, epoch=0, length=512, lr=2.78e-5, out_loss=tensor(3.8533, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.36]train_step 0 226 226 device
+out_loss 3.4676311016082764 device cuda:1
+out_loss 3.4676311016082764 device Tesla T4
+out_loss 5.034229755401611 device cuda:0
+out_loss 5.034229755401611 device Tesla T4
+get_metric:get_metric: 4.250930309295654 2 1 device Tesla T4
+ 4.250930309295654 2 1 device Tesla T4
+ 88%|████████▊ | 227/258 [06:16<00:52,  1.71s/it, acc=0.404, current_step=226, epoch=0, length=512, lr=2.74e-5, out_loss=tensor(5.0342, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.25]train_step 0 227 227 device
+out_loss 3.844055414199829 device cuda:1
+out_loss 3.844055414199829 device Tesla T4
+out_loss 4.096919536590576 device cuda:0
+out_loss 4.096919536590576 device Tesla T4
+get_metric:get_metric: 3.970487594604492 2 1 device Tesla T4
+ 3.970487594604492 2 1 device Tesla T4
+ 88%|████████▊ | 228/258 [06:18<00:51,  1.71s/it, acc=0.387, current_step=227, epoch=0, length=512, lr=2.7e-5, out_loss=tensor(4.0969, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.97]train_step 0 228 228 device
+out_loss 4.728178024291992 device cuda:1
+out_loss 4.728178024291992 device Tesla T4
+out_loss 4.752138137817383 device cuda:0
+out_loss 4.752138137817383 device Tesla T4
+get_metric:get_metric: 4.7401580810546875 2 1 device Tesla T4
+ 4.7401580810546875 2 1 device Tesla T4
+ 89%|████████▉ | 229/258 [06:20<00:49,  1.71s/it, acc=0.291, current_step=228, epoch=0, length=512, lr=2.66e-5, out_loss=tensor(4.7521, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.74]train_step 0 229 229 device
+out_loss 5.601953506469727 device cuda:1
+out_loss 5.601953506469727 device Tesla T4
+out_loss 4.25640869140625 device cuda:0
+out_loss 4.25640869140625 device Tesla T4
+get_metric:get_metric: 4.929181098937988 2 1 device Tesla T4
+ 4.929181098937988 2 1 device Tesla T4
+ 89%|████████▉ | 230/258 [06:22<00:47,  1.71s/it, acc=0.315, current_step=229, epoch=0, length=512, lr=2.62e-5, out_loss=tensor(4.2564, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.93]train_step 0 230 230 device
+out_loss 4.4496564865112305 device cuda:1
+out_loss 4.4496564865112305 device Tesla T4
+out_loss 5.1621599197387695 device cuda:0
+out_loss 5.1621599197387695 device Tesla T4
+get_metric:get_metric: 4.805908203125 2 1 device Tesla T4
+ 4.805908203125 2 1 device Tesla T4
+ 90%|████████▉ | 231/258 [06:23<00:46,  1.71s/it, acc=0.327, current_step=230, epoch=0, length=512, lr=2.58e-5, out_loss=tensor(5.1622, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.81]train_step 0 231 231 device
+out_loss 4.751506328582764 device cuda:1
+out_loss 4.751506328582764 device Tesla T4
+out_loss 4.114157676696777 device cuda:0
+out_loss 4.114157676696777 device Tesla T4
+get_metric:get_metric: 4.432831764221191 2 1 device Tesla T4
+ 4.432831764221191 2 1 device Tesla T4
+ 90%|████████▉ | 232/258 [06:25<00:44,  1.71s/it, acc=0.335, current_step=231, epoch=0, length=512, lr=2.54e-5, out_loss=tensor(4.1142, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.43]train_step 0 232 232 device
+out_loss 2.910205841064453 device cuda:1
+out_loss 2.910205841064453 device Tesla T4
+out_loss 4.672939777374268 device cuda:0
+out_loss 4.672939777374268 device Tesla T4
+get_metric:get_metric: 3.7915728092193604 2 1 device Tesla T4
+ 3.7915728092193604 2 1 device Tesla T4
+ 90%|█████████ | 233/258 [06:27<00:42,  1.72s/it, acc=0.372, current_step=232, epoch=0, length=512, lr=2.5e-5, out_loss=tensor(4.6729, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.79]train_step 0 233 233 device
+out_loss 5.233485221862793 device cuda:1
+out_loss 5.233485221862793 device Tesla T4
+out_loss 3.8408498764038086 device cuda:0
+out_loss 3.8408498764038086 device Tesla T4
+get_metric:get_metric: 4.537167549133301 2 1 device Tesla T4
+ 4.537167549133301 2 1 device Tesla T4
+ 91%|█████████ | 234/258 [06:28<00:41,  1.71s/it, acc=0.305, current_step=233, epoch=0, length=512, lr=2.46e-5, out_loss=tensor(3.8408, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.54]train_step 0 234 234 device
+out_loss 4.496402263641357 device cuda:1
+out_loss 4.496402263641357 device Tesla T4
+out_loss 2.0114474296569824 device cuda:0
+out_loss 2.0114474296569824 device Tesla T4
+get_metric:get_metric: 3.25392484664917 2 1 device Tesla T4
+ 3.25392484664917 2 1 device Tesla T4
+ 91%|█████████ | 235/258 [06:30<00:39,  1.71s/it, acc=0.451, current_step=234, epoch=0, length=512, lr=2.42e-5, out_loss=tensor(2.0114, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.25]train_step 0 235 235 device
+out_loss 3.901768207550049 device cuda:1
+out_loss 3.901768207550049 device Tesla T4
+out_loss 4.8350677490234375 device cuda:0
+out_loss 4.8350677490234375 device Tesla T4
+get_metric:get_metric: 4.368417739868164 2 1 device Tesla T4
+ 4.368417739868164 2 1 device Tesla T4
+ 91%|█████████▏| 236/258 [06:32<00:37,  1.71s/it, acc=0.344, current_step=235, epoch=0, length=512, lr=2.38e-5, out_loss=tensor(4.8351, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.37]train_step 0 236 236 device
+out_loss 4.5360307693481445 device cuda:1
+out_loss 4.5360307693481445 device Tesla T4
+out_loss 4.9593706130981445 device cuda:0
+out_loss 4.9593706130981445 device Tesla T4
+get_metric: 4.7477006912231445 2 1 device Tesla T4
+get_metric: 4.7477006912231445 2 1 device Tesla T4
+ 92%|█████████▏| 237/258 [06:34<00:35,  1.71s/it, acc=0.344, current_step=236, epoch=0, length=512, lr=2.34e-5, out_loss=tensor(4.9594, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.75]train_step 0 237 237 device
+out_loss 5.119750022888184 device cuda:1
+out_loss 5.119750022888184 device Tesla T4
+out_loss 4.116585731506348 device cuda:0
+out_loss 4.116585731506348 device Tesla T4
+get_metric:get_metric: 4.618167877197266 2 1 device Tesla T4
+ 4.618167877197266 2 1 device Tesla T4
+ 92%|█████████▏| 238/258 [06:35<00:34,  1.71s/it, acc=0.312, current_step=237, epoch=0, length=512, lr=2.31e-5, out_loss=tensor(4.1166, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.62]train_step 0 238 238 device
+out_loss 5.054324150085449 device cuda:1
+out_loss 5.054324150085449 device Tesla T4
+out_loss 5.01515007019043 device cuda:0
+out_loss 5.01515007019043 device Tesla T4
+get_metric:get_metric: 5.0347371101379395 2 1 device Tesla T4
+ 5.0347371101379395 2 1 device Tesla T4
+ 93%|█████████▎| 239/258 [06:37<00:32,  1.71s/it, acc=0.324, current_step=238, epoch=0, length=512, lr=2.27e-5, out_loss=tensor(5.0152, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.04]train_step 0 239 239 device
+out_loss 4.974763870239258 device cuda:1
+out_loss 4.974763870239258 device Tesla T4
+out_loss 4.739477157592773 device cuda:0
+out_loss 4.739477157592773 device Tesla T4
+get_metric:get_metric: 4.857120513916016 2 1 device Tesla T4
+ 4.857120513916016 2 1 device Tesla T4
+ 93%|█████████▎| 240/258 [06:39<00:30,  1.71s/it, acc=0.34, current_step=239, epoch=0, length=512, lr=2.23e-5, out_loss=tensor(4.7395, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.86]train_step 0 240 240 device
+out_loss 4.559505939483643 device cuda:1
+out_loss 4.559505939483643 device Tesla T4
+out_loss 4.5825276374816895 device cuda:0
+out_loss 4.5825276374816895 device Tesla T4
+get_metric:get_metric: 4.571016788482666 2 1 device Tesla T4
+ 4.571016788482666 2 1 device Tesla T4
+ 93%|█████████▎| 241/258 [06:40<00:29,  1.71s/it, acc=0.337, current_step=240, epoch=0, length=512, lr=2.19e-5, out_loss=tensor(4.5825, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.57]train_step 0 241 241 device
+out_loss 3.874199151992798 device cuda:1
+out_loss 3.874199151992798 device Tesla T4
+out_loss 4.3673415184021 device cuda:0
+out_loss 4.3673415184021 device Tesla T4
+get_metric:get_metric: 4.120770454406738 2 1 device Tesla T4
+ 4.120770454406738 2 1 device Tesla T4
+ 94%|█████████▍| 242/258 [06:42<00:27,  1.71s/it, acc=0.347, current_step=241, epoch=0, length=512, lr=2.15e-5, out_loss=tensor(4.3673, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.12]train_step 0 242 242 device
+out_loss 5.01877498626709 device cuda:1
+out_loss 5.01877498626709 device Tesla T4
+out_loss 4.490498065948486 device cuda:0
+out_loss 4.490498065948486 device Tesla T4
+get_metric:get_metric: 4.754636764526367 2 1 device Tesla T4
+ 4.754636764526367 2 1 device Tesla T4
+ 94%|█████████▍| 243/258 [06:44<00:25,  1.71s/it, acc=0.329, current_step=242, epoch=0, length=512, lr=2.12e-5, out_loss=tensor(4.4905, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.75]train_step 0 243 243 device
+out_loss 4.598022937774658 device cuda:1
+out_loss 4.598022937774658 device Tesla T4
+out_loss 2.7092931270599365 device cuda:0
+out_loss 2.7092931270599365 device Tesla T4
+get_metric:get_metric: 3.653657913208008 2 1 device Tesla T4
+ 3.653657913208008 2 1 device Tesla T4
+ 95%|█████████▍| 244/258 [06:46<00:23,  1.71s/it, acc=0.43, current_step=243, epoch=0, length=512, lr=2.08e-5, out_loss=tensor(2.7093, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.65]train_step 0 244 244 device
+out_loss 3.9363186359405518 device cuda:1
+out_loss 3.9363186359405518 device Tesla T4
+out_loss 5.194913864135742 device cuda:0
+out_loss 5.194913864135742 device Tesla T4
+get_metric:get_metric: 4.565616130828857 2 1 device Tesla T4
+ 4.565616130828857 2 1 device Tesla T4
+ 95%|█████████▍| 245/258 [06:47<00:22,  1.71s/it, acc=0.357, current_step=244, epoch=0, length=512, lr=2.04e-5, out_loss=tensor(5.1949, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.57]train_step 0 245 245 device
+out_loss 5.856505393981934 device cuda:1
+out_loss 5.856505393981934 device Tesla T4
+out_loss 4.761318206787109 device cuda:0
+out_loss 4.761318206787109 device Tesla T4
+get_metric:get_metric: 5.3089118003845215 2 1 device Tesla T4
+ 5.3089118003845215 2 1 device Tesla T4
+ 95%|█████████▌| 246/258 [06:49<00:20,  1.72s/it, acc=0.323, current_step=245, epoch=0, length=512, lr=2.01e-5, out_loss=tensor(4.7613, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=5.31]train_step 0 246 246 device
+out_loss 3.7170205116271973 device cuda:1
+out_loss 3.7170205116271973 device Tesla T4
+out_loss 4.460809230804443 device cuda:0
+out_loss 4.460809230804443 device Tesla T4
+get_metric:get_metric: 4.08891487121582 2 1 device Tesla T4
+ 4.08891487121582 2 1 device Tesla T4
+ 96%|█████████▌| 247/258 [06:51<00:18,  1.72s/it, acc=0.379, current_step=246, epoch=0, length=512, lr=1.97e-5, out_loss=tensor(4.4608, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.09]train_step 0 247 247 device
+out_loss 3.9797399044036865 device cuda:1
+out_loss 3.9797399044036865 device Tesla T4
+out_loss 3.515368700027466 device cuda:0
+out_loss 3.515368700027466 device Tesla T4
+get_metric:get_metric: 3.747554302215576 2 1 device Tesla T4
+ 3.747554302215576 2 1 device Tesla T4
+ 96%|█████████▌| 248/258 [06:52<00:17,  1.72s/it, acc=0.423, current_step=247, epoch=0, length=512, lr=1.93e-5, out_loss=tensor(3.5154, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.75]train_step 0 248 248 device
+out_loss 4.858145236968994 device cuda:1
+out_loss 4.858145236968994 device Tesla T4
+out_loss 4.208797931671143 device cuda:0
+out_loss 4.208797931671143 device Tesla T4
+get_metric:get_metric: 4.533471584320068 2 1 device Tesla T4
+ 4.533471584320068 2 1 device Tesla T4
+ 97%|█████████▋| 249/258 [06:54<00:15,  1.72s/it, acc=0.361, current_step=248, epoch=0, length=512, lr=1.9e-5, out_loss=tensor(4.2088, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.53]train_step 0 249 249 device
+out_loss 3.5648574829101562 device cuda:1
+out_loss 3.5648574829101562 device Tesla T4
+out_loss 4.799587249755859 device cuda:0
+out_loss 4.799587249755859 device Tesla T4
+get_metric: get_metric:4.182222366333008 2 1 device Tesla T4
+ 4.182222366333008 2 1 device Tesla T4
+ 97%|█████████▋| 250/258 [06:56<00:13,  1.72s/it, acc=0.38, current_step=249, epoch=0, length=512, lr=1.86e-5, out_loss=tensor(4.7996, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.18]train_step 0 250 250 device
+out_loss 3.081984758377075 device cuda:1
+out_loss 3.081984758377075 device Tesla T4
+out_loss 4.55152702331543 device cuda:0
+out_loss 4.55152702331543 device Tesla T4
+get_metric:get_metric: 3.816755771636963 2 1 device Tesla T4
+ 3.816755771636963 2 1 device Tesla T4
+ 97%|█████████▋| 251/258 [06:58<00:12,  1.72s/it, acc=0.396, current_step=250, epoch=0, length=512, lr=1.83e-5, out_loss=tensor(4.5515, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.82]train_step 0 251 251 device
+out_loss 4.451123237609863 device cuda:1
+out_loss 4.451123237609863 device Tesla T4
+out_loss 3.534259080886841 device cuda:0
+out_loss 3.534259080886841 device Tesla T4
+get_metric:get_metric: 3.9926910400390625 2 1 device Tesla T4
+ 3.9926910400390625 2 1 device Tesla T4
+ 98%|█████████▊| 252/258 [06:59<00:10,  1.71s/it, acc=0.373, current_step=251, epoch=0, length=512, lr=1.79e-5, out_loss=tensor(3.5343, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.99]train_step 0 252 252 device
+out_loss 4.79390811920166 device cuda:1
+out_loss 4.79390811920166 device Tesla T4
+out_loss 3.4023351669311523 device cuda:0
+out_loss 3.4023351669311523 device Tesla T4
+get_metric:get_metric: 4.098121643066406 2 1 device Tesla T4
+ 4.098121643066406 2 1 device Tesla T4
+ 98%|█████████▊| 253/258 [07:01<00:08,  1.72s/it, acc=0.358, current_step=252, epoch=0, length=512, lr=1.76e-5, out_loss=tensor(3.4023, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=4.1]train_step 0 253 253 device
+out_loss 3.3715262413024902 device cuda:1
+out_loss 3.3715262413024902 device Tesla T4
+out_loss 4.213005542755127 device cuda:0
+out_loss 4.213005542755127 device Tesla T4
+get_metric:get_metric: 3.7922658920288086 2 1 device Tesla T4
+ 3.7922658920288086 2 1 device Tesla T4
+ 98%|█████████▊| 254/258 [07:03<00:06,  1.71s/it, acc=0.408, current_step=253, epoch=0, length=512, lr=1.72e-5, out_loss=tensor(4.2130, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.79]train_step 0 254 254 device
+out_loss 2.8967459201812744 device cuda:1
+out_loss 2.8967459201812744 device Tesla T4
+out_loss 2.8130996227264404 device cuda:0
+out_loss 2.8130996227264404 device Tesla T4
+get_metric:get_metric: 2.8549227714538574 2 1 device Tesla T4
+ 2.8549227714538574 2 1 device Tesla T4
+ 99%|█████████▉| 255/258 [07:04<00:05,  1.71s/it, acc=0.478, current_step=254, epoch=0, length=512, lr=1.69e-5, out_loss=tensor(2.8131, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=2.85]train_step 0 255 255 device
+out_loss 3.449641227722168 device cuda:1
+out_loss 3.449641227722168 device Tesla T4
+out_loss 3.981146812438965 device cuda:0
+out_loss 3.981146812438965 device Tesla T4
+get_metric:get_metric: 3.7153940200805664 2 1 device Tesla T4
+ 3.7153940200805664 2 1 device Tesla T4
+ 99%|█████████▉| 256/258 [07:06<00:03,  1.71s/it, acc=0.396, current_step=255, epoch=0, length=512, lr=1.65e-5, out_loss=tensor(3.9811, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.71]train_step 0 256 256 device
+out_loss 3.0640523433685303 device cuda:1
+out_loss 3.0640523433685303 device Tesla T4
+out_loss 3.373079538345337 device cuda:0
+out_loss 3.373079538345337 device Tesla T4
+get_metric:get_metric: 3.2185659408569336 2 1 device Tesla T4
+ 3.2185659408569336 2 1 device Tesla T4
+100%|█████████▉| 257/258 [07:08<00:01,  1.71s/it, acc=0.445, current_step=256, epoch=0, length=512, lr=1.62e-5, out_loss=tensor(3.3731, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.22]train_step 0 257 257 device
+out_loss 3.6882941722869873 device cuda:1
+out_loss 3.6882941722869873 device Tesla T4
+out_loss 2.5888679027557373 device cuda:0
+out_loss 2.5888679027557373 device Tesla T4
+get_metric: get_metric:3.1385810375213623 2 1 device Tesla T4
+ 3.1385810375213623 2 1 device Tesla T4
+100%|█████████▉| 257/258 [07:10<00:01,  1.71s/it, acc=0.423, current_step=257, epoch=0, length=512, lr=1.59e-5, out_loss=tensor(2.5889, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.14][2025-06-09 10:20:25,265] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2025-06-09 10:20:25,272] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/mp_rank_00_model_states.pt
+[2025-06-09 10:20:25,272] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/mp_rank_00_model_states.pt...
+[2025-06-09 10:20:27,747] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/mp_rank_00_model_states.pt.
+[2025-06-09 10:20:27,749] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-06-09 10:20:27,749] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt...
+[2025-06-09 10:20:44,328] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-06-09 10:20:44,431] [INFO] [engine.py:3710:_save_zero_checkpoint] zero checkpoint saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-06-09 10:20:44,431] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+[2025-06-09 10:20:46,503] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt.
+[2025-06-09 10:20:46,503] [INFO] [engine.py:3710:_save_zero_checkpoint] zero checkpoint saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt
+[2025-06-09 10:20:46,503] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+checkpoint checkpoint-0-258 is saved...
+100%|██████████| 258/258 [07:31<00:00,  1.75s/it, acc=0.423, current_step=257, epoch=0, length=512, lr=1.59e-5, out_loss=tensor(2.5889, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=258, train_loss=3.14]
+[2025-06-09 10:20:46,510] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is about to be saved!
+[2025-06-09 10:20:46,518] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/mp_rank_00_model_states.pt
+[2025-06-09 10:20:46,518] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/mp_rank_00_model_states.pt...
+[2025-06-09 10:20:51,638] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/mp_rank_00_model_states.pt.
+[2025-06-09 10:20:51,640] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-06-09 10:20:51,640] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt...
+[2025-06-09 10:21:15,672] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt.
+[2025-06-09 10:21:15,672] [INFO] [engine.py:3710:_save_zero_checkpoint] zero checkpoint saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt
+[2025-06-09 10:21:15,672] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+[2025-06-09 10:21:20,089] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-06-09 10:21:20,090] [INFO] [engine.py:3710:_save_zero_checkpoint] zero checkpoint saved ./ckpts/Qwen3_0.6B/checkpoint-0-258/pytorch_model/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-06-09 10:21:20,090] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint pytorch_model is ready now!
+checkpoint checkpoint-0-258 is saved...
+wandb: 
+wandb: 🚀 View run jolly-leaf-31 at: https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/o10ic5s6
+[rank0]:[W609 10:21:21.063518910 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
