@@ -34,11 +34,11 @@ logging.basicConfig(level='INFO')
 
 
 class HuatuoGPT2_train_dataset(torch.utils.data.Dataset):
-    def __init__(self, config, tokenizer):
+    def __init__(self, config, tokenizer, debug=False):
         self.config = config
         self.tokenizer = tokenizer
         self.data = datasets.load_from_disk(config.data_path)
-        self.debug = True
+        self.debug = debug
 
     def __getitem__(self, index):
         return self.data[index]
@@ -111,6 +111,7 @@ def train(args):
     accelerator.state.deepspeed_plugin.deepspeed_config['train_micro_batch_size_per_gpu'] = args.train_bsz_per_gpu
     accelerator.state.deepspeed_plugin.deepspeed_config['train_batch_size'] = args.train_bsz_per_gpu*dist.get_world_size()*accelerator.gradient_accumulation_steps
 
+    tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True, use_fast=True)
     left_tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True, padding_side='left')
     model = AutoModelForCausalLM.from_pretrained(args.model_path, trust_remote_code=True)
     
@@ -205,8 +206,12 @@ def train(args):
             if batch_cnt == 0:
                 # see all input ids and labels decoded
                 for i in range(len(input_ids)):
-                    accelerator.print(f"Input IDs {i}: {input_ids[i].tolist()}", 'device', accelerator.device)
-                    accelerator.print(f"Labels {i}: {labels[i].tolist()}", 'device', accelerator.device)
+                    labels_clean = labels[i].clone()
+                    labels_clean[labels_clean == -100] = tokenizer.pad_token_id
+                    accelerator.print(f"input_ids{i}:")
+                    accelerator.print(tokenizer.decode(input_ids[i]), 'device', accelerator.device)
+                    accelerator.print(f"labels{i}:")
+                    accelerator.print(tokenizer.decode(labels_clean), 'device', accelerator.device)
 
             accelerator.backward(loss)
             if (global_step+1) % accelerator.gradient_accumulation_steps == 0:

@@ -10,3 +10,4 @@ jsonlines
 retrying
 bitsandbytes
 dotenv
+# boto3==1.35.99
