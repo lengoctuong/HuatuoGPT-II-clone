@@ -84,7 +84,7 @@ class HuatuoGPT_data(torch.utils.data.Dataset):
         self.ignore_index = -100
         self.sep = '\n'
         self.sep_ids = self.tokenizer.encode(self.sep,add_special_tokens= False)
-        self.roles = ('<问>：','<答>：')
+        self.roles = ('<Câu hỏi>：','<Câu trả lời>：')
         self.ignore_len = len(self.tokenizer.encode(self.sep + self.roles[1],add_special_tokens= False))
         self.debug = debug
 
