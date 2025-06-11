@@ -69,7 +69,7 @@ class SFTMetric:
     def __call__(self, logits, labels, loss):
         device_id = torch.cuda.current_device()
         device_name = torch.cuda.get_device_name(device_id)
-        print('out_loss', loss.item(), 'device', device_name)
+        # print('out_loss', loss.item(), 'device', device_name)
         return self.update(logits, labels, loss)
 
     def update(self, logits, labels, loss):
@@ -90,7 +90,7 @@ class SFTMetric:
         loss = self.total_loss.item() / (self.world_size * self.n_step)
         device_id = torch.cuda.current_device()
         device_name = torch.cuda.get_device_name(device_id)
-        print('get_metric:', loss, self.world_size, self.n_step, 'device', device_name)
+        # print('get_metric:', loss, self.world_size, self.n_step, 'device', device_name)
 
         if reset:
             self.n_step = 0
@@ -187,7 +187,7 @@ def train(args):
     for epoch in range(start_epoch, args.n_epochs):
         train_dataloader_iterator = tqdm(enumerate(train_dataloader), total=len(train_dataloader)) if accelerator.is_main_process else enumerate(train_dataloader)
         for batch_cnt, batch in train_dataloader_iterator:
-            accelerator.print('train_step', epoch, batch_cnt, global_step, 'device')
+            # accelerator.print('train_step', epoch, batch_cnt, global_step, 'device')
             if epoch==start_epoch and batch_cnt<start_step:
                 continue
 
@@ -199,7 +199,7 @@ def train(args):
 
             output = model(input_ids=input_ids, labels=labels, return_dict=True,use_cache=False)
             loss = output.loss
-            print('out_loss', loss.item(), 'device', accelerator.device)
+            # print('out_loss', loss.item(), 'device', accelerator.device)
 
             metric(output.logits, labels, loss)
             acc, train_loss = metric.get_metric()
