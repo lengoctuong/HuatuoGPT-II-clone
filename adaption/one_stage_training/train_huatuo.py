@@ -26,6 +26,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
+from huggingface_hub import upload_folder
 os.umask(0)
 
 
@@ -199,11 +200,11 @@ def train(args):
                 # see all input ids and labels decoded
                 for i in range(len(input_ids)):
                     labels_clean = labels[i].clone()
-                    labels_clean[labels_clean == -100] = tokenizer.pad_token_id
+                    labels_clean[labels_clean == -100] = left_tokenizer.pad_token_id
                     accelerator.print(f"input_ids{i}:")
-                    accelerator.print(tokenizer.decode(input_ids[i]), 'device', accelerator.device)
+                    accelerator.print(left_tokenizer.decode(input_ids[i]))
                     accelerator.print(f"labels{i}:")
-                    accelerator.print(tokenizer.decode(labels_clean), 'device', accelerator.device)
+                    accelerator.print(left_tokenizer.decode(labels_clean))
 
             accelerator.backward(loss)
             if (global_step+1) % accelerator.gradient_accumulation_steps == 0:
@@ -225,7 +226,7 @@ def train(args):
                 }, step=global_step)
 
             # if global_step % args.save_step == 22:
-            if batch_cnt == len(train_dataloader_iterator) - 1:
+            if batch_cnt == len(train_dataloader) - 1:
                 accelerator.wait_for_everyone()
                 save_checkpoint(epoch, batch_cnt, global_step)
             

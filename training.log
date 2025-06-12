@@ -1,81 +1,79 @@
-[2025-06-12 02:11:30,974] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-06-12 02:11:32,407] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
-2025-06-12 02:11:32.699284: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+[2025-06-12 07:51:38,273] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-12 07:51:39,605] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+2025-06-12 07:51:39.877560: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1749694292.722088     469 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1749694292.729262     469 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-W0612 02:11:36.330000 469 torch/distributed/run.py:792] 
-W0612 02:11:36.330000 469 torch/distributed/run.py:792] *****************************************
-W0612 02:11:36.330000 469 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-W0612 02:11:36.330000 469 torch/distributed/run.py:792] *****************************************
-2025-06-12 02:11:41.364121: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
-2025-06-12 02:11:41.364125: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+E0000 00:00:1749714699.900581    1631 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749714699.907460    1631 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0612 07:51:43.329000 1631 torch/distributed/run.py:792] 
+W0612 07:51:43.329000 1631 torch/distributed/run.py:792] *****************************************
+W0612 07:51:43.329000 1631 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0612 07:51:43.329000 1631 torch/distributed/run.py:792] *****************************************
+2025-06-12 07:51:48.272909: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1749694301.387938     515 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749714708.295233    1677 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749714708.302734    1677 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-06-12 07:51:48.424088: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1749694301.388185     516 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1749694301.395487     515 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-E0000 00:00:1749694301.395725     516 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1749714708.447213    1678 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749714708.454248    1678 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
 /usr/local/lib/python3.11/dist-packages/accelerate/utils/dataclasses.py:1228: UserWarning: DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.
   warnings.warn("DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.")
+[2025-06-12 07:51:53,408] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
 /usr/local/lib/python3.11/dist-packages/accelerate/utils/dataclasses.py:1228: UserWarning: DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.
   warnings.warn("DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.")
-[2025-06-12 02:11:46,608] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-06-12 02:11:46,613] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-06-12 02:11:48,025] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
-[2025-06-12 02:11:48,032] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
-[2025-06-12 02:11:48,409] [INFO] [comm.py:675:init_distributed] cdb=None
-[2025-06-12 02:11:48,418] [INFO] [comm.py:675:init_distributed] cdb=None
-[2025-06-12 02:11:48,419] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-06-12 07:51:53,552] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-12 07:51:54,947] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-06-12 07:51:55,325] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-06-12 07:51:55,325] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+[2025-06-12 07:51:55,459] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
 wandb: Currently logged in as: lengoctuong23052002 (lengoctuong23052002-fpt-retail) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+[2025-06-12 07:51:55,732] [INFO] [comm.py:675:init_distributed] cdb=None
 wandb: Tracking run with wandb version 0.19.9
-wandb: Run data is saved locally in ./train_logs/Qwen3_0.6B/wandb/run-20250612_021148-mtydalbg
+wandb: Run data is saved locally in ./train_logs/Qwen3_0.6B/wandb/run-20250612_075155-n5f0sjq7
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run solar-mountain-44
+wandb: Syncing run splendid-sponge-51
 wandb: ⭐️ View project at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B
-wandb: 🚀 View run at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/mtydalbg
+wandb: 🚀 View run at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/n5f0sjq7
 args:
-Namespace(experiment_name='Qwen3_0.6B', checkpoint_path=None, model_path='Qwen/Qwen3-0.6B', not_shuffle_train_loader=False, data_path='./all_data/train_qa_0.1p_vi_Qwen3-0.6B_512_dataset', output_dir='./ckpts/Qwen3_0.6B', log_dir='./train_logs/Qwen3_0.6B', max_seq_len=512, gradient_checkpointing=True, gradient_accumulation_steps=1, train_bsz_per_gpu=1, eval_bsz_per_gpu=1, weight_decay=0.1, learning_rate=0.0001, warmup_rates=0.01, n_epochs=1, save_step=-1, eval_step=-1, seed=42)
-[2025-06-12 02:11:54,653] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
-gradient_accumulation_steps:1 data_path:./all_data/train_qa_0.1p_vi_Qwen3-0.6B_512_dataset lr:0.0001 num_training_steps:113
-[2025-06-12 02:11:56,275] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.1, git-hash=unknown, git-branch=unknown
-[2025-06-12 02:11:56,275] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
-[2025-06-12 02:11:57,331] [INFO] [engine.py:1325:_configure_distributed_model] ********** distributed groups summary **********
+Namespace(experiment_name='Qwen3_0.6B', checkpoint_path=None, model_path='Qwen/Qwen3-0.6B', not_shuffle_train_loader=False, data_path='./all_data/huatuo_trained_0.1p_Qwen3-0.6B_512_dataset', output_dir='./ckpts/Qwen3_0.6B', log_dir='./train_logs/Qwen3_0.6B', max_seq_len=512, gradient_checkpointing=True, gradient_accumulation_steps=1, train_bsz_per_gpu=1, eval_bsz_per_gpu=1, weight_decay=0.1, learning_rate=0.0001, warmup_rates=0.01, n_epochs=1, save_step=-1, eval_step=-1, seed=42)
+[2025-06-12 07:52:00,553] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
+gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_0.1p_Qwen3-0.6B_512_dataset lr:0.0001 num_training_steps:160
+[2025-06-12 07:52:01,966] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.1, git-hash=unknown, git-branch=unknown
+[2025-06-12 07:52:01,966] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
+[2025-06-12 07:52:03,001] [INFO] [engine.py:1325:_configure_distributed_model] ********** distributed groups summary **********
 	 self.dp_world_size=2
 	 self.mp_world_size=1
 	 self.seq_dp_world_size=2
 	 self.sequence_parallel_size=1
 ***********************************************
-[2025-06-12 02:11:57,758] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
-[2025-06-12 02:11:57,760] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
-[2025-06-12 02:11:57,760] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
-[2025-06-12 02:11:57,774] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
-[2025-06-12 02:11:57,775] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
-[2025-06-12 02:11:57,775] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 1 optimizer
-[2025-06-12 02:11:57,776] [INFO] [stage_1_and_2.py:151:__init__] Reduce bucket size 500000000
-[2025-06-12 02:11:57,776] [INFO] [stage_1_and_2.py:152:__init__] Allgather bucket size 500000000
-[2025-06-12 02:11:57,776] [INFO] [stage_1_and_2.py:153:__init__] CPU Offload: False
-[2025-06-12 02:11:57,777] [INFO] [stage_1_and_2.py:154:__init__] Round robin gradient partitioning: False
-[2025-06-12 02:12:00,260] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
-[2025-06-12 02:12:00,262] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.78 GB         CA 2.78 GB         Max_CA 3 GB 
-[2025-06-12 02:12:00,262] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 8.94 GB, percent = 28.5%
-
-update 5.284797191619873 5.284797191619873
-[2025-06-12 02:12:00,639] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
-[2025-06-12 02:12:00,640] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 3.33 GB         CA 3.89 GB         Max_CA 4 GB 
-[2025-06-12 02:12:00,640] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 8.94 GB, percent = 28.5%
-[2025-06-12 02:12:00,641] [INFO] [stage_1_and_2.py:573:__init__] optimizer state initialized
-[2025-06-12 02:12:01,008] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
-[2025-06-12 02:12:01,010] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.22 GB         CA 3.89 GB         Max_CA 4 GB 
-[2025-06-12 02:12:01,010] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 8.94 GB, percent = 28.5%
-[2025-06-12 02:12:01,013] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
-[2025-06-12 02:12:01,014] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
-[2025-06-12 02:12:01,014] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
-[2025-06-12 02:12:01,015] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
-[2025-06-12 02:12:01,016] [INFO] [logging.py:107:log_dist] [Rank 0] [TorchCheckpointEngine] Initialized with serialization = True
-[2025-06-12 02:12:01,016] [INFO] [config.py:921:print] DeepSpeedEngine configuration:
-[2025-06-12 02:12:01,017] [INFO] [config.py:925:print]   activation_checkpointing_config  {
+[2025-06-12 07:52:03,415] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-06-12 07:52:03,417] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-06-12 07:52:03,417] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-06-12 07:52:03,430] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-06-12 07:52:03,430] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-06-12 07:52:03,430] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 1 optimizer
+[2025-06-12 07:52:03,431] [INFO] [stage_1_and_2.py:151:__init__] Reduce bucket size 500000000
+[2025-06-12 07:52:03,431] [INFO] [stage_1_and_2.py:152:__init__] Allgather bucket size 500000000
+[2025-06-12 07:52:03,431] [INFO] [stage_1_and_2.py:153:__init__] CPU Offload: False
+[2025-06-12 07:52:03,432] [INFO] [stage_1_and_2.py:154:__init__] Round robin gradient partitioning: False
+[2025-06-12 07:52:06,018] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2025-06-12 07:52:06,019] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.78 GB         CA 2.78 GB         Max_CA 3 GB 
+[2025-06-12 07:52:06,020] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.27 GB, percent = 29.6%
+[2025-06-12 07:52:06,412] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2025-06-12 07:52:06,413] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 3.33 GB         CA 3.89 GB         Max_CA 4 GB 
+[2025-06-12 07:52:06,413] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.27 GB, percent = 29.6%
+[2025-06-12 07:52:06,414] [INFO] [stage_1_and_2.py:573:__init__] optimizer state initialized
+[2025-06-12 07:52:06,809] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2025-06-12 07:52:06,810] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.22 GB         CA 3.89 GB         Max_CA 4 GB 
+[2025-06-12 07:52:06,811] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.27 GB, percent = 29.6%
+[2025-06-12 07:52:06,814] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
+[2025-06-12 07:52:06,815] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2025-06-12 07:52:06,815] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-06-12 07:52:06,815] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2025-06-12 07:52:06,817] [INFO] [logging.py:107:log_dist] [Rank 0] [TorchCheckpointEngine] Initialized with serialization = True
+[2025-06-12 07:52:06,817] [INFO] [config.py:921:print] DeepSpeedEngine configuration:
+[2025-06-12 07:52:06,818] [INFO] [config.py:925:print]   activation_checkpointing_config  {
     "partition_activations": false, 
     "contiguous_memory_optimization": false, 
     "cpu_checkpointing": false, 
@@ -83,10 +81,10 @@ update 5.284797191619873 5.284797191619873
     "synchronize_checkpoint_boundary": false, 
     "profile": false
 }
-[2025-06-12 02:12:01,018] [INFO] [config.py:925:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
-[2025-06-12 02:12:01,018] [INFO] [config.py:925:print]   amp_enabled .................. False
-[2025-06-12 02:12:01,018] [INFO] [config.py:925:print]   amp_params ................... False
-[2025-06-12 02:12:01,019] [INFO] [config.py:925:print]   autotuning_config ............ {
+[2025-06-12 07:52:06,818] [INFO] [config.py:925:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-06-12 07:52:06,818] [INFO] [config.py:925:print]   amp_enabled .................. False
+[2025-06-12 07:52:06,819] [INFO] [config.py:925:print]   amp_params ................... False
+[2025-06-12 07:52:06,819] [INFO] [config.py:925:print]   autotuning_config ............ {
     "enabled": false, 
     "start_step": null, 
     "end_step": null, 
@@ -111,33 +109,33 @@ update 5.284797191619873 5.284797191619873
     "min_train_micro_batch_size_per_gpu": 1, 
     "num_tuning_micro_batch_sizes": 3
 }
-[2025-06-12 02:12:01,019] [INFO] [config.py:925:print]   bfloat16_config .............. enabled=True immediate_grad_update=False check_grad_overflow=False
-[2025-06-12 02:12:01,019] [INFO] [config.py:925:print]   checkpoint_config ............ {'tag_validation': 'WARN', 'checkpoint_serialization': True, 'writer': None}
-[2025-06-12 02:12:01,020] [INFO] [config.py:925:print]   checkpoint_parallel_write_pipeline  False
-[2025-06-12 02:12:01,020] [INFO] [config.py:925:print]   checkpoint_tag_validation_enabled  True
-[2025-06-12 02:12:01,020] [INFO] [config.py:925:print]   checkpoint_tag_validation_fail  False
-[2025-06-12 02:12:01,020] [INFO] [config.py:925:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x787598f04490>
-[2025-06-12 02:12:01,021] [INFO] [config.py:925:print]   communication_data_type ...... None
-[2025-06-12 02:12:01,021] [INFO] [config.py:925:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
-[2025-06-12 02:12:01,021] [INFO] [config.py:925:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
-[2025-06-12 02:12:01,022] [INFO] [config.py:925:print]   curriculum_enabled_legacy .... False
-[2025-06-12 02:12:01,022] [INFO] [config.py:925:print]   curriculum_params_legacy ..... False
-[2025-06-12 02:12:01,022] [INFO] [config.py:925:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
-[2025-06-12 02:12:01,023] [INFO] [config.py:925:print]   data_efficiency_enabled ...... False
-[2025-06-12 02:12:01,023] [INFO] [config.py:925:print]   dataloader_drop_last ......... False
-[2025-06-12 02:12:01,023] [INFO] [config.py:925:print]   disable_allgather ............ False
-[2025-06-12 02:12:01,024] [INFO] [config.py:925:print]   dump_state ................... False
-[2025-06-12 02:12:01,024] [INFO] [config.py:925:print]   eigenvalue_enabled ........... False
-[2025-06-12 02:12:01,024] [INFO] [config.py:925:print]   eigenvalue_gas_boundary_resolution  1
-[2025-06-12 02:12:01,025] [INFO] [config.py:925:print]   eigenvalue_layer_name ........ bert.encoder.layer
-[2025-06-12 02:12:01,025] [INFO] [config.py:925:print]   eigenvalue_layer_num ......... 0
-[2025-06-12 02:12:01,025] [INFO] [config.py:925:print]   eigenvalue_max_iter .......... 100
-[2025-06-12 02:12:01,025] [INFO] [config.py:925:print]   eigenvalue_stability ......... 1e-06
-[2025-06-12 02:12:01,026] [INFO] [config.py:925:print]   eigenvalue_tol ............... 0.01
-[2025-06-12 02:12:01,026] [INFO] [config.py:925:print]   eigenvalue_verbose ........... False
-[2025-06-12 02:12:01,026] [INFO] [config.py:925:print]   elasticity_enabled ........... False
-[2025-06-12 02:12:01,027] [INFO] [config.py:925:print]   float16_config ............... enabled=False auto_cast=False loss_scale=0.0 initial_scale_power=16 loss_scale_window=1000 hysteresis=2 consecutive_hysteresis=False min_loss_scale=1 fp16_master_weights_and_grads=False
-[2025-06-12 02:12:01,027] [INFO] [config.py:925:print]   flops_profiler_config ........ {
+[2025-06-12 07:52:06,819] [INFO] [config.py:925:print]   bfloat16_config .............. enabled=True immediate_grad_update=False check_grad_overflow=False
+[2025-06-12 07:52:06,820] [INFO] [config.py:925:print]   checkpoint_config ............ {'tag_validation': 'WARN', 'checkpoint_serialization': True, 'writer': None}
+[2025-06-12 07:52:06,820] [INFO] [config.py:925:print]   checkpoint_parallel_write_pipeline  False
+[2025-06-12 07:52:06,820] [INFO] [config.py:925:print]   checkpoint_tag_validation_enabled  True
+[2025-06-12 07:52:06,821] [INFO] [config.py:925:print]   checkpoint_tag_validation_fail  False
+[2025-06-12 07:52:06,821] [INFO] [config.py:925:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7ea78be8c610>
+[2025-06-12 07:52:06,821] [INFO] [config.py:925:print]   communication_data_type ...... None
+[2025-06-12 07:52:06,822] [INFO] [config.py:925:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2025-06-12 07:52:06,822] [INFO] [config.py:925:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-06-12 07:52:06,822] [INFO] [config.py:925:print]   curriculum_enabled_legacy .... False
+[2025-06-12 07:52:06,823] [INFO] [config.py:925:print]   curriculum_params_legacy ..... False
+[2025-06-12 07:52:06,823] [INFO] [config.py:925:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-06-12 07:52:06,823] [INFO] [config.py:925:print]   data_efficiency_enabled ...... False
+[2025-06-12 07:52:06,824] [INFO] [config.py:925:print]   dataloader_drop_last ......... False
+[2025-06-12 07:52:06,824] [INFO] [config.py:925:print]   disable_allgather ............ False
+[2025-06-12 07:52:06,824] [INFO] [config.py:925:print]   dump_state ................... False
+[2025-06-12 07:52:06,825] [INFO] [config.py:925:print]   eigenvalue_enabled ........... False
+[2025-06-12 07:52:06,825] [INFO] [config.py:925:print]   eigenvalue_gas_boundary_resolution  1
+[2025-06-12 07:52:06,825] [INFO] [config.py:925:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-06-12 07:52:06,826] [INFO] [config.py:925:print]   eigenvalue_layer_num ......... 0
+[2025-06-12 07:52:06,826] [INFO] [config.py:925:print]   eigenvalue_max_iter .......... 100
+[2025-06-12 07:52:06,826] [INFO] [config.py:925:print]   eigenvalue_stability ......... 1e-06
+[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   eigenvalue_tol ............... 0.01
+[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   eigenvalue_verbose ........... False
+[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   elasticity_enabled ........... False
+[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   float16_config ............... enabled=False auto_cast=False loss_scale=0.0 initial_scale_power=16 loss_scale_window=1000 hysteresis=2 consecutive_hysteresis=False min_loss_scale=1 fp16_master_weights_and_grads=False
+[2025-06-12 07:52:06,828] [INFO] [config.py:925:print]   flops_profiler_config ........ {
     "enabled": false, 
     "recompute_fwd_factor": 0.0, 
     "profile_step": 1, 
@@ -146,19 +144,19 @@ update 5.284797191619873 5.284797191619873
     "detailed": true, 
     "output_file": null
 }
-[2025-06-12 02:12:01,027] [INFO] [config.py:925:print]   global_rank .................. 0
-[2025-06-12 02:12:01,028] [INFO] [config.py:925:print]   grad_accum_dtype ............. None
-[2025-06-12 02:12:01,028] [INFO] [config.py:925:print]   gradient_accumulation_steps .. 1
-[2025-06-12 02:12:01,028] [INFO] [config.py:925:print]   gradient_clipping ............ 1.0
-[2025-06-12 02:12:01,028] [INFO] [config.py:925:print]   gradient_predivide_factor .... 1.0
-[2025-06-12 02:12:01,029] [INFO] [config.py:925:print]   graph_harvesting ............. False
-[2025-06-12 02:12:01,029] [INFO] [config.py:925:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
-[2025-06-12 02:12:01,029] [INFO] [config.py:925:print]   load_universal_checkpoint .... False
-[2025-06-12 02:12:01,030] [INFO] [config.py:925:print]   memory_breakdown ............. False
-[2025-06-12 02:12:01,030] [INFO] [config.py:925:print]   mics_hierarchial_params_gather  False
-[2025-06-12 02:12:01,030] [INFO] [config.py:925:print]   mics_shard_size .............. -1
-[2025-06-12 02:12:01,030] [INFO] [config.py:925:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
-[2025-06-12 02:12:01,031] [INFO] [config.py:925:print]   nebula_config ................ {
+[2025-06-12 07:52:06,828] [INFO] [config.py:925:print]   global_rank .................. 0
+[2025-06-12 07:52:06,828] [INFO] [config.py:925:print]   grad_accum_dtype ............. None
+[2025-06-12 07:52:06,829] [INFO] [config.py:925:print]   gradient_accumulation_steps .. 1
+[2025-06-12 07:52:06,829] [INFO] [config.py:925:print]   gradient_clipping ............ 1.0
+[2025-06-12 07:52:06,829] [INFO] [config.py:925:print]   gradient_predivide_factor .... 1.0
+[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   graph_harvesting ............. False
+[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   load_universal_checkpoint .... False
+[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   memory_breakdown ............. False
+[2025-06-12 07:52:06,831] [INFO] [config.py:925:print]   mics_hierarchial_params_gather  False
+[2025-06-12 07:52:06,831] [INFO] [config.py:925:print]   mics_shard_size .............. -1
+[2025-06-12 07:52:06,831] [INFO] [config.py:925:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-06-12 07:52:06,832] [INFO] [config.py:925:print]   nebula_config ................ {
     "enabled": false, 
     "persistent_storage_path": null, 
     "persistent_time_interval": 100, 
@@ -166,34 +164,34 @@ update 5.284797191619873 5.284797191619873
     "enable_nebula_load": true, 
     "load_path": null
 }
-[2025-06-12 02:12:01,031] [INFO] [config.py:925:print]   optimizer_legacy_fusion ...... False
-[2025-06-12 02:12:01,031] [INFO] [config.py:925:print]   optimizer_name ............... None
-[2025-06-12 02:12:01,032] [INFO] [config.py:925:print]   optimizer_params ............. None
-[2025-06-12 02:12:01,032] [INFO] [config.py:925:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
-[2025-06-12 02:12:01,032] [INFO] [config.py:925:print]   pld_enabled .................. False
-[2025-06-12 02:12:01,032] [INFO] [config.py:925:print]   pld_params ................... False
-[2025-06-12 02:12:01,033] [INFO] [config.py:925:print]   prescale_gradients ........... False
-[2025-06-12 02:12:01,033] [INFO] [config.py:925:print]   scheduler_name ............... None
-[2025-06-12 02:12:01,033] [INFO] [config.py:925:print]   scheduler_params ............. None
-[2025-06-12 02:12:01,034] [INFO] [config.py:925:print]   seq_parallel_communication_data_type  torch.float32
-[2025-06-12 02:12:01,034] [INFO] [config.py:925:print]   sparse_attention ............. None
-[2025-06-12 02:12:01,034] [INFO] [config.py:925:print]   sparse_gradients_enabled ..... False
-[2025-06-12 02:12:01,034] [INFO] [config.py:925:print]   steps_per_print .............. inf
-[2025-06-12 02:12:01,035] [INFO] [config.py:925:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
-[2025-06-12 02:12:01,035] [INFO] [config.py:925:print]   timers_config ................ enabled=True synchronized=True
-[2025-06-12 02:12:01,035] [INFO] [config.py:925:print]   train_batch_size ............. 2
-[2025-06-12 02:12:01,036] [INFO] [config.py:925:print]   train_micro_batch_size_per_gpu  1
-[2025-06-12 02:12:01,036] [INFO] [config.py:925:print]   use_data_before_expert_parallel_  False
-[2025-06-12 02:12:01,036] [INFO] [config.py:925:print]   use_node_local_storage ....... False
-[2025-06-12 02:12:01,036] [INFO] [config.py:925:print]   wall_clock_breakdown ......... False
-[2025-06-12 02:12:01,037] [INFO] [config.py:925:print]   weight_quantization_config ... None
-[2025-06-12 02:12:01,037] [INFO] [config.py:925:print]   world_size ................... 2
-[2025-06-12 02:12:01,037] [INFO] [config.py:925:print]   zero_allow_untested_optimizer  True
-[2025-06-12 02:12:01,038] [INFO] [config.py:925:print]   zero_config .................. stage=1 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
-[2025-06-12 02:12:01,038] [INFO] [config.py:925:print]   zero_enabled ................. True
-[2025-06-12 02:12:01,038] [INFO] [config.py:925:print]   zero_force_ds_cpu_optimizer .. True
-[2025-06-12 02:12:01,039] [INFO] [config.py:925:print]   zero_optimization_stage ...... 1
-[2025-06-12 02:12:01,039] [INFO] [config.py:911:print_user_config]   json = {
+[2025-06-12 07:52:06,832] [INFO] [config.py:925:print]   optimizer_legacy_fusion ...... False
+[2025-06-12 07:52:06,832] [INFO] [config.py:925:print]   optimizer_name ............... None
+[2025-06-12 07:52:06,833] [INFO] [config.py:925:print]   optimizer_params ............. None
+[2025-06-12 07:52:06,833] [INFO] [config.py:925:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-06-12 07:52:06,833] [INFO] [config.py:925:print]   pld_enabled .................. False
+[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   pld_params ................... False
+[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   prescale_gradients ........... False
+[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   scheduler_name ............... None
+[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   scheduler_params ............. None
+[2025-06-12 07:52:06,835] [INFO] [config.py:925:print]   seq_parallel_communication_data_type  torch.float32
+[2025-06-12 07:52:06,835] [INFO] [config.py:925:print]   sparse_attention ............. None
+[2025-06-12 07:52:06,835] [INFO] [config.py:925:print]   sparse_gradients_enabled ..... False
+[2025-06-12 07:52:06,836] [INFO] [config.py:925:print]   steps_per_print .............. inf
+[2025-06-12 07:52:06,836] [INFO] [config.py:925:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-06-12 07:52:06,836] [INFO] [config.py:925:print]   timers_config ................ enabled=True synchronized=True
+[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   train_batch_size ............. 2
+[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   train_micro_batch_size_per_gpu  1
+[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   use_data_before_expert_parallel_  False
+[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   use_node_local_storage ....... False
+[2025-06-12 07:52:06,838] [INFO] [config.py:925:print]   wall_clock_breakdown ......... False
+[2025-06-12 07:52:06,838] [INFO] [config.py:925:print]   weight_quantization_config ... None
+[2025-06-12 07:52:06,838] [INFO] [config.py:925:print]   world_size ................... 2
+[2025-06-12 07:52:06,839] [INFO] [config.py:925:print]   zero_allow_untested_optimizer  True
+[2025-06-12 07:52:06,839] [INFO] [config.py:925:print]   zero_config .................. stage=1 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-06-12 07:52:06,839] [INFO] [config.py:925:print]   zero_enabled ................. True
+[2025-06-12 07:52:06,840] [INFO] [config.py:925:print]   zero_force_ds_cpu_optimizer .. True
+[2025-06-12 07:52:06,840] [INFO] [config.py:925:print]   zero_optimization_stage ...... 1
+[2025-06-12 07:52:06,840] [INFO] [config.py:911:print_user_config]   json = {
     "train_batch_size": 2, 
     "train_micro_batch_size_per_gpu": 1, 
     "gradient_accumulation_steps": 1, 
@@ -219,461 +217,47 @@ update 5.284797191619873 5.284797191619873
     }, 
     "zero_allow_untested_optimizer": true
 }
-Save step setted to 8
+Save step setted to 11
 {'train_batch_size': 2, 'train_micro_batch_size_per_gpu': 1, 'gradient_accumulation_steps': 1, 'zero_optimization': {'stage': 1, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 1.0, 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}, 'zero_allow_untested_optimizer': True}
-  0%|          | 0/42 [00:00<?, ?it/s]
-update 2.4993443489074707 2.4993443489074707
-get_metric, b4 reduceget_metric, b4 reduce 5.284797191619873
- 2.4993443489074707
-get_metric, af reduce 7.784141540527344
-get_metric, af reduce 7.784141540527344
-get_metric loss 3.892070770263672
-get_metric loss 3.892070770263672
-input_ids0:
+  0%|          | 0/59 [00:00<?, ?it/s]input_ids0:
 <|im_start|>user
-Tại sao sự nhạy cảm với nhiệt độ ở bệnh nhân có vấn đề về cảm giác nhiệt độ lại làm trầm trọng thêm các triệu chứng của bệnh đa xơ cứng?<|im_end|>
+Bạn có thể nói về đặc điểm và công dụng của thuốc Bikan không?<|im_end|>
 <|im_start|>assistant
 <think>
 
 </think>
 
-Nguyên nhân chính khiến sự nhạy cảm với nhiệt độ ở bệnh nhân có vấn đề về cảm giác nhiệt độ làm trầm trọng thêm các triệu chứng của bệnh đa xơ cứng (MS) là do nhiệt độ cơ thể tăng cao có thể gây ra tình trạng tạm thời nặng thêm, được gọi là 'tăng nặng giả'. Mặc dù bệnh nhân cảm thấy nóng quá mức và ra mồ hôi nhiều trong môi trường ấm, sự nhạy cảm với nhiệt độ này thường xuất phát từ rối loạn nội tiết, thuốc men hoặc các tình trạng tiềm ẩn khác, chứ không phải do hoạt động thể chất quá mức hoặc thời tiết nóng ẩm như trong trường hợp say nắng.
+Bikan (Viên nang Pioglitazone Hydrochloride) là thuốc điều trị đái tháo đường type 2, thành phần chính là pioglitazone hydrochloride. Thuốc thuộc nhóm thuốc hạ đường huyết uống thiazolidinedione, kiểm soát đường huyết bằng cách tăng cường độ nhạy insulin ở mô ngoại biên và gan.
 
-Đối với bệnh nhân MS, sự nhạy cảm với nhiệt độ có thể dẫn đến tăng nặng giả, được đặc trưng bởi sự tạm thời nặng thêm các triệu chứng. Hiện tượng tương tự cũng có thể xảy ra ở bệnh nhân mắc hội chứng tăng nhịp tim tư thế đứng (POTS) và rối loạn tự chủ.
+Cơ chế tác dụng chính của Bikan là kích hoạt thụ thể nhân PPAR (peroxisome proliferator-activated receptor) trong các mô nhạy insulin như mô mỡ, cơ xương và gan. Điều này điều hòa quá trình phiên mã của các gen phản ứng với insulin, qua đó kiểm soát sản xuất, vận chuyển và sử dụng glucose.
 
-Chẩn đoán chủ yếu dựa vào tiền sử bệnh nhân và các xét nghiệm phòng thí nghiệm, bao gồm xét nghiệm máu và các đánh giá y tế khác để xác định nguyên nhân tiềm ẩn. Ở bệnh nhân nữ, cần loại trừ các cơn bốc hỏa mãn kinh.
+Chỉ định của Bikan là đái tháo đường type 2 (đái tháo đường không phụ thuộc insulin). Thuốc có thể được sử dụng kết hợp với kiểm soát chế độ ăn uống và vận động thể chất để quản lý đường huyết. Thuốc có thể dùng đơn độc, và khi kiểm soát đường huyết không đạt hiệu quả qua chế độ ăn, vận động và dùng đơn độc, có thể kết hợp với các thuốc khác.
 
-Nguyên nhân phổ biến của sự nhạy cảm với nhiệt độ bao gồm cường giáp (nồng độ hormone giáp quá cao). Các yếu tố góp phần khác bao gồm amphetamin và các loại thuốc kích thích khác (ví dụ: thuốc giảm thèm ăn), thuốc kháng cholinergic và các loại thuốc ảnh hưởng đến việc ra mồ hôi, caffeine, khả năng chịu nóng ác tính, mãn kinh, hội chứng đau cơ xơ, tiểu đường, u vùng dưới đồi, điều trị bằng methadone, rối loạn tự chủ, hội chứng tăng nhịp tim tư thế đứng (POTS), nhạy cảm cảm giác/thất thường xử lý cảm giác, và hội chứng serotonin.
+Khi sử dụng Bikan, liều khởi đầu là 15 hoặc 30 mg, liều tối đa là 45 mg/ngày. Nên uống thuốc trước bữa sáng. Nếu quên liều, không nên uống gấp đôi liều vào ngày hôm sau mà tiếp tục với liều thông thường.
 
-Điều trị tập trung vào việc cải thiện sự thoải mái cho bệnh nhân và xử lý nguyên nhân tiềm ẩn của sự nhạy cảm với nhiệt độ khi có thể. Bệnh nhân device cuda:0
+Mặc dù Bikan có hiệu quả nhất định trong điều trị đái tháo đường, việc sử dụng thuốc cũng có thể gây ra một số tác dụng phụ. Theo các nghiên cứu độc tính, việc sử dụng Bikan liều cao trong thời gian dài có thể gây ra các vấn đề như phì đại tim và suy tim.<|im_end|>
+<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> device cuda:0
 labels0:
-<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><think>
+<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><think>
 
 </think>
 
-Nguyên nhân chính khiến sự nhạy cảm với nhiệt độ ở bệnh nhân có vấn đề về cảm giác nhiệt độ làm trầm trọng thêm các triệu chứng của bệnh đa xơ cứng (MS) là do nhiệt độ cơ thể tăng cao có thể gây ra tình trạng tạm thời nặng thêm, được gọi là 'tăng nặng giả'. Mặc dù bệnh nhân cảm thấy nóng quá mức và ra mồ hôi nhiều trong môi trường ấm, sự nhạy cảm với nhiệt độ này thường xuất phát từ rối loạn nội tiết, thuốc men hoặc các tình trạng tiềm ẩn khác, chứ không phải do hoạt động thể chất quá mức hoặc thời tiết nóng ẩm như trong trường hợp say nắng.
+Bikan (Viên nang Pioglitazone Hydrochloride) là thuốc điều trị đái tháo đường type 2, thành phần chính là pioglitazone hydrochloride. Thuốc thuộc nhóm thuốc hạ đường huyết uống thiazolidinedione, kiểm soát đường huyết bằng cách tăng cường độ nhạy insulin ở mô ngoại biên và gan.
 
-Đối với bệnh nhân MS, sự nhạy cảm với nhiệt độ có thể dẫn đến tăng nặng giả, được đặc trưng bởi sự tạm thời nặng thêm các triệu chứng. Hiện tượng tương tự cũng có thể xảy ra ở bệnh nhân mắc hội chứng tăng nhịp tim tư thế đứng (POTS) và rối loạn tự chủ.
+Cơ chế tác dụng chính của Bikan là kích hoạt thụ thể nhân PPAR (peroxisome proliferator-activated receptor) trong các mô nhạy insulin như mô mỡ, cơ xương và gan. Điều này điều hòa quá trình phiên mã của các gen phản ứng với insulin, qua đó kiểm soát sản xuất, vận chuyển và sử dụng glucose.
 
-Chẩn đoán chủ yếu dựa vào tiền sử bệnh nhân và các xét nghiệm phòng thí nghiệm, bao gồm xét nghiệm máu và các đánh giá y tế khác để xác định nguyên nhân tiềm ẩn. Ở bệnh nhân nữ, cần loại trừ các cơn bốc hỏa mãn kinh.
+Chỉ định của Bikan là đái tháo đường type 2 (đái tháo đường không phụ thuộc insulin). Thuốc có thể được sử dụng kết hợp với kiểm soát chế độ ăn uống và vận động thể chất để quản lý đường huyết. Thuốc có thể dùng đơn độc, và khi kiểm soát đường huyết không đạt hiệu quả qua chế độ ăn, vận động và dùng đơn độc, có thể kết hợp với các thuốc khác.
 
-Nguyên nhân phổ biến của sự nhạy cảm với nhiệt độ bao gồm cường giáp (nồng độ hormone giáp quá cao). Các yếu tố góp phần khác bao gồm amphetamin và các loại thuốc kích thích khác (ví dụ: thuốc giảm thèm ăn), thuốc kháng cholinergic và các loại thuốc ảnh hưởng đến việc ra mồ hôi, caffeine, khả năng chịu nóng ác tính, mãn kinh, hội chứng đau cơ xơ, tiểu đường, u vùng dưới đồi, điều trị bằng methadone, rối loạn tự chủ, hội chứng tăng nhịp tim tư thế đứng (POTS), nhạy cảm cảm giác/thất thường xử lý cảm giác, và hội chứng serotonin.
+Khi sử dụng Bikan, liều khởi đầu là 15 hoặc 30 mg, liều tối đa là 45 mg/ngày. Nên uống thuốc trước bữa sáng. Nếu quên liều, không nên uống gấp đôi liều vào ngày hôm sau mà tiếp tục với liều thông thường.
 
-Điều trị tập trung vào việc cải thiện sự thoải mái cho bệnh nhân và xử lý nguyên nhân tiềm ẩn của sự nhạy cảm với nhiệt độ khi có thể. Bệnh nhân device cuda:0
-  2%|▏         | 1/42 [00:01<01:16,  1.86s/it, acc=0.525, current_step=0, epoch=0, length=512, lr=0.0001, out_loss=tensor(2.4993, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.89]
-update 4.502015113830566 4.502015113830566
-
-update 2.3071320056915283 2.3071320056915283
-get_metric, b4 reduceget_metric, b4 reduce 4.502015113830566
- 2.3071320056915283
-get_metric, af reduce 6.809146881103516
-get_metric, af reduceget_metric loss 3.404573440551758
- 6.809146881103516
-get_metric loss 3.404573440551758
-  5%|▍         | 2/42 [00:03<01:07,  1.68s/it, acc=0.518, current_step=1, epoch=0, length=512, lr=9.98e-5, out_loss=tensor(2.3071, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.4]
-update 2.553830623626709 2.553830623626709
-
-update 3.1353819370269775 3.1353819370269775
-get_metric, b4 reduce get_metric, b4 reduce3.1353819370269775
- 2.553830623626709
-get_metric, af reduce 5.689212799072266
-get_metric, af reduceget_metric loss 2.844606399536133
- 5.689212799072266
-get_metric loss 2.844606399536133
-  7%|▋         | 3/42 [00:04<01:02,  1.60s/it, acc=0.476, current_step=2, epoch=0, length=512, lr=9.95e-5, out_loss=tensor(2.5538, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.85]
-update 4.671953201293945 4.671953201293945
-
-update 1.6942434310913086 1.6942434310913086
-get_metric, b4 reduceget_metric, b4 reduce 4.671953201293945
- 1.6942434310913086
-get_metric, af reduce 6.366196632385254
-get_metric, af reduceget_metric loss 3.183098316192627
- 6.366196632385254
-get_metric loss 3.183098316192627
- 10%|▉         | 4/42 [00:06<00:59,  1.56s/it, acc=0.592, current_step=3, epoch=0, length=512, lr=9.9e-5, out_loss=tensor(1.6942, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.18] 
-update 4.1017584800720215 4.1017584800720215
-
-update 2.697760581970215 2.697760581970215
-get_metric, b4 reduceget_metric, b4 reduce 4.1017584800720215
- 2.697760581970215
-get_metric, af reduce 6.799519062042236
-get_metric, af reduceget_metric loss 3.399759531021118
- 6.799519062042236
-get_metric loss 3.399759531021118
- 12%|█▏        | 5/42 [00:07<00:57,  1.55s/it, acc=0.508, current_step=4, epoch=0, length=512, lr=9.84e-5, out_loss=tensor(2.6978, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.4]
-update 3.338261842727661 3.338261842727661
-
-update 2.7920026779174805 2.7920026779174805
-get_metric, b4 reduce get_metric, b4 reduce3.338261842727661
- 2.7920026779174805
-get_metric, af reduce 6.1302642822265625
-get_metric, af reduceget_metric loss 3.0651321411132812
- 6.1302642822265625
-get_metric loss 3.0651321411132812
- 14%|█▍        | 6/42 [00:09<00:55,  1.53s/it, acc=0.452, current_step=5, epoch=0, length=512, lr=9.76e-5, out_loss=tensor(2.7920, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.06]
-update 2.9063096046447754 2.9063096046447754
-
-update 2.482649326324463 2.482649326324463
-get_metric, b4 reduceget_metric, b4 reduce 2.482649326324463
- 2.9063096046447754
-get_metric, af reduce 5.388958930969238
-get_metric, af reduceget_metric loss 2.694479465484619
- 5.388958930969238
-get_metric loss 2.694479465484619
- 17%|█▋        | 7/42 [00:10<00:53,  1.53s/it, acc=0.491, current_step=6, epoch=0, length=512, lr=9.67e-5, out_loss=tensor(2.9063, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.69]
-update 3.1743757724761963 3.1743757724761963
-update 2.256997585296631 
-2.256997585296631
-get_metric, b4 reduce get_metric, b4 reduce2.256997585296631
- 3.1743757724761963
-get_metric, af reduce 5.431373596191406get_metric, af reduce
-get_metric loss 2.715686798095703
- 5.431373596191406
-get_metric loss 2.715686798095703
- 19%|█▉        | 8/42 [00:12<00:51,  1.53s/it, acc=0.508, current_step=7, epoch=0, length=512, lr=9.56e-5, out_loss=tensor(3.1744, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.72]
-update 3.417740821838379 3.417740821838379
-
-update 2.7069661617279053 2.7069661617279053
-get_metric, b4 reduceget_metric, b4 reduce 3.417740821838379
- 2.7069661617279053
-get_metric, af reduce 6.124707221984863
-get_metric, af reduceget_metric loss 3.0623536109924316
- 6.124707221984863
-get_metric loss 3.0623536109924316
- 21%|██▏       | 9/42 [00:14<00:50,  1.53s/it, acc=0.472, current_step=8, epoch=0, length=512, lr=9.44e-5, out_loss=tensor(2.7070, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.06]
-update 2.2603371143341064 
-update 3.1136157512664795 3.1136157512664795
-2.2603371143341064
-get_metric, b4 reduce get_metric, b4 reduce3.1136157512664795
- 2.2603371143341064
-get_metric, af reduce 5.373952865600586
-get_metric, af reduceget_metric loss 2.686976432800293
- 5.373952865600586
-get_metric loss 2.686976432800293
- 24%|██▍       | 10/42 [00:15<00:48,  1.53s/it, acc=0.484, current_step=9, epoch=0, length=512, lr=9.31e-5, out_loss=tensor(2.2603, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.69]
-update 2.569840431213379 2.569840431213379
-
-update 4.04367733001709 4.04367733001709
-get_metric, b4 reduceget_metric, b4 reduce 4.04367733001709
- 2.569840431213379
-get_metric, af reduce 6.613517761230469
-get_metric, af reduceget_metric loss 3.3067588806152344
- 6.613517761230469
-get_metric loss 3.3067588806152344
- 26%|██▌       | 11/42 [00:17<00:47,  1.53s/it, acc=0.405, current_step=10, epoch=0, length=512, lr=9.16e-5, out_loss=tensor(2.5698, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.31]
-update 2.6252875328063965 2.6252875328063965
-
-update 3.023751974105835 3.023751974105835
-get_metric, b4 reduceget_metric, b4 reduce 2.6252875328063965
- 3.023751974105835
-get_metric, af reduce 5.649039268493652
-get_metric, af reduceget_metric loss 2.824519634246826
- 5.649039268493652
-get_metric loss 2.824519634246826
- 29%|██▊       | 12/42 [00:18<00:45,  1.53s/it, acc=0.499, current_step=11, epoch=0, length=512, lr=9e-5, out_loss=tensor(3.0238, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.83]   
-update 2.0816218852996826 2.0816218852996826
-
-update 3.2515830993652344 3.2515830993652344
-get_metric, b4 reduceget_metric, b4 reduce 3.2515830993652344
- 2.0816218852996826
-get_metric, af reduce 5.333205223083496
-get_metric, af reduceget_metric loss 2.666602611541748
- 5.333205223083496
-get_metric loss 2.666602611541748
- 31%|███       | 13/42 [00:20<00:44,  1.54s/it, acc=0.492, current_step=12, epoch=0, length=512, lr=8.82e-5, out_loss=tensor(2.0816, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.67]
-update 4.687479019165039 4.687479019165039
-
-update 3.44761061668396 3.44761061668396
-get_metric, b4 reduceget_metric, b4 reduce 4.687479019165039
- 3.44761061668396
-get_metric, af reduce 8.135089874267578
-get_metric, af reduceget_metric loss 4.067544937133789
- 8.135089874267578
-get_metric loss 4.067544937133789
- 33%|███▎      | 14/42 [00:21<00:42,  1.54s/it, acc=0.386, current_step=13, epoch=0, length=512, lr=8.63e-5, out_loss=tensor(3.4476, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=4.07]
-update 4.027337551116943 4.027337551116943
-
-update 2.895969867706299 2.895969867706299
-get_metric, b4 reduceget_metric, b4 reduce 4.027337551116943
- 2.895969867706299
-get_metric, af reduce 6.923307418823242
-get_metric, af reduceget_metric loss 3.461653709411621
- 6.923307418823242
-get_metric loss 3.461653709411621
- 36%|███▌      | 15/42 [00:23<00:41,  1.54s/it, acc=0.435, current_step=14, epoch=0, length=512, lr=8.43e-5, out_loss=tensor(2.8960, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.46]
-update 3.018923759460449 3.018923759460449
-
-update 3.0142579078674316 3.0142579078674316
-get_metric, b4 reduce get_metric, b4 reduce3.018923759460449
- 3.0142579078674316
-get_metric, af reduce 6.033181667327881
-get_metric, af reduceget_metric loss 3.0165908336639404
- 6.033181667327881
-get_metric loss 3.0165908336639404
- 38%|███▊      | 16/42 [00:24<00:40,  1.54s/it, acc=0.444, current_step=15, epoch=0, length=512, lr=8.23e-5, out_loss=tensor(3.0143, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.02]
-update 2.4611432552337646 2.4611432552337646
-
-update 3.265983819961548 3.265983819961548
-get_metric, b4 reduceget_metric, b4 reduce 2.4611432552337646
- 3.265983819961548
-get_metric, af reduce 5.7271270751953125
-get_metric, af reduceget_metric loss 2.8635635375976562
- 5.7271270751953125
-get_metric loss 2.8635635375976562
- 40%|████      | 17/42 [00:26<00:38,  1.54s/it, acc=0.444, current_step=16, epoch=0, length=512, lr=8.01e-5, out_loss=tensor(3.2660, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.86]
-update 2.4172184467315674 2.4172184467315674
-
-update 2.5071074962615967 2.5071074962615967
-get_metric, b4 reduceget_metric, b4 reduce 2.4172184467315674
- 2.5071074962615967
-get_metric, af reduce 4.924325942993164
-get_metric, af reduceget_metric loss 2.462162971496582
- 4.924325942993164
-get_metric loss 2.462162971496582
- 43%|████▎     | 18/42 [00:27<00:37,  1.55s/it, acc=0.496, current_step=17, epoch=0, length=512, lr=7.78e-5, out_loss=tensor(2.5071, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.46]
-update 5.429165363311768 5.429165363311768
-
-update 2.492896556854248 2.492896556854248
-get_metric, b4 reduce get_metric, b4 reduce5.429165363311768
- 2.492896556854248
-get_metric, af reduce 7.922061920166016
-get_metric, af reduceget_metric loss 3.961030960083008
- 7.922061920166016
-get_metric loss 3.961030960083008
- 45%|████▌     | 19/42 [00:29<00:35,  1.55s/it, acc=0.491, current_step=18, epoch=0, length=512, lr=7.54e-5, out_loss=tensor(2.4929, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.96]
-update 3.3166964054107666 3.3166964054107666
-
-update 2.6963770389556885 2.6963770389556885
-get_metric, b4 reduce get_metric, b4 reduce3.3166964054107666
- 2.6963770389556885
-get_metric, af reduce 6.013073444366455
-get_metric, af reduceget_metric loss 3.0065367221832275
- 6.013073444366455
-get_metric loss 3.0065367221832275
- 48%|████▊     | 20/42 [00:31<00:34,  1.55s/it, acc=0.444, current_step=19, epoch=0, length=512, lr=7.29e-5, out_loss=tensor(2.6964, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.01]
-update 2.832536458969116 2.832536458969116
-
-update 2.984339952468872 2.984339952468872
-get_metric, b4 reduceget_metric, b4 reduce 2.832536458969116
- 2.984339952468872
-get_metric, af reduce 5.816876411437988get_metric, af reduce
-get_metric loss 2.908438205718994
- 5.816876411437988
-get_metric loss 2.908438205718994
- 50%|█████     | 21/42 [00:32<00:32,  1.56s/it, acc=0.426, current_step=20, epoch=0, length=512, lr=7.04e-5, out_loss=tensor(2.9843, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.91]
-update 2.7838475704193115 2.7838475704193115
-
-update 2.5801475048065186 2.5801475048065186
-get_metric, b4 reduceget_metric, b4 reduce 2.7838475704193115
- 2.5801475048065186
-get_metric, af reduce get_metric, af reduce5.36399507522583
-get_metric loss 2.681997537612915
- 5.36399507522583
-get_metric loss 2.681997537612915
- 52%|█████▏    | 22/42 [00:34<00:31,  1.56s/it, acc=0.474, current_step=21, epoch=0, length=512, lr=6.78e-5, out_loss=tensor(2.5801, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.68]
-update 3.3941032886505127 3.3941032886505127
-
-update 1.6897728443145752 1.6897728443145752
-get_metric, b4 reduceget_metric, b4 reduce 3.3941032886505127
- 1.6897728443145752
-get_metric, af reduce 5.083876132965088
-get_metric, af reduceget_metric loss 2.541938066482544
- 5.083876132965088
-get_metric loss 2.541938066482544
- 55%|█████▍    | 23/42 [00:35<00:29,  1.56s/it, acc=0.638, current_step=22, epoch=0, length=512, lr=6.52e-5, out_loss=tensor(1.6898, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.54]
-update 4.4089884757995605 4.4089884757995605
-
-update 2.702090263366699 2.702090263366699
-get_metric, b4 reduce 4.4089884757995605
-get_metric, b4 reduce 2.702090263366699
-get_metric, af reduce 7.11107873916626
-get_metric, af reduceget_metric loss 3.55553936958313
- 7.11107873916626
-get_metric loss 3.55553936958313
- 57%|█████▋    | 24/42 [00:37<00:28,  1.56s/it, acc=0.405, current_step=23, epoch=0, length=512, lr=6.25e-5, out_loss=tensor(2.7021, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.56]
-update 2.5433197021484375 2.5433197021484375
-
-update 3.332875967025757 3.332875967025757
-get_metric, b4 reduceget_metric, b4 reduce 2.5433197021484375
- 3.332875967025757
-get_metric, af reduce 5.876195907592773get_metric, af reduce
-get_metric loss 2.9380979537963867
- 5.876195907592773
-get_metric loss 2.9380979537963867
- 60%|█████▉    | 25/42 [00:38<00:26,  1.57s/it, acc=0.427, current_step=24, epoch=0, length=512, lr=5.98e-5, out_loss=tensor(3.3329, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.94]
-update 3.943178176879883 3.943178176879883
-
-update 2.13677716255188 2.13677716255188
-get_metric, b4 reduceget_metric, b4 reduce 2.13677716255188
- 3.943178176879883
-get_metric, af reduce get_metric, af reduce6.079955101013184
-get_metric loss 3.039977550506592
- 6.079955101013184
-get_metric loss 3.039977550506592
- 62%|██████▏   | 26/42 [00:40<00:25,  1.57s/it, acc=0.513, current_step=25, epoch=0, length=512, lr=5.7e-5, out_loss=tensor(3.9432, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=3.04] 
-update 2.2636890411376953 2.2636890411376953
-
-update 2.127929210662842 2.127929210662842
-get_metric, b4 reduce 2.2636890411376953
-get_metric, b4 reduce 2.127929210662842
-get_metric, af reduce 4.391618251800537
-get_metric, af reduceget_metric loss 2.1958091259002686
- 4.391618251800537
-get_metric loss 2.1958091259002686
- 64%|██████▍   | 27/42 [00:42<00:23,  1.57s/it, acc=0.553, current_step=26, epoch=0, length=512, lr=5.42e-5, out_loss=tensor(2.1279, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.2]
-update 2.41666579246521 2.41666579246521
-
-update 2.413597822189331 2.413597822189331
-get_metric, b4 reduceget_metric, b4 reduce 2.41666579246521
- 2.413597822189331
-get_metric, af reduce get_metric, af reduce4.830263614654541
-get_metric loss 2.4151318073272705
- 4.830263614654541
-get_metric loss 2.4151318073272705
- 67%|██████▋   | 28/42 [00:43<00:22,  1.57s/it, acc=0.53, current_step=27, epoch=0, length=512, lr=5.14e-5, out_loss=tensor(2.4136, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.42]
-update 2.1285157203674316 2.1285157203674316
-
-update 2.2424919605255127 2.2424919605255127
-get_metric, b4 reduceget_metric, b4 reduce 2.2424919605255127
- 2.1285157203674316
-get_metric, af reduce 4.371007919311523
-get_metric, af reduceget_metric loss 2.1855039596557617
- 4.371007919311523
-get_metric loss 2.1855039596557617
- 69%|██████▉   | 29/42 [00:45<00:20,  1.58s/it, acc=0.543, current_step=28, epoch=0, length=512, lr=4.86e-5, out_loss=tensor(2.1285, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.19]
-update 2.082350254058838 2.082350254058838
-
-update 2.3705265522003174 2.3705265522003174
-get_metric, b4 reduce get_metric, b4 reduce2.082350254058838
- 2.3705265522003174
-get_metric, af reduce 4.452877044677734
-get_metric, af reduceget_metric loss 2.226438522338867
- 4.452877044677734
-get_metric loss 2.226438522338867
- 71%|███████▏  | 30/42 [00:46<00:18,  1.58s/it, acc=0.532, current_step=29, epoch=0, length=512, lr=4.58e-5, out_loss=tensor(2.3705, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.23]
-update
- update 3.0427253246307373 3.0427253246307373
-2.608567714691162 2.608567714691162
-get_metric, b4 reduceget_metric, b4 reduce 3.0427253246307373
- 2.608567714691162
-get_metric, af reduce 5.65129280090332
-get_metric, af reduceget_metric loss 2.82564640045166
- 5.65129280090332
-get_metric loss 2.82564640045166
- 74%|███████▍  | 31/42 [00:48<00:17,  1.58s/it, acc=0.479, current_step=30, epoch=0, length=512, lr=4.3e-5, out_loss=tensor(2.6086, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.83] 
-update 2.861790895462036 2.861790895462036
-
-update 2.1499807834625244 2.1499807834625244
-get_metric, b4 reduceget_metric, b4 reduce 2.1499807834625244
- 2.861790895462036
-get_metric, af reduce 5.0117716789245605
-get_metric, af reduceget_metric loss 2.5058858394622803
- 5.0117716789245605
-get_metric loss 2.5058858394622803
- 76%|███████▌  | 32/42 [00:49<00:15,  1.59s/it, acc=0.564, current_step=31, epoch=0, length=512, lr=4.02e-5, out_loss=tensor(2.8618, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.51]
-update 2.612536907196045
-update  2.435600757598877 2.435600757598877
-2.612536907196045
-get_metric, b4 reduce 2.435600757598877
-get_metric, b4 reduce 2.612536907196045
-get_metric, af reduce 5.048137664794922
-get_metric, af reduceget_metric loss 2.524068832397461
- 5.048137664794922
-get_metric loss 2.524068832397461
- 79%|███████▊  | 33/42 [00:51<00:14,  1.59s/it, acc=0.506, current_step=32, epoch=0, length=512, lr=3.75e-5, out_loss=tensor(2.6125, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.52]
-update 2.5337305068969727 2.5337305068969727
-
-update 2.1771726608276367 2.1771726608276367
-get_metric, b4 reduceget_metric, b4 reduce 2.5337305068969727
- 2.1771726608276367
-get_metric, af reduce 4.710903167724609get_metric, af reduce
-get_metric loss 2.3554515838623047
- 4.710903167724609
-get_metric loss 2.3554515838623047
- 81%|████████  | 34/42 [00:53<00:12,  1.59s/it, acc=0.548, current_step=33, epoch=0, length=512, lr=3.48e-5, out_loss=tensor(2.1772, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.35]
-update 2.271961212158203 2.271961212158203
-
-update 2.3876149654388428 2.3876149654388428
-get_metric, b4 reduceget_metric, b4 reduce 2.271961212158203
- 2.3876149654388428
-get_metric, af reduce 4.659576416015625
-get_metric, af reduceget_metric loss 2.3297882080078125
- 4.659576416015625
-get_metric loss 2.3297882080078125
- 83%|████████▎ | 35/42 [00:54<00:11,  1.60s/it, acc=0.535, current_step=34, epoch=0, length=512, lr=3.22e-5, out_loss=tensor(2.3876, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.33]
-
-update 2.291893482208252 2.291893482208252
-update 1.690020203590393 1.690020203590393
-get_metric, b4 reduceget_metric, b4 reduce 2.291893482208252
- 1.690020203590393
-get_metric, af reduce 3.9819135665893555
-get_metric, af reduceget_metric loss 1.9909567832946777
- 3.9819135665893555
-get_metric loss 1.9909567832946777
- 86%|████████▌ | 36/42 [00:56<00:09,  1.60s/it, acc=0.595, current_step=35, epoch=0, length=512, lr=2.96e-5, out_loss=tensor(1.6900, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=1.99]
-update 
-2.0166823863983154update 2.2048490047454834 2.2048490047454834
- 2.0166823863983154
-get_metric, b4 reduce get_metric, b4 reduce2.2048490047454834
- 2.0166823863983154
-get_metric, af reduce 4.221531391143799
-get_metric, af reduceget_metric loss 2.1107656955718994
- 4.221531391143799
-get_metric loss 2.1107656955718994
- 88%|████████▊ | 37/42 [00:57<00:08,  1.60s/it, acc=0.54, current_step=36, epoch=0, length=512, lr=2.71e-5, out_loss=tensor(2.0167, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.11] 
-update 2.631312370300293 2.631312370300293
-
-update 1.6982145309448242 1.6982145309448242
-get_metric, b4 reduceget_metric, b4 reduce 1.6982145309448242
- 2.631312370300293
-get_metric, af reduce 4.329526901245117
-get_metric, af reduceget_metric loss 2.1647634506225586
- 4.329526901245117
-get_metric loss 2.1647634506225586
- 90%|█████████ | 38/42 [00:59<00:06,  1.61s/it, acc=0.558, current_step=37, epoch=0, length=512, lr=2.46e-5, out_loss=tensor(2.6313, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.17]
-update 2.309621572494507 2.309621572494507
-
-update 2.4445993900299072 2.4445993900299072
-get_metric, b4 reduceget_metric, b4 reduce 2.4445993900299072
- 2.309621572494507
-get_metric, af reduce 4.754220962524414
-get_metric, af reduceget_metric loss 2.377110481262207
- 4.754220962524414
-get_metric loss 2.377110481262207
- 93%|█████████▎| 39/42 [01:01<00:04,  1.61s/it, acc=0.519, current_step=38, epoch=0, length=512, lr=2.22e-5, out_loss=tensor(2.3096, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.38]
-update 2.034245491027832 
-2.034245491027832update 2.6140267848968506 2.6140267848968506
-
-get_metric, b4 reduce 2.6140267848968506get_metric, b4 reduce
- 2.034245491027832
-get_metric, af reduce 4.648272514343262
-get_metric, af reduceget_metric loss 2.324136257171631
- 4.648272514343262
-get_metric loss 2.324136257171631
- 95%|█████████▌| 40/42 [01:02<00:03,  1.62s/it, acc=0.521, current_step=39, epoch=0, length=512, lr=1.99e-5, out_loss=tensor(2.0342, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.32]
-update 3.1638097763061523 3.1638097763061523
-
-update 2.285351514816284 2.285351514816284
-get_metric, b4 reduce 3.1638097763061523get_metric, b4 reduce
- 2.285351514816284
-get_metric, af reduce 5.449161529541016
-get_metric, af reduceget_metric loss 2.724580764770508
- 5.449161529541016
-get_metric loss 2.724580764770508
- 98%|█████████▊| 41/42 [01:04<00:01,  1.62s/it, acc=0.514, current_step=40, epoch=0, length=512, lr=1.77e-5, out_loss=tensor(2.2854, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.73]
-update 2.3838465213775635 2.3838465213775635
-
-update 1.84676992893219 1.84676992893219
-get_metric, b4 reduceget_metric, b4 reduce 2.3838465213775635
- 1.84676992893219
-get_metric, af reduce 4.230616569519043
-get_metric, af reduceget_metric loss 2.1153082847595215
- 4.230616569519043
-get_metric loss 2.1153082847595215
-100%|██████████| 42/42 [01:06<00:00,  1.57s/it, acc=0.581, current_step=41, epoch=0, length=512, lr=1.57e-5, out_loss=tensor(1.8468, device='cuda:0', grad_fn=<NllLossBackward0>), skip=0, total_step=42, train_loss=2.12]
-[2025-06-12 02:13:07,173] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is begin to save!
-[2025-06-12 02:13:07,179] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-42/pytorch_model/mp_rank_00_model_states.pt
-checkpoint checkpoint-0-42 is saved...
+Mặc dù Bikan có hiệu quả nhất định trong điều trị đái tháo đường, việc sử dụng thuốc cũng có thể gây ra một số tác dụng phụ. Theo các nghiên cứu độc tính, việc sử dụng Bikan liều cao trong thời gian dài có thể gây ra các vấn đề như phì đại tim và suy tim.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> device cuda:0
+ 98%|█████████▊| 58/59 [01:39<00:01,  1.76s/it, acc=0.555, current_step=58, epoch=0, length=512, loss=2.18, lr=1.63e-5, skip=0, total_step=59][2025-06-12 07:53:46,547] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is begin to save!
+[2025-06-12 07:53:46,556] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-59/pytorch_model/mp_rank_00_model_states.pt
+checkpoint checkpoint-0-59 is saved...
+100%|██████████| 59/59 [02:02<00:00,  2.07s/it, acc=0.555, current_step=58, epoch=0, length=512, loss=2.18, lr=1.63e-5, skip=0, total_step=59]
+[2025-06-12 07:54:09,083] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is begin to save!
+[2025-06-12 07:54:09,088] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-59/pytorch_model/mp_rank_00_model_states.pt
+checkpoint checkpoint-0-59 is saved...
 wandb: 
-wandb: 🚀 View run solar-mountain-44 at: https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/mtydalbg
-[rank0]:[W612 02:13:31.694714869 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wandb: 🚀 View run splendid-sponge-51 at: https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/n5f0sjq7
+[rank0]:[W612 07:54:44.290393093 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
