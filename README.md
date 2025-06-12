@@ -1,7 +1,12 @@
 Citation: [HUatuoGPT-II](https://github.com/FreedomIntelligence/HuatuoGPT-II)
 
 ### Prepare
-
+python adaption/one_stage_training/data_prepare.py \
+    --file_path1 /mnt/c/Users/HOME/Downloads/HuatuoGPT-II/all_data/huatuogpt2_vi.jsonl \
+    --file_path2 /mnt/c/Users/HOME/Downloads/HuatuoGPT-II/all_data/huatuo26m_vi.jsonl \
+    --dataset_type train \
+    --percent 1 \
+    --output_path all_data/huatuo_trained_1p.json \
 
 ### Preprocess
 - data_path: Output of data_prepare.py
