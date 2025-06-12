@@ -1,7 +1,9 @@
 .env
-adaption/one_stage_training/train_qa_1p.json
 evaluation/data/eval_qa.json
 train_logs
 
-all_data/train_qa_1p_Baichuan2-13B-Base_4096_dataset
+all_data/train_qa_1*
+
 all_data/huatuo*
+
+!all_data/huatuo_trained_0.1p.json

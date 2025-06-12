@@ -69,7 +69,6 @@ class SFTMetric:
     def __call__(self, logits, labels, loss):
         device_id = torch.cuda.current_device()
         device_name = torch.cuda.get_device_name(device_id)
-        # print('out_loss', loss.item(), 'device', device_name)
         return self.update(logits, labels, loss)
 
     def update(self, logits, labels, loss):
@@ -90,7 +89,6 @@ class SFTMetric:
         loss = self.total_loss.item() / (self.world_size * self.n_step)
         device_id = torch.cuda.current_device()
         device_name = torch.cuda.get_device_name(device_id)
-        # print('get_metric:', loss, self.world_size, self.n_step, 'device', device_name)
 
         if reset:
             self.n_step = 0
@@ -199,7 +197,6 @@ def train(args):
 
             output = model(input_ids=input_ids, labels=labels, return_dict=True,use_cache=False)
             loss = output.loss
-            # print('out_loss', loss.item(), 'device', accelerator.device)
 
             metric(output.logits, labels, loss)
             acc, train_loss = metric.get_metric()
@@ -222,13 +219,12 @@ def train(args):
             global_step += 1
 
             if accelerator.is_main_process:
-                train_dataloader_iterator.set_postfix(epoch=epoch, current_step=batch_cnt, total_step=len(train_dataloader), skip=accelerator.optimizer_step_was_skipped, train_loss=round(train_loss, 3), out_loss=loss, acc=round(acc, 3), length=len(input_ids[0]), lr=lr_scheduler.get_last_lr()[0])
+                train_dataloader_iterator.set_postfix(epoch=epoch, current_step=batch_cnt, total_step=len(train_dataloader), skip=accelerator.optimizer_step_was_skipped, loss=round(train_loss, 3), acc=round(acc, 3), length=len(input_ids[0]), lr=lr_scheduler.get_last_lr()[0])
 
             if global_step % 3 == 0 and accelerator.is_main_process:
                 wandb.log({
                     'skip': int(accelerator.optimizer_step_was_skipped),
-                    'train_loss': train_loss,
-                    'out_loss': loss,
+                    'loss': train_loss,
                     'acc': acc,
                     'lr': lr_scheduler.get_last_lr()[0]
                 }, step=global_step)
