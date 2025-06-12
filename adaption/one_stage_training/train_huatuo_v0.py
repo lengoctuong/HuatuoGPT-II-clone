@@ -1,6 +1,7 @@
 """Code for finetune_huatuo"""
 
 import os
+os.environ["WANDB_API_KEY"]='Your wandb key'
 import copy
 import json
 import torch
@@ -22,9 +23,6 @@ import shutil
 import json
 import random
 
-from dotenv import load_dotenv
-load_dotenv()
-
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 os.umask(0)
 
@@ -34,11 +32,11 @@ logging.basicConfig(level='INFO')
 
 
 class HuatuoGPT2_train_dataset(torch.utils.data.Dataset):
-    def __init__(self, config, tokenizer, debug=False):
+    def __init__(self, config, tokenizer):
         self.config = config
         self.tokenizer = tokenizer
         self.data = datasets.load_from_disk(config.data_path)
-        self.debug = debug
+        self.debug = True
 
     def __getitem__(self, index):
         return self.data[index]
@@ -47,7 +45,7 @@ class HuatuoGPT2_train_dataset(torch.utils.data.Dataset):
         input_ids = [item["input_ids"] for item in batch]
         labels = [item["labels"] for item in batch]
         if self.debug:
-            print('tokenizer.decode', self.tokenizer.decode(batch[0]['input_ids']))
+            print(self.tokenizer.decode(batch[0]['input_ids']))
             self.debug = False
 
         return {
@@ -137,7 +135,7 @@ def train(args):
 
     accelerator.print(f'gradient_accumulation_steps:{accelerator.gradient_accumulation_steps} data_path:{args.data_path} lr:{args.learning_rate} num_training_steps:{num_training_steps}')
     
-    model, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(model, optimizer, train_dataloader, lr_scheduler)
+    model, optimizer, train_dataloader, val_dataloader, lr_scheduler = accelerator.prepare(model, optimizer, train_dataloader, val_dataloader, lr_scheduler)
 
     if args.checkpoint_path:
         if os.path.isfile(os.path.join(args.checkpoint_path, "scheduler.bin")) and \
@@ -180,7 +178,6 @@ def train(args):
     for epoch in range(start_epoch, args.n_epochs):
         train_dataloader_iterator = tqdm(enumerate(train_dataloader), total=len(train_dataloader)) if accelerator.is_main_process else enumerate(train_dataloader)
         for batch_cnt, batch in train_dataloader_iterator:
-            # accelerator.print('train_step', epoch, batch_cnt, global_step, 'device')
             if epoch==start_epoch and batch_cnt<start_step:
                 continue
 
@@ -195,16 +192,6 @@ def train(args):
 
             metric(output.logits, labels, loss)
             acc, train_loss = metric.get_metric()
-            if batch_cnt == 0:
-                # see all input ids and labels decoded
-                for i in range(len(input_ids)):
-                    labels_clean = labels[i].clone()
-                    labels_clean[labels_clean == -100] = tokenizer.pad_token_id
-                    accelerator.print(f"input_ids{i}:")
-                    accelerator.print(tokenizer.decode(input_ids[i]), 'device', accelerator.device)
-                    accelerator.print(f"labels{i}:")
-                    accelerator.print(tokenizer.decode(labels_clean), 'device', accelerator.device)
-
             accelerator.backward(loss)
             if (global_step+1) % accelerator.gradient_accumulation_steps == 0:
                 optimizer.step()
@@ -224,8 +211,7 @@ def train(args):
                     'lr': lr_scheduler.get_last_lr()[0]
                 }, step=global_step)
 
-            # if global_step % args.save_step == 22:
-            if batch_cnt == len(train_dataloader_iterator) - 1:
+            if global_step % args.save_step == 22:
                 accelerator.wait_for_everyone()
                 save_checkpoint(epoch, batch_cnt, global_step)
             

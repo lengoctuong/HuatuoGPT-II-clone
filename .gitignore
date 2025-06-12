@@ -7,3 +7,4 @@ all_data/train_qa_1*
 all_data/huatuo*
 
 !all_data/huatuo_trained_0.1p.json
+!all_data/huatuo_validated_5p.json
