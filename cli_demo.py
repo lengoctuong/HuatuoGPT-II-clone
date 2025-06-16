@@ -15,12 +15,12 @@ def load_model(model_name):
 
 def generate_prompt(query, history):
     if not history:
-        return  f"<问>：{query}\n<答>："
+        return  f"<Câu hỏi>：{query}\n<Câu trả lời>："
     else:
         prompt = ''
         for i, (old_query, response) in enumerate(history):
-            prompt += "<问>：{}\n<答>：{}\n".format(old_query, response)
-        prompt += "<问>：{}\n<答>：".format(query)
+            prompt += "<Câu hỏi>：{}\n<Câu trả lời>：{}\n".format(old_query, response)
+        prompt += "<Câu hỏi>：{}\n<Câu trả lời>：".format(query)
         return prompt
 
 def remove_overlap(str1, str2):
@@ -41,15 +41,15 @@ def main(args):
     os_name = platform.system()
     clear_command = 'cls' if os_name == 'Windows' else 'clear'
     history = []
-    print("HuatuoGPT: 你好，我是一个解答医疗健康问题的大模型，目前处于测试阶段，请以医嘱为准。请问有什么可以帮到您？输入 clear 清空对话历史，stop 终止程序")
+    print("HuatuoGPT: Chào bạn, tôi là một mô hình trí tuệ nhân tạo chuyên giải đáp các câu hỏi về y tế và sức khỏe, hiện đang trong giai đoạn thử nghiệm. Vui lòng tham khảo ý kiến bác sĩ để có hướng dẫn chính xác. Tôi có thể giúp gì cho bạn?\nNhập clear để xóa lịch sử trò chuyện, stop để kết thúc chương trình.")
     while True:
-        query = input("\n用户：")
+        query = input("\nUser：")
         if query == "stop":
             break
         if query == "clear":
             history = []
             os.system(clear_command)
-            print("HuatuoGPT: 你好，我是一个解答医疗健康问题的大模型，目前处于测试阶段，请以医嘱为准。请问有什么可以帮到您？输入 clear 清空对话历史，stop 终止程序")
+            print("HuatuoGPT: Chào bạn, tôi là một mô hình trí tuệ nhân tạo chuyên giải đáp các câu hỏi về y tế và sức khỏe, hiện đang trong giai đoạn thử nghiệm. Vui lòng tham khảo ý kiến bác sĩ để có hướng dẫn chính xác. Tôi có thể giúp gì cho bạn?\nNhập clear để xóa lịch sử trò chuyện, stop để kết thúc chương trình.")
             continue
         
         print(f"HuatuoGPT: ", end="", flush=True)

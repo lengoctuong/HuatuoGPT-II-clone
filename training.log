@@ -1,79 +1,79 @@
-[2025-06-12 07:51:38,273] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-06-12 07:51:39,605] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
-2025-06-12 07:51:39.877560: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+[2025-06-13 02:28:40,176] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-13 02:28:41,613] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+2025-06-13 02:28:41.888132: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1749714699.900581    1631 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1749714699.907460    1631 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-W0612 07:51:43.329000 1631 torch/distributed/run.py:792] 
-W0612 07:51:43.329000 1631 torch/distributed/run.py:792] *****************************************
-W0612 07:51:43.329000 1631 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-W0612 07:51:43.329000 1631 torch/distributed/run.py:792] *****************************************
-2025-06-12 07:51:48.272909: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+E0000 00:00:1749781721.911958     913 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749781721.919045     913 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0613 02:28:45.550000 913 torch/distributed/run.py:792] 
+W0613 02:28:45.550000 913 torch/distributed/run.py:792] *****************************************
+W0613 02:28:45.550000 913 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0613 02:28:45.550000 913 torch/distributed/run.py:792] *****************************************
+2025-06-13 02:28:51.020809: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1749714708.295233    1677 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1749714708.302734    1677 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-2025-06-12 07:51:48.424088: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+E0000 00:00:1749781731.045501     960 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749781731.052998     960 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-06-13 02:28:51.253739: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1749714708.447213    1678 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1749714708.454248    1678 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1749781731.277602     961 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749781731.285289     961 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
 /usr/local/lib/python3.11/dist-packages/accelerate/utils/dataclasses.py:1228: UserWarning: DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.
   warnings.warn("DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.")
-[2025-06-12 07:51:53,408] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-13 02:28:56,425] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
 /usr/local/lib/python3.11/dist-packages/accelerate/utils/dataclasses.py:1228: UserWarning: DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.
   warnings.warn("DeepSpeed Zero3 Init flag is only applicable for ZeRO Stage 3. Setting it to False.")
-[2025-06-12 07:51:53,552] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-[2025-06-12 07:51:54,947] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
-[2025-06-12 07:51:55,325] [INFO] [comm.py:675:init_distributed] cdb=None
-[2025-06-12 07:51:55,325] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-06-13 02:28:56,668] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-13 02:28:57,964] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-06-13 02:28:58,300] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-06-13 02:28:58,419] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-06-13 02:28:58,419] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-[2025-06-12 07:51:55,459] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-06-13 02:28:58,698] [INFO] [comm.py:675:init_distributed] cdb=None
 wandb: Currently logged in as: lengoctuong23052002 (lengoctuong23052002-fpt-retail) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
-[2025-06-12 07:51:55,732] [INFO] [comm.py:675:init_distributed] cdb=None
 wandb: Tracking run with wandb version 0.19.9
-wandb: Run data is saved locally in ./train_logs/Qwen3_0.6B/wandb/run-20250612_075155-n5f0sjq7
+wandb: Run data is saved locally in ./train_logs/Qwen3_0.6B/wandb/run-20250613_022858-qb1n4sru
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run splendid-sponge-51
+wandb: Syncing run peach-cosmos-58
 wandb: ⭐️ View project at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B
-wandb: 🚀 View run at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/n5f0sjq7
+wandb: 🚀 View run at https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/qb1n4sru
 args:
-Namespace(experiment_name='Qwen3_0.6B', checkpoint_path=None, model_path='Qwen/Qwen3-0.6B', not_shuffle_train_loader=False, data_path='./all_data/huatuo_trained_0.1p_Qwen3-0.6B_512_dataset', output_dir='./ckpts/Qwen3_0.6B', log_dir='./train_logs/Qwen3_0.6B', max_seq_len=512, gradient_checkpointing=True, gradient_accumulation_steps=1, train_bsz_per_gpu=1, eval_bsz_per_gpu=1, weight_decay=0.1, learning_rate=0.0001, warmup_rates=0.01, n_epochs=1, save_step=-1, eval_step=-1, seed=42)
-[2025-06-12 07:52:00,553] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
-gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_0.1p_Qwen3-0.6B_512_dataset lr:0.0001 num_training_steps:160
-[2025-06-12 07:52:01,966] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.1, git-hash=unknown, git-branch=unknown
-[2025-06-12 07:52:01,966] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
-[2025-06-12 07:52:03,001] [INFO] [engine.py:1325:_configure_distributed_model] ********** distributed groups summary **********
+Namespace(experiment_name='Qwen3_0.6B', checkpoint_path=None, model_path='Qwen/Qwen3-0.6B', not_shuffle_train_loader=False, data_path='./all_data/huatuo_trained_1p_Qwen3-0.6B_512_dataset', output_dir='./ckpts/Qwen3_0.6B', log_dir='./train_logs/Qwen3_0.6B', max_seq_len=512, gradient_checkpointing=True, gradient_accumulation_steps=1, train_bsz_per_gpu=1, eval_bsz_per_gpu=1, weight_decay=0.1, learning_rate=0.0001, warmup_rates=0.01, n_epochs=1, save_step=-1, eval_step=-1, seed=42)
+[2025-06-13 02:29:04,260] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
+gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_1p_Qwen3-0.6B_512_dataset lr:0.0001 num_training_steps:1285
+[2025-06-13 02:29:05,211] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.1, git-hash=unknown, git-branch=unknown
+[2025-06-13 02:29:05,212] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 2
+[2025-06-13 02:29:06,322] [INFO] [engine.py:1325:_configure_distributed_model] ********** distributed groups summary **********
 	 self.dp_world_size=2
 	 self.mp_world_size=1
 	 self.seq_dp_world_size=2
 	 self.sequence_parallel_size=1
 ***********************************************
-[2025-06-12 07:52:03,415] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
-[2025-06-12 07:52:03,417] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
-[2025-06-12 07:52:03,417] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
-[2025-06-12 07:52:03,430] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
-[2025-06-12 07:52:03,430] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
-[2025-06-12 07:52:03,430] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 1 optimizer
-[2025-06-12 07:52:03,431] [INFO] [stage_1_and_2.py:151:__init__] Reduce bucket size 500000000
-[2025-06-12 07:52:03,431] [INFO] [stage_1_and_2.py:152:__init__] Allgather bucket size 500000000
-[2025-06-12 07:52:03,431] [INFO] [stage_1_and_2.py:153:__init__] CPU Offload: False
-[2025-06-12 07:52:03,432] [INFO] [stage_1_and_2.py:154:__init__] Round robin gradient partitioning: False
-[2025-06-12 07:52:06,018] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
-[2025-06-12 07:52:06,019] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.78 GB         CA 2.78 GB         Max_CA 3 GB 
-[2025-06-12 07:52:06,020] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.27 GB, percent = 29.6%
-[2025-06-12 07:52:06,412] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
-[2025-06-12 07:52:06,413] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 3.33 GB         CA 3.89 GB         Max_CA 4 GB 
-[2025-06-12 07:52:06,413] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.27 GB, percent = 29.6%
-[2025-06-12 07:52:06,414] [INFO] [stage_1_and_2.py:573:__init__] optimizer state initialized
-[2025-06-12 07:52:06,809] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
-[2025-06-12 07:52:06,810] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.22 GB         CA 3.89 GB         Max_CA 4 GB 
-[2025-06-12 07:52:06,811] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.27 GB, percent = 29.6%
-[2025-06-12 07:52:06,814] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
-[2025-06-12 07:52:06,815] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
-[2025-06-12 07:52:06,815] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
-[2025-06-12 07:52:06,815] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
-[2025-06-12 07:52:06,817] [INFO] [logging.py:107:log_dist] [Rank 0] [TorchCheckpointEngine] Initialized with serialization = True
-[2025-06-12 07:52:06,817] [INFO] [config.py:921:print] DeepSpeedEngine configuration:
-[2025-06-12 07:52:06,818] [INFO] [config.py:925:print]   activation_checkpointing_config  {
+[2025-06-13 02:29:06,796] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-06-13 02:29:06,798] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2025-06-13 02:29:06,798] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-06-13 02:29:06,812] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2025-06-13 02:29:06,812] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=AdamW type=<class 'torch.optim.adamw.AdamW'>
+[2025-06-13 02:29:06,813] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 1 optimizer
+[2025-06-13 02:29:06,813] [INFO] [stage_1_and_2.py:151:__init__] Reduce bucket size 500000000
+[2025-06-13 02:29:06,814] [INFO] [stage_1_and_2.py:152:__init__] Allgather bucket size 500000000
+[2025-06-13 02:29:06,814] [INFO] [stage_1_and_2.py:153:__init__] CPU Offload: False
+[2025-06-13 02:29:06,814] [INFO] [stage_1_and_2.py:154:__init__] Round robin gradient partitioning: False
+[2025-06-13 02:29:09,616] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2025-06-13 02:29:09,618] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.78 GB         CA 2.78 GB         Max_CA 3 GB 
+[2025-06-13 02:29:09,618] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.19 GB, percent = 29.3%
+[2025-06-13 02:29:10,028] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2025-06-13 02:29:10,029] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 3.33 GB         CA 3.89 GB         Max_CA 4 GB 
+[2025-06-13 02:29:10,030] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.19 GB, percent = 29.3%
+[2025-06-13 02:29:10,030] [INFO] [stage_1_and_2.py:573:__init__] optimizer state initialized
+[2025-06-13 02:29:10,440] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2025-06-13 02:29:10,442] [INFO] [utils.py:782:see_memory_usage] MA 2.22 GB         Max_MA 2.22 GB         CA 3.89 GB         Max_CA 4 GB 
+[2025-06-13 02:29:10,443] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 9.19 GB, percent = 29.3%
+[2025-06-13 02:29:10,446] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
+[2025-06-13 02:29:10,446] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2025-06-13 02:29:10,446] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-06-13 02:29:10,447] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2025-06-13 02:29:10,448] [INFO] [logging.py:107:log_dist] [Rank 0] [TorchCheckpointEngine] Initialized with serialization = True
+[2025-06-13 02:29:10,448] [INFO] [config.py:921:print] DeepSpeedEngine configuration:
+[2025-06-13 02:29:10,449] [INFO] [config.py:925:print]   activation_checkpointing_config  {
     "partition_activations": false, 
     "contiguous_memory_optimization": false, 
     "cpu_checkpointing": false, 
@@ -81,10 +81,10 @@ gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_0.1p_Qwen3-0.6
     "synchronize_checkpoint_boundary": false, 
     "profile": false
 }
-[2025-06-12 07:52:06,818] [INFO] [config.py:925:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
-[2025-06-12 07:52:06,818] [INFO] [config.py:925:print]   amp_enabled .................. False
-[2025-06-12 07:52:06,819] [INFO] [config.py:925:print]   amp_params ................... False
-[2025-06-12 07:52:06,819] [INFO] [config.py:925:print]   autotuning_config ............ {
+[2025-06-13 02:29:10,449] [INFO] [config.py:925:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-06-13 02:29:10,449] [INFO] [config.py:925:print]   amp_enabled .................. False
+[2025-06-13 02:29:10,450] [INFO] [config.py:925:print]   amp_params ................... False
+[2025-06-13 02:29:10,450] [INFO] [config.py:925:print]   autotuning_config ............ {
     "enabled": false, 
     "start_step": null, 
     "end_step": null, 
@@ -109,33 +109,33 @@ gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_0.1p_Qwen3-0.6
     "min_train_micro_batch_size_per_gpu": 1, 
     "num_tuning_micro_batch_sizes": 3
 }
-[2025-06-12 07:52:06,819] [INFO] [config.py:925:print]   bfloat16_config .............. enabled=True immediate_grad_update=False check_grad_overflow=False
-[2025-06-12 07:52:06,820] [INFO] [config.py:925:print]   checkpoint_config ............ {'tag_validation': 'WARN', 'checkpoint_serialization': True, 'writer': None}
-[2025-06-12 07:52:06,820] [INFO] [config.py:925:print]   checkpoint_parallel_write_pipeline  False
-[2025-06-12 07:52:06,820] [INFO] [config.py:925:print]   checkpoint_tag_validation_enabled  True
-[2025-06-12 07:52:06,821] [INFO] [config.py:925:print]   checkpoint_tag_validation_fail  False
-[2025-06-12 07:52:06,821] [INFO] [config.py:925:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7ea78be8c610>
-[2025-06-12 07:52:06,821] [INFO] [config.py:925:print]   communication_data_type ...... None
-[2025-06-12 07:52:06,822] [INFO] [config.py:925:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
-[2025-06-12 07:52:06,822] [INFO] [config.py:925:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
-[2025-06-12 07:52:06,822] [INFO] [config.py:925:print]   curriculum_enabled_legacy .... False
-[2025-06-12 07:52:06,823] [INFO] [config.py:925:print]   curriculum_params_legacy ..... False
-[2025-06-12 07:52:06,823] [INFO] [config.py:925:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
-[2025-06-12 07:52:06,823] [INFO] [config.py:925:print]   data_efficiency_enabled ...... False
-[2025-06-12 07:52:06,824] [INFO] [config.py:925:print]   dataloader_drop_last ......... False
-[2025-06-12 07:52:06,824] [INFO] [config.py:925:print]   disable_allgather ............ False
-[2025-06-12 07:52:06,824] [INFO] [config.py:925:print]   dump_state ................... False
-[2025-06-12 07:52:06,825] [INFO] [config.py:925:print]   eigenvalue_enabled ........... False
-[2025-06-12 07:52:06,825] [INFO] [config.py:925:print]   eigenvalue_gas_boundary_resolution  1
-[2025-06-12 07:52:06,825] [INFO] [config.py:925:print]   eigenvalue_layer_name ........ bert.encoder.layer
-[2025-06-12 07:52:06,826] [INFO] [config.py:925:print]   eigenvalue_layer_num ......... 0
-[2025-06-12 07:52:06,826] [INFO] [config.py:925:print]   eigenvalue_max_iter .......... 100
-[2025-06-12 07:52:06,826] [INFO] [config.py:925:print]   eigenvalue_stability ......... 1e-06
-[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   eigenvalue_tol ............... 0.01
-[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   eigenvalue_verbose ........... False
-[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   elasticity_enabled ........... False
-[2025-06-12 07:52:06,827] [INFO] [config.py:925:print]   float16_config ............... enabled=False auto_cast=False loss_scale=0.0 initial_scale_power=16 loss_scale_window=1000 hysteresis=2 consecutive_hysteresis=False min_loss_scale=1 fp16_master_weights_and_grads=False
-[2025-06-12 07:52:06,828] [INFO] [config.py:925:print]   flops_profiler_config ........ {
+[2025-06-13 02:29:10,450] [INFO] [config.py:925:print]   bfloat16_config .............. enabled=True immediate_grad_update=False check_grad_overflow=False
+[2025-06-13 02:29:10,450] [INFO] [config.py:925:print]   checkpoint_config ............ {'tag_validation': 'WARN', 'checkpoint_serialization': True, 'writer': None}
+[2025-06-13 02:29:10,450] [INFO] [config.py:925:print]   checkpoint_parallel_write_pipeline  False
+[2025-06-13 02:29:10,451] [INFO] [config.py:925:print]   checkpoint_tag_validation_enabled  True
+[2025-06-13 02:29:10,451] [INFO] [config.py:925:print]   checkpoint_tag_validation_fail  False
+[2025-06-13 02:29:10,451] [INFO] [config.py:925:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7bc8215c0750>
+[2025-06-13 02:29:10,451] [INFO] [config.py:925:print]   communication_data_type ...... None
+[2025-06-13 02:29:10,451] [INFO] [config.py:925:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2025-06-13 02:29:10,451] [INFO] [config.py:925:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-06-13 02:29:10,452] [INFO] [config.py:925:print]   curriculum_enabled_legacy .... False
+[2025-06-13 02:29:10,452] [INFO] [config.py:925:print]   curriculum_params_legacy ..... False
+[2025-06-13 02:29:10,452] [INFO] [config.py:925:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-06-13 02:29:10,452] [INFO] [config.py:925:print]   data_efficiency_enabled ...... False
+[2025-06-13 02:29:10,452] [INFO] [config.py:925:print]   dataloader_drop_last ......... False
+[2025-06-13 02:29:10,453] [INFO] [config.py:925:print]   disable_allgather ............ False
+[2025-06-13 02:29:10,453] [INFO] [config.py:925:print]   dump_state ................... False
+[2025-06-13 02:29:10,453] [INFO] [config.py:925:print]   eigenvalue_enabled ........... False
+[2025-06-13 02:29:10,453] [INFO] [config.py:925:print]   eigenvalue_gas_boundary_resolution  1
+[2025-06-13 02:29:10,453] [INFO] [config.py:925:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-06-13 02:29:10,453] [INFO] [config.py:925:print]   eigenvalue_layer_num ......... 0
+[2025-06-13 02:29:10,453] [INFO] [config.py:925:print]   eigenvalue_max_iter .......... 100
+[2025-06-13 02:29:10,454] [INFO] [config.py:925:print]   eigenvalue_stability ......... 1e-06
+[2025-06-13 02:29:10,454] [INFO] [config.py:925:print]   eigenvalue_tol ............... 0.01
+[2025-06-13 02:29:10,454] [INFO] [config.py:925:print]   eigenvalue_verbose ........... False
+[2025-06-13 02:29:10,454] [INFO] [config.py:925:print]   elasticity_enabled ........... False
+[2025-06-13 02:29:10,454] [INFO] [config.py:925:print]   float16_config ............... enabled=False auto_cast=False loss_scale=0.0 initial_scale_power=16 loss_scale_window=1000 hysteresis=2 consecutive_hysteresis=False min_loss_scale=1 fp16_master_weights_and_grads=False
+[2025-06-13 02:29:10,454] [INFO] [config.py:925:print]   flops_profiler_config ........ {
     "enabled": false, 
     "recompute_fwd_factor": 0.0, 
     "profile_step": 1, 
@@ -144,19 +144,19 @@ gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_0.1p_Qwen3-0.6
     "detailed": true, 
     "output_file": null
 }
-[2025-06-12 07:52:06,828] [INFO] [config.py:925:print]   global_rank .................. 0
-[2025-06-12 07:52:06,828] [INFO] [config.py:925:print]   grad_accum_dtype ............. None
-[2025-06-12 07:52:06,829] [INFO] [config.py:925:print]   gradient_accumulation_steps .. 1
-[2025-06-12 07:52:06,829] [INFO] [config.py:925:print]   gradient_clipping ............ 1.0
-[2025-06-12 07:52:06,829] [INFO] [config.py:925:print]   gradient_predivide_factor .... 1.0
-[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   graph_harvesting ............. False
-[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
-[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   load_universal_checkpoint .... False
-[2025-06-12 07:52:06,830] [INFO] [config.py:925:print]   memory_breakdown ............. False
-[2025-06-12 07:52:06,831] [INFO] [config.py:925:print]   mics_hierarchial_params_gather  False
-[2025-06-12 07:52:06,831] [INFO] [config.py:925:print]   mics_shard_size .............. -1
-[2025-06-12 07:52:06,831] [INFO] [config.py:925:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
-[2025-06-12 07:52:06,832] [INFO] [config.py:925:print]   nebula_config ................ {
+[2025-06-13 02:29:10,455] [INFO] [config.py:925:print]   global_rank .................. 0
+[2025-06-13 02:29:10,455] [INFO] [config.py:925:print]   grad_accum_dtype ............. None
+[2025-06-13 02:29:10,455] [INFO] [config.py:925:print]   gradient_accumulation_steps .. 1
+[2025-06-13 02:29:10,455] [INFO] [config.py:925:print]   gradient_clipping ............ 1.0
+[2025-06-13 02:29:10,455] [INFO] [config.py:925:print]   gradient_predivide_factor .... 1.0
+[2025-06-13 02:29:10,455] [INFO] [config.py:925:print]   graph_harvesting ............. False
+[2025-06-13 02:29:10,455] [INFO] [config.py:925:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-06-13 02:29:10,456] [INFO] [config.py:925:print]   load_universal_checkpoint .... False
+[2025-06-13 02:29:10,456] [INFO] [config.py:925:print]   memory_breakdown ............. False
+[2025-06-13 02:29:10,456] [INFO] [config.py:925:print]   mics_hierarchial_params_gather  False
+[2025-06-13 02:29:10,456] [INFO] [config.py:925:print]   mics_shard_size .............. -1
+[2025-06-13 02:29:10,456] [INFO] [config.py:925:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-06-13 02:29:10,456] [INFO] [config.py:925:print]   nebula_config ................ {
     "enabled": false, 
     "persistent_storage_path": null, 
     "persistent_time_interval": 100, 
@@ -164,34 +164,34 @@ gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_0.1p_Qwen3-0.6
     "enable_nebula_load": true, 
     "load_path": null
 }
-[2025-06-12 07:52:06,832] [INFO] [config.py:925:print]   optimizer_legacy_fusion ...... False
-[2025-06-12 07:52:06,832] [INFO] [config.py:925:print]   optimizer_name ............... None
-[2025-06-12 07:52:06,833] [INFO] [config.py:925:print]   optimizer_params ............. None
-[2025-06-12 07:52:06,833] [INFO] [config.py:925:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
-[2025-06-12 07:52:06,833] [INFO] [config.py:925:print]   pld_enabled .................. False
-[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   pld_params ................... False
-[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   prescale_gradients ........... False
-[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   scheduler_name ............... None
-[2025-06-12 07:52:06,834] [INFO] [config.py:925:print]   scheduler_params ............. None
-[2025-06-12 07:52:06,835] [INFO] [config.py:925:print]   seq_parallel_communication_data_type  torch.float32
-[2025-06-12 07:52:06,835] [INFO] [config.py:925:print]   sparse_attention ............. None
-[2025-06-12 07:52:06,835] [INFO] [config.py:925:print]   sparse_gradients_enabled ..... False
-[2025-06-12 07:52:06,836] [INFO] [config.py:925:print]   steps_per_print .............. inf
-[2025-06-12 07:52:06,836] [INFO] [config.py:925:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
-[2025-06-12 07:52:06,836] [INFO] [config.py:925:print]   timers_config ................ enabled=True synchronized=True
-[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   train_batch_size ............. 2
-[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   train_micro_batch_size_per_gpu  1
-[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   use_data_before_expert_parallel_  False
-[2025-06-12 07:52:06,837] [INFO] [config.py:925:print]   use_node_local_storage ....... False
-[2025-06-12 07:52:06,838] [INFO] [config.py:925:print]   wall_clock_breakdown ......... False
-[2025-06-12 07:52:06,838] [INFO] [config.py:925:print]   weight_quantization_config ... None
-[2025-06-12 07:52:06,838] [INFO] [config.py:925:print]   world_size ................... 2
-[2025-06-12 07:52:06,839] [INFO] [config.py:925:print]   zero_allow_untested_optimizer  True
-[2025-06-12 07:52:06,839] [INFO] [config.py:925:print]   zero_config .................. stage=1 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
-[2025-06-12 07:52:06,839] [INFO] [config.py:925:print]   zero_enabled ................. True
-[2025-06-12 07:52:06,840] [INFO] [config.py:925:print]   zero_force_ds_cpu_optimizer .. True
-[2025-06-12 07:52:06,840] [INFO] [config.py:925:print]   zero_optimization_stage ...... 1
-[2025-06-12 07:52:06,840] [INFO] [config.py:911:print_user_config]   json = {
+[2025-06-13 02:29:10,457] [INFO] [config.py:925:print]   optimizer_legacy_fusion ...... False
+[2025-06-13 02:29:10,457] [INFO] [config.py:925:print]   optimizer_name ............... None
+[2025-06-13 02:29:10,457] [INFO] [config.py:925:print]   optimizer_params ............. None
+[2025-06-13 02:29:10,457] [INFO] [config.py:925:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-06-13 02:29:10,457] [INFO] [config.py:925:print]   pld_enabled .................. False
+[2025-06-13 02:29:10,457] [INFO] [config.py:925:print]   pld_params ................... False
+[2025-06-13 02:29:10,458] [INFO] [config.py:925:print]   prescale_gradients ........... False
+[2025-06-13 02:29:10,458] [INFO] [config.py:925:print]   scheduler_name ............... None
+[2025-06-13 02:29:10,458] [INFO] [config.py:925:print]   scheduler_params ............. None
+[2025-06-13 02:29:10,458] [INFO] [config.py:925:print]   seq_parallel_communication_data_type  torch.float32
+[2025-06-13 02:29:10,458] [INFO] [config.py:925:print]   sparse_attention ............. None
+[2025-06-13 02:29:10,458] [INFO] [config.py:925:print]   sparse_gradients_enabled ..... False
+[2025-06-13 02:29:10,459] [INFO] [config.py:925:print]   steps_per_print .............. inf
+[2025-06-13 02:29:10,459] [INFO] [config.py:925:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-06-13 02:29:10,459] [INFO] [config.py:925:print]   timers_config ................ enabled=True synchronized=True
+[2025-06-13 02:29:10,459] [INFO] [config.py:925:print]   train_batch_size ............. 2
+[2025-06-13 02:29:10,459] [INFO] [config.py:925:print]   train_micro_batch_size_per_gpu  1
+[2025-06-13 02:29:10,459] [INFO] [config.py:925:print]   use_data_before_expert_parallel_  False
+[2025-06-13 02:29:10,460] [INFO] [config.py:925:print]   use_node_local_storage ....... False
+[2025-06-13 02:29:10,460] [INFO] [config.py:925:print]   wall_clock_breakdown ......... False
+[2025-06-13 02:29:10,460] [INFO] [config.py:925:print]   weight_quantization_config ... None
+[2025-06-13 02:29:10,460] [INFO] [config.py:925:print]   world_size ................... 2
+[2025-06-13 02:29:10,460] [INFO] [config.py:925:print]   zero_allow_untested_optimizer  True
+[2025-06-13 02:29:10,460] [INFO] [config.py:925:print]   zero_config .................. stage=1 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='none', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=False) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='none', nvme_path=None, buffer_count=4, pin_memory=False, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-06-13 02:29:10,460] [INFO] [config.py:925:print]   zero_enabled ................. True
+[2025-06-13 02:29:10,461] [INFO] [config.py:925:print]   zero_force_ds_cpu_optimizer .. True
+[2025-06-13 02:29:10,461] [INFO] [config.py:925:print]   zero_optimization_stage ...... 1
+[2025-06-13 02:29:10,461] [INFO] [config.py:911:print_user_config]   json = {
     "train_batch_size": 2, 
     "train_micro_batch_size_per_gpu": 1, 
     "gradient_accumulation_steps": 1, 
@@ -217,47 +217,43 @@ gradient_accumulation_steps:1 data_path:./all_data/huatuo_trained_0.1p_Qwen3-0.6
     }, 
     "zero_allow_untested_optimizer": true
 }
-Save step setted to 11
+Save step setted to 95
 {'train_batch_size': 2, 'train_micro_batch_size_per_gpu': 1, 'gradient_accumulation_steps': 1, 'zero_optimization': {'stage': 1, 'offload_optimizer': {'device': 'none', 'nvme_path': None}, 'offload_param': {'device': 'none', 'nvme_path': None}, 'stage3_gather_16bit_weights_on_model_save': True}, 'gradient_clipping': 1.0, 'steps_per_print': inf, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}, 'zero_allow_untested_optimizer': True}
-  0%|          | 0/59 [00:00<?, ?it/s]input_ids0:
+  0%|          | 0/476 [00:00<?, ?it/s]input_ids0:
 <|im_start|>user
-Bạn có thể nói về đặc điểm và công dụng của thuốc Bikan không?<|im_end|>
+Thuốc được khuyến nghị cho triệu chứng ho ở mô hình chuột lang là gì?<|im_end|>
 <|im_start|>assistant
 <think>
 
 </think>
 
-Bikan (Viên nang Pioglitazone Hydrochloride) là thuốc điều trị đái tháo đường type 2, thành phần chính là pioglitazone hydrochloride. Thuốc thuộc nhóm thuốc hạ đường huyết uống thiazolidinedione, kiểm soát đường huyết bằng cách tăng cường độ nhạy insulin ở mô ngoại biên và gan.
-
-Cơ chế tác dụng chính của Bikan là kích hoạt thụ thể nhân PPAR (peroxisome proliferator-activated receptor) trong các mô nhạy insulin như mô mỡ, cơ xương và gan. Điều này điều hòa quá trình phiên mã của các gen phản ứng với insulin, qua đó kiểm soát sản xuất, vận chuyển và sử dụng glucose.
-
-Chỉ định của Bikan là đái tháo đường type 2 (đái tháo đường không phụ thuộc insulin). Thuốc có thể được sử dụng kết hợp với kiểm soát chế độ ăn uống và vận động thể chất để quản lý đường huyết. Thuốc có thể dùng đơn độc, và khi kiểm soát đường huyết không đạt hiệu quả qua chế độ ăn, vận động và dùng đơn độc, có thể kết hợp với các thuốc khác.
-
-Khi sử dụng Bikan, liều khởi đầu là 15 hoặc 30 mg, liều tối đa là 45 mg/ngày. Nên uống thuốc trước bữa sáng. Nếu quên liều, không nên uống gấp đôi liều vào ngày hôm sau mà tiếp tục với liều thông thường.
-
-Mặc dù Bikan có hiệu quả nhất định trong điều trị đái tháo đường, việc sử dụng thuốc cũng có thể gây ra một số tác dụng phụ. Theo các nghiên cứu độc tính, việc sử dụng Bikan liều cao trong thời gian dài có thể gây ra các vấn đề như phì đại tim và suy tim.<|im_end|>
-<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> device cuda:0
-labels0:
-<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><think>
+Tachykinin đường hô hấp<|im_end|>
+<|im_start|>user
+Biến chứng của đau bụng cấp là gì?<|im_end|>
+<|im_start|>assistant
+<think>
 
 </think>
 
-Bikan (Viên nang Pioglitazone Hydrochloride) là thuốc điều trị đái tháo đường type 2, thành phần chính là pioglitazone hydrochloride. Thuốc thuộc nhóm thuốc hạ đường huyết uống thiazolidinedione, kiểm soát đường huyết bằng cách tăng cường độ nhạy insulin ở mô ngoại biên và gan.
+Toan niệu do đái tháo đường<|im_end|>
+<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+labels0:
+<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><think>
 
-Cơ chế tác dụng chính của Bikan là kích hoạt thụ thể nhân PPAR (peroxisome proliferator-activated receptor) trong các mô nhạy insulin như mô mỡ, cơ xương và gan. Điều này điều hòa quá trình phiên mã của các gen phản ứng với insulin, qua đó kiểm soát sản xuất, vận chuyển và sử dụng glucose.
+</think>
 
-Chỉ định của Bikan là đái tháo đường type 2 (đái tháo đường không phụ thuộc insulin). Thuốc có thể được sử dụng kết hợp với kiểm soát chế độ ăn uống và vận động thể chất để quản lý đường huyết. Thuốc có thể dùng đơn độc, và khi kiểm soát đường huyết không đạt hiệu quả qua chế độ ăn, vận động và dùng đơn độc, có thể kết hợp với các thuốc khác.
+Tachykinin đường hô hấp<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><think>
 
-Khi sử dụng Bikan, liều khởi đầu là 15 hoặc 30 mg, liều tối đa là 45 mg/ngày. Nên uống thuốc trước bữa sáng. Nếu quên liều, không nên uống gấp đôi liều vào ngày hôm sau mà tiếp tục với liều thông thường.
+</think>
 
-Mặc dù Bikan có hiệu quả nhất định trong điều trị đái tháo đường, việc sử dụng thuốc cũng có thể gây ra một số tác dụng phụ. Theo các nghiên cứu độc tính, việc sử dụng Bikan liều cao trong thời gian dài có thể gây ra các vấn đề như phì đại tim và suy tim.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> device cuda:0
- 98%|█████████▊| 58/59 [01:39<00:01,  1.76s/it, acc=0.555, current_step=58, epoch=0, length=512, loss=2.18, lr=1.63e-5, skip=0, total_step=59][2025-06-12 07:53:46,547] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is begin to save!
-[2025-06-12 07:53:46,556] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-59/pytorch_model/mp_rank_00_model_states.pt
-checkpoint checkpoint-0-59 is saved...
-100%|██████████| 59/59 [02:02<00:00,  2.07s/it, acc=0.555, current_step=58, epoch=0, length=512, loss=2.18, lr=1.63e-5, skip=0, total_step=59]
-[2025-06-12 07:54:09,083] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is begin to save!
-[2025-06-12 07:54:09,088] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-59/pytorch_model/mp_rank_00_model_states.pt
-checkpoint checkpoint-0-59 is saved...
+Toan niệu do đái tháo đường<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+100%|█████████▉| 475/476 [13:10<00:01,  1.67s/it, acc=0.606, current_step=475, epoch=0, length=512, loss=1.79, lr=1.6e-5, skip=0, total_step=476] [2025-06-13 02:42:21,119] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is begin to save!
+[2025-06-13 02:42:21,129] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-476/pytorch_model/mp_rank_00_model_states.pt
+checkpoint checkpoint-0-476 is saved...
+100%|██████████| 476/476 [13:29<00:00,  1.70s/it, acc=0.606, current_step=475, epoch=0, length=512, loss=1.79, lr=1.6e-5, skip=0, total_step=476]
+[2025-06-13 02:42:40,344] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint pytorch_model is begin to save!
+[2025-06-13 02:42:40,360] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: ./ckpts/Qwen3_0.6B/checkpoint-0-476/pytorch_model/mp_rank_00_model_states.pt
+checkpoint checkpoint-0-476 is saved...
 wandb: 
-wandb: 🚀 View run splendid-sponge-51 at: https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/n5f0sjq7
-[rank0]:[W612 07:54:44.290393093 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+wandb: 🚀 View run peach-cosmos-58 at: https://wandb.ai/lengoctuong23052002-fpt-retail/Qwen3_0.6B/runs/qb1n4sru
+[rank0]:[W613 02:43:15.949332829 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

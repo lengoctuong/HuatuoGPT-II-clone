@@ -138,18 +138,44 @@ class HuatuoGPT_data(torch.utils.data.Dataset):
         res = {}
         total = 0
         for k,v in self.data_epoch.items():
-            res[k] = self.lengths[k]*v
-            total += self.lengths[k]*v
+            if k in self.lengths:
+                res[k] = self.lengths[k]*v
+                total += self.lengths[k]*v
         res['sum'] = total
         return res
 
     def preprocess(self, data):
+        """
+        Preprocesses input data into tokenized input IDs and corresponding labels for model training.
+
+        Args:
+            data: A list of strings representing alternating user and assistant messages.
+
+        Returns:
+            A dictionary containing:
+                - 'input_ids': List of tokenized input IDs, truncated to max_seq_len.
+                - 'labels': List of labels aligned with input_ids, where non-assistant tokens are marked with ignore_index (-100).
+
+        Raises:
+            ValueError: If data is not a list.
+
+        The function:
+            - Validates that input data is a list.
+            - Converts data into a chat format with alternating 'user' and 'assistant' roles.
+            - Applies a chat template to create a single prompt string.
+            - Tokenizes the prompt, respecting max_seq_len and truncation.
+            - Initializes labels with ignore_index (-100) for all tokens.
+            - Identifies the assistant's response section (between <|im_start|>assistant\n and <|im_end|>).
+            - Sets labels to match input_ids for the assistant's response tokens, including the end token.
+            - Optionally prints debug information (decoded input_ids and labels) if self.debug is True.
+            - Returns input_ids and labels, truncated to max_seq_len.
+        """
         input_ids = []
         labels = []
         if not isinstance(data, list):
             raise ValueError('The data must be a list.')
 
-        # Chuyển đổi sang định dạng chat template
+        # Convert data to chat format with alternating user and assistant roles
         chat = []
         for ind, d in enumerate(data):
             if ind % 2 == 0:
@@ -157,31 +183,31 @@ class HuatuoGPT_data(torch.utils.data.Dataset):
             else:
                 chat.append({"role": "assistant", "content": d})
 
-        # Áp dụng chat template để tạo prompt
+        # Apply chat template to create a single prompt
         prompt = self.tokenizer.apply_chat_template(chat, tokenize=False)
 
-        # Tokenize toàn bộ prompt
-        input_ids = self.tokenizer.encode(prompt, add_special_tokens=False, max_length=self.config.max_seq_len, truncation=True)
+        # Tokenize the prompt
+        input_ids = self.tokenizer.encode(
+            prompt, add_special_tokens=False, max_length=self.config.max_seq_len, truncation=True
+        )
 
-        # Initialize labels with -100
+        # Initialize labels with ignore_index (-100)
         labels = [self.ignore_index] * len(input_ids)
 
-        # Find the start of the assistant's response
+        # Define assistant start and end tokens
         assistant_start_token = "<|im_start|>assistant\n"
         assistant_start_ids = self.tokenizer.encode(assistant_start_token, add_special_tokens=False)
         assistant_start_len = len(assistant_start_ids)
 
-        # Find the end token
         end_token = "<|im_end|>"
         end_token_ids = self.tokenizer.encode(end_token, add_special_tokens=False)
         end_token_len = len(end_token_ids)
 
-        # Search for the assistant start token in input_ids
+        # Search for assistant start token in input_ids
         for i in range(len(input_ids) - assistant_start_len + 1):
             if input_ids[i:i + assistant_start_len] == assistant_start_ids:
-                # Start labeling from the position after the assistant start token
+                # Label tokens after assistant start until end token
                 for j in range(i + assistant_start_len, len(input_ids)):
-                    # Stop labeling when <|im_end|> is encountered
                     if j <= len(input_ids) - end_token_len and input_ids[j:j + end_token_len] == end_token_ids:
                         for k in range(j, j + end_token_len):
                             labels[k] = input_ids[k]
@@ -189,14 +215,18 @@ class HuatuoGPT_data(torch.utils.data.Dataset):
                     labels[j] = input_ids[j]
                 break
 
+        # Debug output if enabled
         if self.debug:
-            print('input_ids',self.tokenizer.decode(input_ids))
-            labels_clean = labels[i].clone()
-            labels_clean[labels_clean == -100] = tokenizer.pad_token_id
+            print('input_ids', self.tokenizer.decode(input_ids))
+            labels_clean = labels.copy()  # Avoid modifying original labels
+            labels_clean = [self.tokenizer.pad_token_id if l == -100 else l for l in labels_clean]
             print('labels', self.tokenizer.decode(labels_clean))
             self.debug = False
 
-        return {'input_ids': input_ids[:self.config.max_seq_len], 'labels': labels[:self.config.max_seq_len]}
+        return {
+            'input_ids': input_ids[:self.config.max_seq_len],
+            'labels': labels[:self.config.max_seq_len]
+        }
 
     def __len__(self):
         return len(self.weights)
@@ -210,7 +240,10 @@ class HuatuoGPT_data(torch.utils.data.Dataset):
 
 def preprocess(args):
     # args.save_path = '.'.join(os.path.split(args.data_path)[-1].split('.')[:-1])+'_'+os.path.split(args.model_path)[-1]+f'_{args.max_seq_len}_dataset'
-    args.save_path = os.path.join('/mnt/c/Users/HOME/Downloads/HuatuoGPT-II/all_data', '.'.join(os.path.split(args.data_path)[-1].split('.')[:-1])+'_'+os.path.split(args.model_path)[-1]+f'_{args.max_seq_len}_dataset')
+    if not os.path.exists('./all_data'):
+        os.makedirs('./all_data', exist_ok=True)
+
+    args.save_path = os.path.join('./all_data', '.'.join(os.path.split(args.data_path)[-1].split('.')[:-1])+'_'+os.path.split(args.model_path)[-1]+f'_{args.max_seq_len}_dataset')
     print(f'The dataset will save in {args.save_path}')
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True, use_fast=True)
     if tokenizer.pad_token is None:
