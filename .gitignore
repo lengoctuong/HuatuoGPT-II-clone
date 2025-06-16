@@ -2,12 +2,8 @@
 evaluation/data/eval_qa.json
 train_logs
 
-all_data/train_qa_1*
-
-all_data/huatuo*
-
-!all_data/huatuo_trained_0.1p.json
-!all_data/huatuo_trained_1p.json
-!all_data/huatuo_trained_0.1p_Qwen3-0.6B_512_dataset
-!all_data/huatuo_trained_1p_Qwen3-0.6B_512_dataset
-!all_data/huatuo_validated_5p.json
+all_data/huatuo26m*
+all_data/huatuogpt2*
+all_data/huatuo_trained.json
+all_data/huatuo_trained_Qwen3-8B_4096_dataset.zip
+all_data/train_qa_1p_cn_paper.json
