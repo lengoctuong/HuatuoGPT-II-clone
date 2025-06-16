@@ -106,8 +106,8 @@ def train(args):
     accelerator.state.deepspeed_plugin.deepspeed_config['train_micro_batch_size_per_gpu'] = args.train_bsz_per_gpu
     accelerator.state.deepspeed_plugin.deepspeed_config['train_batch_size'] = args.train_bsz_per_gpu*dist.get_world_size()*accelerator.gradient_accumulation_steps
 
-    left_tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True, padding_side='left')
-    model = AutoModelForCausalLM.from_pretrained(args.model_path, trust_remote_code=True)
+    left_tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True, padding_side='left', use_auth_token=os.environ['HG_KEY'])
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, trust_remote_code=True, use_auth_token=os.environ['HG_KEY'])
     
 
     if left_tokenizer.pad_token is None:

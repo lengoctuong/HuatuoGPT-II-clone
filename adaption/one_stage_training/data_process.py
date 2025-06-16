@@ -254,8 +254,8 @@ def preprocess(args):
     args.save_path = os.path.join('./all_data', '.'.join(os.path.split(args.data_path)[-1].split('.')[:-1])+'_'+os.path.split(args.model_path)[-1]+f'_{args.max_seq_len}_dataset')
     print(f'The dataset will save in {args.save_path}')
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True, use_fast=True)
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = '<PAD>'
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
 
     #%%
     train_dataset = HuatuoGPT_data(args, tokenizer)
