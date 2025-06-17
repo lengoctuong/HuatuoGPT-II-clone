@@ -107,11 +107,9 @@ def train(args):
     accelerator.state.deepspeed_plugin.deepspeed_config['train_batch_size'] = args.train_bsz_per_gpu*dist.get_world_size()*accelerator.gradient_accumulation_steps
 
     left_tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True, padding_side='left', use_auth_token=os.environ['HG_KEY'])
+    if not left_tokenizer.pad_token_id:
+        left_tokenizer.pad_token_id = left_tokenizer.eos_token_id
     model = AutoModelForCausalLM.from_pretrained(args.model_path, trust_remote_code=True, use_auth_token=os.environ['HG_KEY'])
-    
-
-    if left_tokenizer.pad_token is None:
-        left_tokenizer.pad_token = '<PAD>'
 
     if args.gradient_checkpointing:
         model.gradient_checkpointing_enable()
